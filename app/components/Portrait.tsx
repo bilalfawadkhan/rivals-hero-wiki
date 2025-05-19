@@ -22,7 +22,7 @@ const Portrait: React.FC<PortraitProps> = ({
 
   const handleClick = (e: React.MouseEvent,value:boolean) => {
     e.stopPropagation();
-    value ? setIsFocused(false) : setIsFocused(true);
+    setIsFocused(!value)
     document.body.style.overflow = 'hidden'; // optional
   };
   return (
@@ -47,8 +47,7 @@ const Portrait: React.FC<PortraitProps> = ({
         <p className="bg-amber-600 w-full text-center">{herotype}</p>
       </motion.div>
   )}
-
-  {!isFocused && (
+  {!isFocused &&(
       <motion.div
       layoutId="portrait"
        className={" w-[200px] rounded-2xl shadow-2xl flex flex-col items-center mt-12 bg-gray-700 border-gold-border border-4 overflow-hidden "}
