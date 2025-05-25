@@ -8,7 +8,7 @@ export default function Home() {
 
 
     </div>
-    <div className="grid grid-cols-10 h-full">
+    <div className="grid grid-cols-11 h-full">
        <Portrait src="/jeff.webp" alt="My Portrait" heroName="Psylocke" herotype="Assassin" />
         <Portrait src="/jeff.webp" alt="My Portrait" heroName="Psylocke" herotype="Assassin" />
 

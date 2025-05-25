@@ -36,8 +36,8 @@ const Portrait: React.FC<PortraitProps> = ({
         console.log(data)
       setPosition({
         left:140 - ref.current.offsetLeft,
-        top: 300- ref.current.offsetTop,
-        scale:2
+        top: 350- ref.current.offsetTop,
+        scale:2.5
       })
     } 
     else{
@@ -57,16 +57,16 @@ const Portrait: React.FC<PortraitProps> = ({
       <div 
       ref = {ref}
        onClick={(e) => handleClick(e, isFocused)}
-        className='w-[200px] h-[273px]'>
+        className='w-[150px] h-[217px]'>
 
             {/* Motion Card for Scaled and normal version*/}
           <motion.div
-           className={`relative w-[200px] z-50 rounded-2xl shadow-2xl flex flex-col items-center  bg-gray-700 border-gold-border border-4 `}
+           className={`relative z-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-gold-border border-4 `}
            animate={Position}
           >
             <Image src={src} alt={alt} className={className} width={200} height={300} />
             <h5 className="bg-gray-500 w-full text-center text-white">{heroName}</h5>
-            <p className="bg-amber-600 w-full text-center">{herotype}</p>
+            <p className="bg-amber-600 w-full text-center ">{herotype}</p>
           </motion.div>
       </div>
     </>
