@@ -9,6 +9,9 @@ interface PortraitProps {
   className?: string;
   heroName?: string;
   herotype?: string;
+  isFocused?: boolean;
+  setFocus?: (value: boolean) => void;
+
 }
 
 const Portrait: React.FC<PortraitProps> = ({
@@ -17,10 +20,12 @@ const Portrait: React.FC<PortraitProps> = ({
   className = '',
   heroName = 'Hero Name',
   herotype = 'Hero Type',
+isFocused = false,
+setFocus,
 }) => {
   
   const ref = useRef<HTMLDivElement | null>(null);
-  const [isFocused, setIsFocused] = React.useState(false);
+
   const [Position , setPosition] = React.useState({
     left: 0,
     top: 0,
@@ -28,15 +33,16 @@ const Portrait: React.FC<PortraitProps> = ({
   })
 
     {/* Conditional Reposition and Scaling based on a focused usestate*/}
-  const handleClick = (e: React.MouseEvent,value:boolean) => {
+  const handleClick = (e: React.MouseEvent) => {
      if(!ref.current) return;
         e.stopPropagation();
-        if(!isFocused){
+        const newFocus = !isFocused;
+        if(newFocus){
         const data = ref.current.getBoundingClientRect();
-        console.log(data)
+        // console.log(data)
       setPosition({
         left:140 - ref.current.offsetLeft,
-        top: 350- ref.current.offsetTop,
+        top: 280- ref.current.offsetTop,
         scale:2.5
       })
     } 
@@ -47,7 +53,8 @@ const Portrait: React.FC<PortraitProps> = ({
         scale:1
       })
     }   
-    setIsFocused(!value)
+
+setFocus?.(newFocus);       // schedules update
   };
 
 
@@ -56,17 +63,17 @@ const Portrait: React.FC<PortraitProps> = ({
     {/* Wrapper Div around the card as Placeholder*/}
       <div 
       ref = {ref}
-       onClick={(e) => handleClick(e, isFocused)}
+       onClick={(e) => handleClick(e)}
         className='w-[150px] h-[217px]'>
 
             {/* Motion Card for Scaled and normal version*/}
           <motion.div
-           className={`relative z-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-gold-border border-4 `}
+           className={`relative h-50 z-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-[#eaa03a] border-4 `}
            animate={Position}
           >
             <Image src={src} alt={alt} className={className} width={200} height={300} />
-            <h5 className="bg-gray-500 w-full text-center text-white">{heroName}</h5>
-            <p className="bg-amber-600 w-full text-center ">{herotype}</p>
+            <h5 className="absolute top-34 left-4 rounded-sm w-2/3 text-center text-white text-xl">{heroName}</h5>
+            <p className=" absolute top-40 rounded-sm  w-2/4 bg-[#be6f23] border-[#eaa03a]  border-2 text-center text-[10px]">{herotype}</p>
           </motion.div>
       </div>
     </>
