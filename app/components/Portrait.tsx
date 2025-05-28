@@ -11,6 +11,10 @@ interface PortraitProps {
   herotype?: string;
   isFocused?: boolean;
   setFocus?: (value: boolean) => void;
+  isActive?: boolean
+ setActiveId: (value: number | null) => void;
+   activeId: number | null;
+  compID: number
 
 }
 
@@ -20,8 +24,11 @@ const Portrait: React.FC<PortraitProps> = ({
   className = '',
   heroName = 'Hero Name',
   herotype = 'Hero Type',
-isFocused = false,
 setFocus,
+isActive,
+activeId,
+setActiveId,
+compID
 }) => {
   
   const ref = useRef<HTMLDivElement | null>(null);
@@ -33,28 +40,34 @@ setFocus,
   })
 
     {/* Conditional Reposition and Scaling based on a focused usestate*/}
+const setId = (compID : number) => {
+setActiveId(compID)
+}
+
   const handleClick = (e: React.MouseEvent) => {
      if(!ref.current) return;
         e.stopPropagation();
-        const newFocus = !isFocused;
-        if(newFocus){
+        
+    if (!isActive && activeId !== null) return;
+
+    const shouldFocus = !isActive;
+        if(isActive){
         const data = ref.current.getBoundingClientRect();
         // console.log(data)
       setPosition({
         left:140 - ref.current.offsetLeft,
         top: 280- ref.current.offsetTop,
-        scale:2.5
+        scale:2.5,
       })
-    } 
-    else{
+    }  else{
        setPosition({
         left:0,
         top: 0,
         scale:1
       })
     }   
-
-setFocus?.(newFocus);       // schedules update
+       // schedules update
+      setActiveId(shouldFocus ? compID : null);
   };
 
 
@@ -68,7 +81,7 @@ setFocus?.(newFocus);       // schedules update
 
             {/* Motion Card for Scaled and normal version*/}
           <motion.div
-           className={`relative h-50 z-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-[#eaa03a] border-4 `}
+           className={`relative h-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-[#eaa03a] border-4 ${isActive ? 'z-60' : 'z-40' } `}
            animate={Position}
           >
             <Image src={src} alt={alt} className={className} width={200} height={300} />
