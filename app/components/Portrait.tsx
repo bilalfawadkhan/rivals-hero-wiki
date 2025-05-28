@@ -47,11 +47,21 @@ setActiveId(compID)
   const handleClick = (e: React.MouseEvent) => {
      if(!ref.current) return;
         e.stopPropagation();
-        
-    if (!isActive && activeId !== null) return;
 
-    const shouldFocus = !isActive;
-        if(isActive){
+        let shouldFocus
+        if(activeId === compID && isActive){ // after first render works
+          console.log('Second Click actions')
+          setActiveId(null);
+          shouldFocus = !isActive;
+        }
+        if(activeId === null){ //before first render
+          console.log('First Click action')
+          setActiveId(compID);
+            shouldFocus = !isActive;
+        }
+
+    // if (!isActive) return;
+        if(shouldFocus){
         const data = ref.current.getBoundingClientRect();
         // console.log(data)
       setPosition({
@@ -67,7 +77,7 @@ setActiveId(compID)
       })
     }   
        // schedules update
-      setActiveId(shouldFocus ? compID : null);
+      // setActiveId(shouldFocus ? compID : null);
   };
 
 
@@ -81,7 +91,7 @@ setActiveId(compID)
 
             {/* Motion Card for Scaled and normal version*/}
           <motion.div
-           className={`relative h-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-[#eaa03a] border-4 ${isActive ? 'z-60' : 'z-40' } `}
+           className={`relative h-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-[#eaa03a] border-4 } ${activeId === compID ? 'z-60' : 'z-40'} `}
            animate={Position}
           >
             <Image src={src} alt={alt} className={className} width={200} height={300} />
