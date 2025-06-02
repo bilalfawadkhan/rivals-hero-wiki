@@ -55,13 +55,13 @@ const Portrait: React.FC<PortraitProps> = ({
     // Logic to toggle focus based on the current active ID and click count
     if (activeId === compID && isActive) {
       // If already active and clicked again, unfocus
-      console.log('Second Click actions');
+      // console.log('Second Click actions');
       setActiveId(null);
       shouldFocus = !isActive;
     }
     if (activeId === null) {
       // First time click — set as active
-      console.log('First Click action');
+      // console.log('First Click action');
       setActiveId(compID);
       shouldFocus = !isActive;
     }
@@ -71,7 +71,7 @@ const Portrait: React.FC<PortraitProps> = ({
       const data = ref.current.getBoundingClientRect(); // Get current position on screen
       setPosition({
         left: 140 - ref.current.offsetLeft,
-        top: 280 - ref.current.offsetTop,
+        top: 430 - ref.current.offsetTop,
         scale: 2.5, // Zoom in
       });
     } else {
@@ -94,7 +94,7 @@ const Portrait: React.FC<PortraitProps> = ({
       >
         {/* Motion-enabled card for smooth scaling and repositioning */}
         <motion.div
-          className={`relative h-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-[#eaa03a] border-4 ${activeId === compID ? 'z-60' : 'z-40'}`}
+          className={`relative h-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-[#D6D9F2] border-4 ${activeId === compID ? 'z-60' : 'z-40'}`}
           animate={Position} // Apply dynamic animation styles
         >
           {/* Image of the hero */}
