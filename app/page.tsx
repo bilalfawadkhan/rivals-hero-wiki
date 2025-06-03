@@ -13,12 +13,14 @@ export default function Home() {
   const refs = useRef<Array<HTMLDivElement | null>>([]);
   let offtop:number | undefined = 0;
   let offsetLeft:number | undefined  = 0 ;
+  
   const [position, setPosition] = useState({
 top: 0,
 left: 0,
 height: 0,
 width: 0,
   });
+  const positionRef = useRef(position)
 
 useLayoutEffect(() => {
   if (scaledIndex !== null && refs.current[scaledIndex]) {
@@ -27,15 +29,15 @@ useLayoutEffect(() => {
     offtop = el.offsetTop;
     offsetLeft = el.offsetLeft;
     console.log('first Click')
-    console.log('topOff = ', offtop);
-    console.log('leftOff = ', offsetLeft);
-    console.log(el)
-    setPosition({
+   const newPosition = {
       top: offtop - 100,
       left:offsetLeft,
       height: 99,
       width: 99,
-    });
+   }
+    setPosition(newPosition);
+    positionRef.current = newPosition;
+    console.log(positionRef.current)
   }
 }, [scaledIndex]);
 
@@ -82,10 +84,11 @@ useLayoutEffect(() => {
           className={`flex absolute w-[45%] bg-[#D9C9CF] rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer`}
           onClick={() => {
           setScaledIndex(scaledIndex === i ? null : i)
+          // console.log(`top = ${position.top}, left = ${position.left}, height = ${position.height}, width = ${position.width}`);
           }}
             animate={{
-              top: scaledIndex === i ? `${ position.top}px` : '',
-              left: scaledIndex === i ? `${ position.left}px` : '',
+              top: scaledIndex === i ? `${ positionRef.current.top}px` : '',
+              left: scaledIndex === i ? `${ positionRef.current.left}px` : '',
               width: scaledIndex === i ? '99%' : '',
               height: scaledIndex === i ? '90%' : '',
             }}
