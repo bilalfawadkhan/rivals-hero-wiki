@@ -1,7 +1,7 @@
 'use client';
 import Portrait from "./components/Portrait";
 import { useState , useRef, useLayoutEffect } from "react";
-import {animate, motion, scale} from "framer-motion";
+import {animate, AnimatePresence, motion, scale} from "framer-motion";
 import { off } from "process";
 
 export default function Home() {
@@ -85,13 +85,12 @@ export default function Home() {
       </div>
 
       {/* Abilities Grid */}
-      <div className=" flex flex-wrap gap-4 h-64 mt-10 justify-between ">
+      <div className=" flex flex-wrap gap-4 h-64 mt-10 justify-between">
         {[...Array(6)].map((_, i) => (
       <div  key={i}  className="w-[45%]" ref = {(el) =>{ refs.current[i] = el}}>
             <motion.div 
             className={`flex absolute w-[45%] bg-[#D9C9CF] rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer`}
             onClick={(e) => {   
-            // setScaledIndex(scaledIndex === i ? null : i)
             handleClick(e, i);
             console.log(`top = ${positionRef.current.top}, left = ${positionRef.current.left}, height = ${positionRef.current.height}, width = ${positionRef.current.width}`);
             }}
@@ -103,24 +102,33 @@ export default function Home() {
                 height: positionRef.current.height,
               }:{}
               }
-              transition={{ type: "spring", stiffness: 300, damping: 20}}
+              transition={{duration:0.4}}
             >
               <div className="bg-[#D6D9F2] text-white w-[20%] h-16 px-4 py-2 flex items-center justify-center font-bold">Q</div>
               <div className="p-3 w-[20%] h-16 font-medium">
                 Karmic Revival
               </div>
-              <div className="w-[55%] h-16 bg-gray-500 flex items-center justify-center">
+              <div className="w-[60%] h-16 bg-gray-500 flex items-center justify-center">
                 <img className="w-[25%]"/>
                 </div>
-                {/* <div className="w-[100%] ">
-                <p>Name</p>
-                <p>Description</p>
-                <p>Cost</p>
-                <p>Type</p>
-                <p>Range</p>
-                <p>Target</p>
-                <p>Effect</p>
-                  </div> */}
+              <AnimatePresence>
+              {scaledIndex === i && (
+                  <motion.div 
+                  initial={{height: '20%',  opacity: 0 }}
+                  animate={{height: '100%', opacity: 1 }}
+                  exit={{ opacity: 0 , transition: { duration: 0.7 } }}
+                  transition={{ duration: 0.6 }}
+                 className="w-[100%] absolute top-15 left-0 h-5/6 bg-amber-500">
+                   <p>Name</p>
+                   <p>Description</p>
+                   <p>Cost</p>
+                   <p>Type</p>
+                   <p>Range</p>
+                   <p>Target</p>
+                   <p>Effect</p>
+                  </motion.div>
+              )}
+              </AnimatePresence>
             </motion.div>
       </div>
         ))}
