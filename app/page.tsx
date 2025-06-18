@@ -6,7 +6,7 @@ import { off } from "process";
 
 export default function Home() {
 
-
+  const [buffsBorder, setBuffsBorder] = useState<string[]>(['rgb(107 114 128)','rgba(170, 255, 0, 1)', 'rgba(199, 0, 57, 1)']);
   const [activeId, setActiveId] = useState<number | null>(null)
   const id :number = 1;
   const [scaledIndex, setScaledIndex] = useState<number | null>(null);
@@ -48,8 +48,14 @@ export default function Home() {
     }
   }
 }
+const spellArray : String[] = ['name', 'description', 'cost', 'type', 'range', 'target', 'effect'];
 
+const getSpellData = () => {
+return spellArray.map((spell,index) => {
+ return  <p key={index}> {spell}</p>
 
+});
+};
     return (
   <>
 
@@ -89,7 +95,8 @@ export default function Home() {
         {[...Array(6)].map((_, i) => (
       <div  key={i}  className="w-[45%]" ref = {(el) =>{ refs.current[i] = el}}>
             <motion.div 
-            className={`flex absolute w-[45%] bg-[#D9C9CF] rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer`}
+            className={`flex absolute w-[45%] bg-[#D9C9CF]  rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer `}
+            style={{ border: `2px solid ${buffsBorder[0]}` }}
             onClick={(e) => {   
             handleClick(e, i);
             console.log(`top = ${positionRef.current.top}, left = ${positionRef.current.left}, height = ${positionRef.current.height}, width = ${positionRef.current.width}`);
@@ -102,7 +109,7 @@ export default function Home() {
                 height: positionRef.current.height,
               }:{}
               }
-              transition={{duration:0.4}}
+              transition={{duration:0.3}}
             >
               <div className="bg-[#D6D9F2] text-white w-[20%] h-16 px-4 py-2 flex items-center justify-center font-bold">Q</div>
               <div className="p-3 w-[20%] h-16 font-medium">
@@ -116,16 +123,10 @@ export default function Home() {
                   <motion.div 
                   initial={{height: '20%',  opacity: 0 }}
                   animate={{height: '100%', opacity: 1 }}
-                  exit={{ opacity: 0 , transition: { duration: 0.7 } }}
-                  transition={{ duration: 0.6 }}
+                  exit={{ opacity: 0 , transition: { duration: 0.6 } }}
+                  transition={{ duration: 0.4 }}
                  className="w-[100%] absolute top-15 left-0 h-5/6 bg-amber-500">
-                   <p>Name</p>
-                   <p>Description</p>
-                   <p>Cost</p>
-                   <p>Type</p>
-                   <p>Range</p>
-                   <p>Target</p>
-                   <p>Effect</p>
+                 {getSpellData()}
                   </motion.div>
               )}
               </AnimatePresence>
