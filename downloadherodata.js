@@ -159,7 +159,7 @@ const getdata = async (url) => {
                   if(/-(.+)/.test(text)){
                             let parts = text.split(/-(.+)/);
                             attrib.push({
-                            [`label${lablecount++}`] : parts[0].trim(),
+                            [`label`] : parts[0].trim(),
                             value : parts[1].trim()
                             }) 
                         }
@@ -169,7 +169,7 @@ const getdata = async (url) => {
                 const pEl = $(td).children('p').text() // extracting Special Effect Data
                 console.log(pEl);
                 const sPart = pEl.split(/⚬(.+)/);  
-                attrib.push({[`label${lablecount++}`]:sPart[0].trim(),
+                attrib.push({[`label`]:sPart[0].trim(),
                             value : sPart[1].trim()
                             });
                         }
@@ -187,11 +187,10 @@ const getdata = async (url) => {
     
     // const data = await response.data
     // const $ = cheerios.load(response);
-    const dataDir = path.join(process.cwd(), 'public', 'data');
+    const dataDir = path.join(process.cwd(), 'data');
     const filePath = path.join(dataDir, `${'Adam_Warlock'}.json`);
 
     if(!fs.existsSync(filePath)){
-
     const formattedJson = stringifyAttributesOneLine(spells)
     fs.writeFileSync(filePath, formattedJson, 'utf8');
     console.log('✅ spells.json has been created.');
@@ -202,7 +201,3 @@ const getdata = async (url) => {
 
 getdata('https://marvelrivals.fandom.com/wiki/Adam_Warlock')
 
-const downloadData = async () => {
-
-
-}

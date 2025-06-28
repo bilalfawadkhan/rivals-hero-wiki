@@ -1,8 +1,7 @@
 'use client';
 import Portrait from "./components/Portrait";
-import { useState , useRef, useLayoutEffect } from "react";
+import { useState , useRef, useEffect } from "react";
 import {animate, AnimatePresence, motion, scale} from "framer-motion";
-import { off } from "process";
 
 export default function Home() {
 
@@ -24,7 +23,7 @@ export default function Home() {
   const positionRef = useRef(position)
 
   const handleClick = (e: React.MouseEvent, index:number) => {
-    e.stopPropagation(); // Prevents the event from bubbling to parent elements{
+    e.stopPropagation(); // Prevents the event from bubbling to parent elements
 
     if(scaledIndex === index) {
       setScaledIndex(null);
@@ -48,6 +47,35 @@ export default function Home() {
     }
   }
 }
+{/* Fetching datqa from API for Hero Spells*/}
+type spells = {
+  key: string;
+  img : string;
+  name : string
+  description: string;
+  attributes: {label: string; value: string}[];
+   
+ }
+const [hero_spells, setHeroSpells]  = useState <{[key: string] : spells} | null>();
+
+   useEffect(() => {
+       fetch('/api/hero_spells/Adam_Warlock')
+       .then(response => response.json())
+         .then(data => {
+             console.log(data);
+             setHeroSpells(data);
+         })
+   },[]);
+   // console.log("Render hero_spells:", hero_spells);
+
+   useEffect(() => {
+     if (hero_spells) {
+       console.log("Updated hero_spells:", hero_spells);
+     }
+   }, [hero_spells]);
+
+{/* END*/}
+
 const spellArray : String[] = ['name', 'description', 'cost', 'type', 'range', 'target', 'effect'];
 
 const getSpellData = () => {
@@ -142,7 +170,6 @@ return spellArray.map((spell,index) => {
       isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} compID ={1} />
           <Portrait src="/jeff.webp" alt="My Portrait" heroName="PSYLOCKE" herotype="STRATEGIST" 
      isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  compID ={2}/>
-
       </div>
       </>
     );
