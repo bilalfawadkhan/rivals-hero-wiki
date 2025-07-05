@@ -113,15 +113,17 @@ return spellArray.map((spell,index) => {
     >
     <div className=" relative rounded-lg p-4 w-[90%] h-[500px] max-w-4xl -mt-7">
       {/* Top Section */}
+      
+      { hero_spells && (
       <div className="flex items-center gap-4 mt-6 mb-6 bg-gray-600 rounded-lg overflow-hidden">
         <div className="w-24 h-24 bg-[#FBF8F4] border-2 border-[#D6D9F2] rounded-lg "></div>
         <h2 className="text-3xl font-semibold">Hero Attack</h2>
-      </div>
+      </div>)}
 
       {/* Abilities Grid */}
       <div className=" flex flex-wrap gap-4 h-64 mt-10 justify-between">
-        {[...Array(6)].map((_, i) => (
-      <div  key={i}  className="w-[45%]" ref = {(el) =>{ refs.current[i] = el}}>
+        {hero_spells && Object.entries(hero_spells).map(([key,val], i) => (
+      <div key={i}  className="w-[45%]" ref = {(el) =>{ refs.current[i] = el}}>
             <motion.div 
             className={`flex absolute w-[45%] bg-[#D9C9CF]  rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer `}
             style={{ border: `2px solid ${buffsBorder[0]}` }}
@@ -139,11 +141,11 @@ return spellArray.map((spell,index) => {
               }
               transition={{duration:0.3}}
             >
-              <div className="bg-[#D6D9F2] text-white w-[20%] h-16 px-4 py-2 flex items-center justify-center font-bold">Q</div>
-              <div className="p-3 w-[20%] h-16 font-medium">
-                Karmic Revival
+              <div className="bg-[#D6D9F2] text-white w-[15%] h-16 px-4 py-2 flex items-center justify-center font-bold">Q</div>
+              <div className="p-3 w-[35%] h-16 font-medium">
+                {val.name}
               </div>
-              <div className="w-[60%] h-16 bg-gray-500 flex items-center justify-center">
+              <div className="w-[50%] h-16 bg-gray-500 flex items-center justify-center">
                 <img className="w-[25%]"/>
                 </div>
               <AnimatePresence>
@@ -154,16 +156,18 @@ return spellArray.map((spell,index) => {
                   exit={{ opacity: 0 , transition: { duration: 0.6 } }}
                   transition={{ duration: 0.4 }}
                  className="w-[100%] absolute top-15 left-0 h-5/6 bg-amber-500">
-                 {getSpellData()}
+                 <div className="w-[70%] bg-blue-900">
+                 {val.description}
+                 </div>
                   </motion.div>
               )}
               </AnimatePresence>
             </motion.div>
-      </div>
-        ))}
-      </div>
-    </div>
-  </motion.div>
+              </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
 
       <div className="grid grid-cols-11 h-full mt-8">
          <Portrait src="/jeff.webp" alt="My Portrait" heroName="PSYLOCKE" herotype="Strategist" 

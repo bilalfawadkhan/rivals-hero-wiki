@@ -35,9 +35,9 @@ const [hero_spells, setHeroSpells]  = useState <{[key: string] : spells} | null>
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <p>
-    {hero_spells && Object.entries(hero_spells).map(([key,val]) => (
+    {hero_spells && Object.entries(hero_spells).map(([key,val],index ) => (
       <span key={key} className="block mt-2">
-        {val.name}
+        {index + 1}
       </span>
     ))}
       </p>
