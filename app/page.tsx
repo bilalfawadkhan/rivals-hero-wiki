@@ -1,7 +1,18 @@
 'use client';
-import Portrait from "./components/Portrait";
+import Portrait from "@/components/Portrait";
 import { useState , useRef, useEffect } from "react";
 import {animate, AnimatePresence, motion, scale} from "framer-motion";
+import SpellTable from "@/components/SpellTable";
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 export default function Home() {
 
@@ -12,6 +23,7 @@ export default function Home() {
   const refs = useRef<Array<HTMLDivElement | null>>([]);
   let offtop:number | undefined = 0;
   let offsetLeft:number | undefined  = 0 ;
+  const [dropPosition, setDropPosition] = useState('bottom');
   
   const [position, setPosition] = useState<{
   top: number | string;
@@ -84,6 +96,9 @@ return spellArray.map((spell,index) => {
 
 });
 };
+
+
+
     return (
   <>
 
@@ -104,6 +119,20 @@ return spellArray.map((spell,index) => {
         Marvel Rivals Hero Wiki
       </h1>
     </div>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="outline">Select Patch</Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="w-56">
+        <DropdownMenuLabel>Panel Position</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuRadioGroup value={dropPosition} onValueChange={setDropPosition}>
+          <DropdownMenuRadioItem value="S1">Season 1</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="S2">Season 2</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="S3">Season 3</DropdownMenuRadioItem>
+        </DropdownMenuRadioGroup>
+      </DropdownMenuContent>
+    </DropdownMenu>
   </div>
    {/* Header end*/}
 
@@ -114,15 +143,15 @@ return spellArray.map((spell,index) => {
     <div className=" relative rounded-lg p-4 w-[90%] h-[500px] max-w-4xl -mt-7">
       {/* Top Section */}
       
-      { hero_spells && (
+      {/* { hero_spells && (
       <div className="flex items-center gap-4 mt-6 mb-6 bg-gray-600 rounded-lg overflow-hidden">
         <div className="w-24 h-24 bg-[#FBF8F4] border-2 border-[#D6D9F2] rounded-lg "></div>
         <h2 className="text-3xl font-semibold">Hero Attack</h2>
-      </div>)}
+      </div>)} */}
 
       {/* Abilities Grid */}
       <div className=" flex flex-wrap gap-4 h-64 mt-10 justify-between">
-        {hero_spells && Object.entries(hero_spells).map(([key,val], i) => (
+        {hero_spells && Object.entries(hero_spells).map(([key,spell], i) => (
       <div key={i}  className="w-[45%]" ref = {(el) =>{ refs.current[i] = el}}>
             <motion.div 
             className={`flex absolute w-[45%] bg-[#D9C9CF]  rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer `}
@@ -141,9 +170,9 @@ return spellArray.map((spell,index) => {
               }
               transition={{duration:0.3}}
             >
-              <div className="bg-[#D6D9F2] text-white w-[15%] h-16 px-4 py-2 flex items-center justify-center font-bold">Q</div>
+              <div className="bg-[#D6D9F2] text-white w-[15%] h-16 px-4 py-2 flex items-center justify-center font-bold">{spell.key ? spell.key : 'nill'}</div>
               <div className="p-3 w-[35%] h-16 font-medium">
-                {val.name}
+                {spell.name}
               </div>
               <div className="w-[50%] h-16 bg-gray-500 flex items-center justify-center">
                 <img className="w-[25%]"/>
@@ -157,7 +186,7 @@ return spellArray.map((spell,index) => {
                   transition={{ duration: 0.4 }}
                  className="w-[100%] absolute top-15 left-0 h-5/6 bg-amber-500">
                  <div className="w-[70%] bg-blue-900">
-                 {val.description}
+                 <SpellTable spell={spell} />
                  </div>
                   </motion.div>
               )}
