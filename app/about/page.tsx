@@ -4,43 +4,43 @@ import { useEffect, useState } from "react";
 
 
 export default function AboutPage() {
+{/*Loading hero Names*/}
+ type hero ={
+  hero_name: string;
+ };
 
-  type spells = {
-   key: string;
-   img : string;
-   name : string
-   description: string;
-   attributes: {label: string; value: string}[];
-    
-  }
-const [hero_spells, setHeroSpells]  = useState <{[key: string] : spells} | null>();
 
-    useEffect(() => {
-        fetch('/api/hero_spells/Adam_Warlock')
-        .then(response => response.json())
-          .then(data => {
-              console.log(data);
-              setHeroSpells(data);
-          })
-    },[]);
-    // console.log("Render hero_spells:", hero_spells);
+const [heroNames, setHeroNames] = useState<hero[]>([]);
 
-    useEffect(() => {
-      if (hero_spells) {
-        console.log("Updated hero_spells:", hero_spells);
-      }
-    }, [hero_spells]);
+useEffect(() =>{
 
+  fetch('/api/hero_names')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data.heroes);
+    setHeroNames(data.heroes);
+  })
+
+},[])
+
+useEffect(() => {
+  console.log(heroNames)
+
+},[heroNames]);
+
+
+{/* END*/}
+  
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <p>
-    {hero_spells && Object.entries(hero_spells).map(([key,val],index ) => (
-      <span key={key} className="block mt-2">
-        {index + 1}
-      </span>
-    ))}
-      </p>
+    <ul>
+  {heroNames.map((hero,index) => (
+    <li key={index} className="text-lg font-semibold text-gray-800">
+      {hero.hero_name}
+    </li>
+  ))}
+  </ul>
     </div>
   );
 }

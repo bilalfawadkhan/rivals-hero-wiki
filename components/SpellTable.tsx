@@ -1,3 +1,5 @@
+// Filename: app/components/SpellTable.tsx
+
 import React from 'react';
 
 interface SpellAttribute {
@@ -19,22 +21,22 @@ interface SpellTableProps {
 
 const SpellTable: React.FC<SpellTableProps> = ({ spell }) => {
   return (
-    <div className=" mx-auto bg-gray-600 shadow-xl rounded-2xl p-4">
-      {/* <h2 className="text-3xl font-bold text-indigo-600 mb-2">{spell.name.trim()}</h2> */}
-      <p className="text-white text-xs mb-6">{spell.description}</p>
-
-      <table className="w-full border-collapse border border-white">
-        <thead className="bg-gray-500">
-          <tr>
-            <th className="text-left px-4 py-2 border text-white text-xs border-gray-200 font-semibold">Attribute</th>
-            <th className="text-left px-4 py-2 border text-white text-xs border-gray-200 font-semibold">Value</th>
+    <div className="bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-2xl shadow-lg p-6 w-full max-w-md mx-auto font-orbitron">
+      <h2 className="text-yellow-400 text-2xl font-bold mb-1">🪐 {spell.name}</h2>
+      <p className="text-blue-300 text-sm mb-4">Right Mouse Button</p>
+      <p className="text-gray-300 text-sm mb-6">{spell.description}</p>
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="text-gray-400 uppercase text-xs border-b border-gray-600">
+            <th className="py-2 text-left">Attribute</th>
+            <th className="py-2 text-left">Details</th>
           </tr>
         </thead>
         <tbody>
           {spell.attributes.map((attr, index) => (
-            <tr key={index} className="hover:bg-gray-700">
-              <td className="px-4 py-2 border text-white text-xs border-gray-200">{attr.label}</td>
-              <td className="px-4 py-2 border text-white text-xs border-gray-200">{attr.value}</td>
+            <tr key={index} className="border-b border-gray-700 hover:bg-gray-700/50">
+              <td className="py-2">{attr.label}</td>
+              <td className="py-2">{attr.value}</td>
             </tr>
           ))}
         </tbody>

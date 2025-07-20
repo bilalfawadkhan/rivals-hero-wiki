@@ -50,7 +50,7 @@ export default function Home() {
         top: 40,
         left:16,
         height: '100%',
-        width: '100%',
+        width: '80%',
      }
       positionRef.current = newPosition;
       console.log(positionRef.current)
@@ -68,6 +68,7 @@ type spells = {
   attributes: {label: string; value: string}[];
    
  }
+
 const [hero_spells, setHeroSpells]  = useState <{[key: string] : spells} | null>();
 
    useEffect(() => {
@@ -78,13 +79,26 @@ const [hero_spells, setHeroSpells]  = useState <{[key: string] : spells} | null>
              setHeroSpells(data);
          })
    },[]);
-   // console.log("Render hero_spells:", hero_spells);
+{/* END*/}
 
-   useEffect(() => {
-     if (hero_spells) {
-       console.log("Updated hero_spells:", hero_spells);
-     }
-   }, [hero_spells]);
+{/*Loading hero Names*/}
+ type hero ={
+  hero_name: string;
+ };
+
+
+const [heroNames, setHeroNames] = useState<hero[]>();
+
+useEffect(() =>{
+
+  fetch('/api/hero_names')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    setHeroNames(data);
+  })
+
+},[])
 
 {/* END*/}
 
@@ -96,9 +110,6 @@ return spellArray.map((spell,index) => {
 
 });
 };
-
-
-
     return (
   <>
 
@@ -140,7 +151,7 @@ return spellArray.map((spell,index) => {
     animate={{ opacity: activeId ? 0.8 : 0}}
     transition={{ duration: 0.3,delay: 0.1 }}
     >
-    <div className=" relative rounded-lg p-4 w-[90%] h-[500px] max-w-4xl -mt-7">
+    <div className=" relative rounded-lg p-4 w-[90%] h-[600px] max-w-4xl -mt-7">
       {/* Top Section */}
       
       {/* { hero_spells && (
@@ -152,9 +163,9 @@ return spellArray.map((spell,index) => {
       {/* Abilities Grid */}
       <div className=" flex flex-wrap gap-4 h-64 mt-10 justify-between">
         {hero_spells && Object.entries(hero_spells).map(([key,spell], i) => (
-      <div key={i}  className="w-[45%]" ref = {(el) =>{ refs.current[i] = el}}>
+           <div key={i}  className="w-[45%]" ref = {(el) =>{ refs.current[i] = el}}>
             <motion.div 
-            className={`flex absolute w-[45%] bg-[#D9C9CF]  rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer `}
+            className={`flex absolute w-[45%] h-20 bg-[#D9C9CF] rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer `}
             style={{ border: `2px solid ${buffsBorder[0]}` }}
             onClick={(e) => {   
             handleClick(e, i);
@@ -168,23 +179,25 @@ return spellArray.map((spell,index) => {
                 height: positionRef.current.height,
               }:{}
               }
-              transition={{duration:0.3}}
+              transition={{duration:0.2}}
             >
-              <div className="bg-[#D6D9F2] text-white w-[15%] h-16 px-4 py-2 flex items-center justify-center font-bold">{spell.key ? spell.key : 'nill'}</div>
-              <div className="p-3 w-[35%] h-16 font-medium">
+              <div className="bg-[#D6D9F2] text-white w-[15%] h-20 px-4 py-2 flex items-center justify-center font-bold">{/* Spell Key Div */}
+                {spell.key ? spell.key : 'null'}
+              </div>
+              <div className="w-[35%] h-16 font-medium"> {/* Spell name Div */}
                 {spell.name}
               </div>
-              <div className="w-[50%] h-16 bg-gray-500 flex items-center justify-center">
-                <img className="w-[25%]"/>
+              <div className="w-[50%] h-20 bg-gray-500 flex items-center justify-center"> {/* IMG Div */}
+                <img className="w-[100%]"/>
                 </div>
               <AnimatePresence>
               {scaledIndex === i && (
                   <motion.div 
-                  initial={{height: '20%',  opacity: 0 }}
-                  animate={{height: '100%', opacity: 1 }}
+                  initial={{height: '0%' }}
+                  animate={{height: '100%'}}
                   exit={{ opacity: 0 , transition: { duration: 0.6 } }}
                   transition={{ duration: 0.4 }}
-                 className="w-[100%] absolute top-15 left-0 h-5/6 bg-amber-500">
+                 className="w-[100%] absolute top-20 left-0 h-3/4 bg-amber-500">
                  <div className="w-[70%] bg-blue-900">
                  <SpellTable spell={spell} />
                  </div>
