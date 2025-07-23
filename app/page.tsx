@@ -49,8 +49,8 @@ export default function Home() {
      const newPosition = {
         top: 40,
         left:16,
-        height: '100%',
-        width: '80%',
+        height: 'fit-content',
+        width: '90%',
      }
       positionRef.current = newPosition;
       console.log(positionRef.current)
@@ -151,7 +151,7 @@ return spellArray.map((spell,index) => {
     animate={{ opacity: activeId ? 0.8 : 0}}
     transition={{ duration: 0.3,delay: 0.1 }}
     >
-    <div className=" relative rounded-lg p-4 w-[90%] h-[600px] max-w-4xl -mt-7">
+    <div className=" relative rounded-lg p-4 w-[90%] h-[600px] max-w-4xl mt-7">
       {/* Top Section */}
       
       {/* { hero_spells && (
@@ -161,11 +161,11 @@ return spellArray.map((spell,index) => {
       </div>)} */}
 
       {/* Abilities Grid */}
-      <div className=" flex flex-wrap gap-4 h-64 mt-10 justify-between">
+      <div className=" flex flex-wrap gap-y-36 h-64 mt-10 justify-between">
         {hero_spells && Object.entries(hero_spells).map(([key,spell], i) => (
-           <div key={i}  className="w-[45%]" ref = {(el) =>{ refs.current[i] = el}}>
+           <div key={i}  className="w-[45%] h-fit" ref = {(el) =>{ refs.current[i] = el}}>
             <motion.div 
-            className={`flex absolute w-[45%] h-20 bg-[#D9C9CF] rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer `}
+            className={`flex absolute w-[45%] h-28 bg-[#D9C9CF] rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer `}
             style={{ border: `2px solid ${buffsBorder[0]}` }}
             onClick={(e) => {   
             handleClick(e, i);
@@ -181,28 +181,20 @@ return spellArray.map((spell,index) => {
               }
               transition={{duration:0.2}}
             >
-              <div className="bg-[#D6D9F2] text-white w-[15%] h-20 px-4 py-2 flex items-center justify-center font-bold">{/* Spell Key Div */}
-                {spell.key ? spell.key : 'null'}
-              </div>
-              <div className="w-[35%] h-16 font-medium"> {/* Spell name Div */}
-                {spell.name}
-              </div>
-              <div className="w-[50%] h-20 bg-gray-500 flex items-center justify-center"> {/* IMG Div */}
-                <img className="w-[100%]"/>
-                </div>
+     
               <AnimatePresence>
-              {scaledIndex === i && (
+              { 
                   <motion.div 
                   initial={{height: '0%' }}
                   animate={{height: '100%'}}
-                  exit={{ opacity: 0 , transition: { duration: 0.6 } }}
+                  exit={{ transition: { duration: 0.6 } }}
                   transition={{ duration: 0.4 }}
-                 className="w-[100%] absolute top-20 left-0 h-3/4 bg-amber-500">
-                 <div className="w-[70%] bg-blue-900">
+                 className="w-[100%] relative top-0 left-0 h-3/4 bg-amber-500">
+                 <div className="w-[100%] bg-blue-900">
                  <SpellTable spell={spell} />
                  </div>
                   </motion.div>
-              )}
+              }
               </AnimatePresence>
             </motion.div>
               </div>

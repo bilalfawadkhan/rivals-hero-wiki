@@ -21,8 +21,8 @@ interface SpellTableProps {
 
 const SpellTable: React.FC<SpellTableProps> = ({ spell }) => {
   return (
-    <div className="bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-2xl shadow-lg p-6 w-full max-w-md mx-auto font-orbitron">
-      <h2 className="text-yellow-400 text-2xl font-bold mb-1">🪐 {spell.name}</h2>
+    <div className=" relative bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-2xl shadow-lg p-4 w-full max-w-md font-orbitron">
+      <h2 className="text-yellow-400 text-xl font-bold mb-1">🪐 {spell.name}</h2>
       <p className="text-blue-300 text-sm mb-4">Right Mouse Button</p>
       <p className="text-gray-300 text-sm mb-6">{spell.description}</p>
       <table className="w-full text-sm">
