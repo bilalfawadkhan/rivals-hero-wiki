@@ -13,12 +13,14 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { s } from "framer-motion/client";
 
 export default function Home() {
 
   const [buffsBorder, setBuffsBorder] = useState<string[]>(['rgb(107 114 128)','rgba(170, 255, 0, 1)', 'rgba(199, 0, 57, 1)']);
   const [activeId, setActiveId] = useState<number | null>(null)
   const id :number = 1;
+  let seasonversion = 'S0';
   const [scaledIndex, setScaledIndex] = useState<number | null>(null);
   const refs = useRef<Array<HTMLDivElement | null>>([]);
   let offtop:number | undefined = 0;
@@ -34,8 +36,8 @@ export default function Home() {
 
   const positionRef = useRef(position)
 
-  const handleClick = (e: React.MouseEvent, index:number) => {
-    e.stopPropagation(); // Prevents the event from bubbling to parent elements
+  const handleClick = (e: React.MouseEvent, index:number) => { // event handling for scaling the spell card
+    e.stopPropagation();
 
     if(scaledIndex === index) {
       setScaledIndex(null);
@@ -84,18 +86,18 @@ const [hero_spells, setHeroSpells]  = useState <{[key: string] : spells} | null>
 {/*Loading hero Names*/}
  type hero ={
   hero_name: string;
+  hero_type: string;
  };
 
 
 const [heroNames, setHeroNames] = useState<hero[]>();
 
 useEffect(() =>{
-
   fetch('/api/hero_names')
   .then(response => response.json())
   .then(data => {
-    console.log(data);
-    setHeroNames(data);
+    console.log(data.heroes);
+    setHeroNames(data.heroes);
   })
 
 },[])
@@ -148,19 +150,18 @@ return spellArray.map((spell,index) => {
    {/* Header end*/}
 
     <motion.div className={`absolute z-50 bg-black w-full h-full flex items-center justify-center ${activeId ? '' : 'hidden'}`}
-    animate={{ opacity: activeId ? 0.8 : 0}}
-    transition={{ duration: 0.3,delay: 0.1 }}
-    >
+        animate={{ opacity: activeId ? 0.8 : 0}}
+        transition={{ duration: 0.3,delay: 0.1 }}
+        >
     <div className=" relative rounded-lg p-4 w-[90%] h-[600px] max-w-4xl mt-7">
       {/* Top Section */}
       
-      {/* { hero_spells && (
-      <div className="flex items-center gap-4 mt-6 mb-6 bg-gray-600 rounded-lg overflow-hidden">
-        <div className="w-24 h-24 bg-[#FBF8F4] border-2 border-[#D6D9F2] rounded-lg "></div>
-        <h2 className="text-3xl font-semibold">Hero Attack</h2>
-      </div>)} */}
-
-      {/* Abilities Grid */}
+        {/* { hero_spells && (
+        <div className="flex items-center gap-4 mt-6 mb-6 bg-gray-600 rounded-lg overflow-hidden">
+          <div className="w-24 h-24 bg-[#FBF8F4] border-2 border-[#D6D9F2] rounded-lg "></div>
+          <h2 className="text-3xl font-semibold">Hero Attack</h2>
+        </div>)} */}
+        {/* Abilities Grid */}
       <div className=" flex flex-wrap gap-y-36 h-64 mt-10 justify-between">
         {hero_spells && Object.entries(hero_spells).map(([key,spell], i) => (
            <div key={i}  className="w-[45%] h-fit" ref = {(el) =>{ refs.current[i] = el}}>
@@ -180,31 +181,42 @@ return spellArray.map((spell,index) => {
               }:{}
               }
               transition={{duration:0.2}}
-            >
-     
-              <AnimatePresence>
-              { 
-                  <motion.div 
-                  initial={{height: '0%' }}
-                  animate={{height: '100%'}}
-                  exit={{ transition: { duration: 0.6 } }}
-                  transition={{ duration: 0.4 }}
-                 className="w-[100%] relative top-0 left-0 h-3/4 bg-amber-500">
-                 <div className="w-[100%] bg-blue-900">
+            > 
+              
+              <div className=" w-full relative bg-blue-900">
                  <SpellTable spell={spell} />
-                 </div>
-                  </motion.div>
-              }
-              </AnimatePresence>
+                  <AnimatePresence>
+                  {scaledIndex === i && (
+                     <motion.div className="absolute bottom-0 right-0 h-full bg-gray-800 rounded-b-xl"
+                     initial={{ width: '0%'}}
+                     animate={{ width: '42%'}}
+                     exit={{ width: '0%' , transition: { duration:0.2 } }}
+                     transition={{ duration: 0.2 }}
+                     style={{transformOrigin:'right'}}
+                     >
+                    <div className="relative h-1/2 w-full bg-amber-700">
+
+                    </div>
+                    <div className=" relative h-1/2 w-full bg-green-600">
+
+                    </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+              
             </motion.div>
               </div>
                 ))}
               </div>
             </div>
-          </motion.div>
-
+        </motion.div>
       <div className="grid grid-cols-11 h-full mt-8">
-         <Portrait src="/jeff.webp" alt="My Portrait" heroName="PSYLOCKE" herotype="Strategist" 
+        {/* {heroNames && heroNames.map((hero, index) => (
+          <Portrait key={index} src=`/hero-prestige-images/{}_prestige` alt="My Portrait" heroName={hero.hero_name} herotype={hero.hero_type} 
+      isActive ={activeId == index + 1 } activeId={activeId} setActiveId = {setActiveId} compID ={index + 1} />
+        ))} */}
+         <Portrait src="/hero-prestige-images/adam-warlock_prestige.png" alt="My Portrait" heroName="PSYLOCKE" herotype="Strategist" 
       isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} compID ={1} />
           <Portrait src="/jeff.webp" alt="My Portrait" heroName="PSYLOCKE" herotype="STRATEGIST" 
      isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  compID ={2}/>

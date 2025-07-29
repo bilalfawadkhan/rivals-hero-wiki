@@ -98,10 +98,10 @@ const Portrait: React.FC<PortraitProps> = ({
           animate={Position} // Apply dynamic animation styles
         >
           {/* Image of the hero */}
-          <Image src={src} alt={alt} className={className} width={200} height={300} />
+          <Image src={src} alt={alt} className='-ml-3.5' width={120} height={300} />
 
           {/* Hero name positioned near the bottom of the image */}
-          <h5 className="absolute top-34 left-4 rounded-sm w-2/3 text-center text-white text-xl">
+          <h5 className="absolute top-34 left-6 rounded-sm w-2/3 text-center text-white text-xl">
             {heroName}
           </h5>
 

@@ -25,7 +25,10 @@ const SpellTable: React.FC<SpellTableProps> = ({ spell }) => {
       <h2 className="text-yellow-400 text-xl font-bold mb-1">🪐 {spell.name}</h2>
       <p className="text-blue-300 text-sm mb-4">Right Mouse Button</p>
       <p className="text-gray-300 text-sm mb-6">{spell.description}</p>
+      {spell.attributes.length > 0 && (
       <table className="w-full text-sm">
+
+
         <thead>
           <tr className="text-gray-400 uppercase text-xs border-b border-gray-600">
             <th className="py-2 text-left">Attribute</th>
@@ -41,6 +44,7 @@ const SpellTable: React.FC<SpellTableProps> = ({ spell }) => {
           ))}
         </tbody>
       </table>
+      )}
     </div>
   );
 };
