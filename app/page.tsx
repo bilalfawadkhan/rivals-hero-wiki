@@ -118,7 +118,7 @@ return spellArray.map((spell,index) => {
   {/* Header Start*/}
 
     <div
-    className="w-full h-12 flex items-center border-b-4 border-gold-border overflow-hidden"
+    className="relative w-full h-12 flex items-center border-b-4 border-gold-border"
     style={{ backgroundColor: 'rgba(255, 207, 64, 0.5)' }}
   >
       <div className="relative w-52 h-12 ">
