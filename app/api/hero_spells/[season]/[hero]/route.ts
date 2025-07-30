@@ -5,11 +5,11 @@ import { existsSync} from "fs";
 
 export async function GET( 
     request :NextRequest,
-    {params} : {params: {hero: string}}
+    {params} : {params: {season: string,hero: string}}
 ) {
-    const hero = (await params).hero
+    const {season,hero} = params;
 
-const filePath = path.join(process.cwd(), "data", `${hero}.json`);
+const filePath = path.join(process.cwd(), "data",season,`${hero}.json`);
 
 if(!existsSync(filePath)){
     return NextResponse.json({ error: "Hero not found" }, { status: 404 });

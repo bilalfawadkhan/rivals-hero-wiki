@@ -74,7 +74,7 @@ type spells = {
 const [hero_spells, setHeroSpells]  = useState <{[key: string] : spells} | null>();
 
    useEffect(() => {
-       fetch('/api/hero_spells/Adam_Warlock')
+       fetch('/api/hero_spells/S0/Adam_Warlock')
        .then(response => response.json())
          .then(data => {
              console.log(data);
