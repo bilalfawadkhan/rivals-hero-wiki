@@ -7,7 +7,7 @@ export async function GET(
     request :NextRequest,
     {params} : {params: {season: string,hero: string}}
 ) {
-    const {season,hero} = params;
+    const {season,hero} = await params;
 
 const filePath = path.join(process.cwd(), "data",season,`${hero}.json`);
 
