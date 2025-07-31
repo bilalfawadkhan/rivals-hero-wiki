@@ -1,9 +1,10 @@
 'use client';
 import Portrait from "@/components/Portrait";
-import { useState , useRef, useEffect } from "react";
-import {animate, AnimatePresence, motion, scale} from "framer-motion";
 import SpellTable from "@/components/SpellTable";
 import { Button } from "@/components/ui/button"
+import { useState , useRef, useEffect } from "react";
+import { AnimatePresence, motion} from "framer-motion";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,11 +14,10 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { s } from "framer-motion/client";
 
 export default function Home() {
 
-  const [buffsBorder, setBuffsBorder] = useState<string[]>(['rgb(107 114 128)','rgba(170, 255, 0, 1)', 'rgba(199, 0, 57, 1)']);
+  const [buffsBorder, setBuffsBorder] = useState<string[]>(['rgb(107 114 128)','rgba(170, 255, 0, 1)', 'rgba(199, 0, 57, 1)']); // Temp Border Colors
   const [activeId, setActiveId] = useState<number | null>(null)
   const id :number = 1;
   let seasonversion = 'S0';
@@ -26,38 +26,33 @@ export default function Home() {
   let offtop:number | undefined = 0;
   let offsetLeft:number | undefined  = 0 ;
   const [dropPosition, setDropPosition] = useState('bottom');
-  
   const [position, setPosition] = useState<{
   top: number | string;
   left: number | string;
   height: number | string;
   width: number | string;
   }>({ top: 0, left: 0, height: 0, width: 0 });
-
   const positionRef = useRef(position)
 
   const handleClick = (e: React.MouseEvent, index:number) => { // event handling for scaling the spell card
     e.stopPropagation();
-
     if(scaledIndex === index) {
       setScaledIndex(null);
     }
     else {
-    const el = refs.current[index];
-    if(el){
-      offtop = el.offsetTop;
-      offsetLeft = el.offsetLeft;
-      console.log('first Click')
-     const newPosition = {
-        top: 40,
-        left:16,
-        height: 'fit-content',
-        width: '90%',
+      const el = refs.current[index];
+      if(el){
+        offtop = el.offsetTop;
+        offsetLeft = el.offsetLeft;
+       const newPosition = {
+          top: 40,
+          left:16,
+          height: 'fit-content',
+          width: '90%',
      }
-      positionRef.current = newPosition;
-      console.log(positionRef.current)
-      setPosition(newPosition);
-      setScaledIndex(index);
+       positionRef.current = newPosition;
+       setPosition(newPosition);
+       setScaledIndex(index);
     }
   }
 }
@@ -67,8 +62,7 @@ type spells = {
   img : string;
   name : string
   description: string;
-  attributes: {label: string; value: string}[];
-   
+  attributes: {label: string; value: string}[];   
  }
 
 const [hero_spells, setHeroSpells]  = useState <{[key: string] : spells} | null>();
@@ -89,34 +83,26 @@ const [hero_spells, setHeroSpells]  = useState <{[key: string] : spells} | null>
   hero_type: string;
  };
 
-
 const [heroNames, setHeroNames] = useState<hero[]>();
 
 useEffect(() =>{
   fetch('/api/hero_names')
   .then(response => response.json())
   .then(data => {
-    console.log(data.heroes);
     setHeroNames(data.heroes);
-  })
-
-},[])
+    })},[])
 
 {/* END*/}
 
-const spellArray : String[] = ['name', 'description', 'cost', 'type', 'range', 'target', 'effect'];
-
-const getSpellData = () => {
-return spellArray.map((spell,index) => {
- return  <p key={index}> {spell}</p>
-
-});
-};
+// const spellArray : String[] = ['name', 'description', 'cost', 'type', 'range', 'target', 'effect'];
+// const getSpellData = () => {
+// return spellArray.map((spell,index) => {
+//       return  <p key={index}> {spell}</p>
+//     });
+//   };
     return (
   <>
-
   {/* Header Start*/}
-
     <div
     className="relative w-full h-12 flex items-center border-b-4 border-gold-border"
     style={{ backgroundColor: 'rgba(255, 207, 64, 0.5)' }}
@@ -154,8 +140,7 @@ return spellArray.map((spell,index) => {
         transition={{ duration: 0.3,delay: 0.1 }}
         >
     <div className=" relative rounded-lg p-4 w-[90%] h-[600px] max-w-4xl mt-7">
-      {/* Top Section */}
-      
+      {/* Top Section */} 
         {/* { hero_spells && (
         <div className="flex items-center gap-4 mt-6 mb-6 bg-gray-600 rounded-lg overflow-hidden">
           <div className="w-24 h-24 bg-[#FBF8F4] border-2 border-[#D6D9F2] rounded-lg "></div>
@@ -166,11 +151,11 @@ return spellArray.map((spell,index) => {
         {hero_spells && Object.entries(hero_spells).map(([key,spell], i) => (
            <div key={i}  className="w-[45%] h-fit" ref = {(el) =>{ refs.current[i] = el}}>
             <motion.div 
-            className={`flex absolute w-[45%] h-28 bg-[#D9C9CF] rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer `}
-            style={{ border: `2px solid ${buffsBorder[0]}` }}
-            onClick={(e) => {   
-            handleClick(e, i);
-            console.log(`top = ${positionRef.current.top}, left = ${positionRef.current.left}, height = ${positionRef.current.height}, width = ${positionRef.current.width}`);
+              className={`flex absolute w-[45%] h-28 bg-[#D9C9CF] rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer `}
+              style={{ border: `2px solid ${buffsBorder[0]}` }}
+              onClick={(e) => {   
+              handleClick(e, i);
+              console.log(`top = ${positionRef.current.top}, left = ${positionRef.current.left}, height = ${positionRef.current.height}, width = ${positionRef.current.width}`);
             }}
               animate={
               scaledIndex == i ? {
@@ -181,8 +166,7 @@ return spellArray.map((spell,index) => {
               }:{}
               }
               transition={{duration:0.2}}
-            > 
-              
+            >  
               <div className=" w-full relative bg-blue-900">
                  <SpellTable spell={spell} />
                   <AnimatePresence>
@@ -195,16 +179,15 @@ return spellArray.map((spell,index) => {
                      style={{transformOrigin:'right'}}
                      >
                     <div className="relative h-1/2 w-full bg-amber-700">
-
+                    <p className="text-white text-sm p-1">Hero Update Changes</p>
                     </div>
                     <div className=" relative h-1/2 w-full bg-green-600">
-
+                    <p className="text-white text-sm p-1">Hero Prestige Changes</p>
                     </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
-              
             </motion.div>
               </div>
                 ))}
