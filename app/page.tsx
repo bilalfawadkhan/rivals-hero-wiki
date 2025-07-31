@@ -118,7 +118,7 @@ useEffect(() =>{
         Marvel Rivals Hero Wiki
       </h1>
     </div>
-    <DropdownMenu>
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
         <Button variant="outline">Select Patch</Button>
       </DropdownMenuTrigger>
