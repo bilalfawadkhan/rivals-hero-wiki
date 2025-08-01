@@ -4,7 +4,6 @@ import SpellTable from "@/components/SpellTable";
 import { Button } from "@/components/ui/button"
 import { useState , useRef, useEffect } from "react";
 import { AnimatePresence, motion} from "framer-motion";
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -20,12 +19,11 @@ export default function Home() {
   const [buffsBorder, setBuffsBorder] = useState<string[]>(['rgb(107 114 128)','rgba(170, 255, 0, 1)', 'rgba(199, 0, 57, 1)']); // Temp Border Colors
   const [activeId, setActiveId] = useState<number | null>(null)
   const id :number = 1;
-  let seasonversion = 'S0';
   const [scaledIndex, setScaledIndex] = useState<number | null>(null);
   const refs = useRef<Array<HTMLDivElement | null>>([]);
   let offtop:number | undefined = 0;
   let offsetLeft:number | undefined  = 0 ;
-  const [season, SetSeason] = useState('S0');
+  const [season, SetSeason] = useState('S1');
   const [position, setPosition] = useState<{
   top: number | string;
   left: number | string;
@@ -56,7 +54,8 @@ export default function Home() {
     }
   }
 }
-{/* Fetching datqa from API for Hero Spells*/}
+
+{/* ----Fetching datqa from API for Hero Spells-----*/}
 type spells = {
   key: string;
   img : string;
@@ -67,20 +66,23 @@ type spells = {
 
 const [hero_spells, setHeroSpells]  = useState <{[key: string] : spells} | null>();
 
+
    useEffect(() => {
-       fetch('/api/hero_spells/S0/Adam_Warlock')
+    if (!season) return; // Ensure season is defined before fetching
+       fetch(`/api/hero_spells/${season}/Adam_Warlock`)
        .then(response => response.json())
          .then(data => {
              console.log(data);
              setHeroSpells(data);
          })
-   },[]);
-{/* END*/}
+   },[season]);
 
-{/*Loading hero Names*/}
+{/* -----END-----*/}
+
+{/*--------Loading hero Names-------*/}
  type hero ={
-  hero_name: string;
-  hero_type: string;
+  name: string;
+  type: string;
  };
 
 const [heroNames, setHeroNames] = useState<hero[]>();
@@ -92,7 +94,7 @@ useEffect(() =>{
     setHeroNames(data.heroes);
     })},[])
 
-{/* END*/}
+{/* -----END-----*/}
 
 
     return (
@@ -121,6 +123,7 @@ useEffect(() =>{
         <DropdownMenuLabel>Panel Position</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={season} onValueChange={SetSeason}>
+          <DropdownMenuRadioItem value="S0">Season 0</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="S1">Season 1</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="S2">Season 2</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="S3">Season 3</DropdownMenuRadioItem>
@@ -186,7 +189,7 @@ useEffect(() =>{
         </motion.div>
       <div className="grid grid-cols-11 h-full mt-8">
         {/* {heroNames && heroNames.map((hero, index) => (
-          <Portrait key={index} src=`/hero-prestige-images/{}_prestige` alt="My Portrait" heroName={hero.hero_name} herotype={hero.hero_type} 
+          <Portrait key={index} src=`/hero-prestige-images/{hero.name}_prestige` alt="hero.name" heroName={hero.name} herotype={hero.type} 
       isActive ={activeId == index + 1 } activeId={activeId} setActiveId = {setActiveId} compID ={index + 1} />
         ))} */}
          <Portrait src="/hero-prestige-images/adam-warlock_prestige.png" alt="My Portrait" heroName="PSYLOCKE" herotype="Strategist" 
