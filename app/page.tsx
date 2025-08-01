@@ -25,7 +25,7 @@ export default function Home() {
   const refs = useRef<Array<HTMLDivElement | null>>([]);
   let offtop:number | undefined = 0;
   let offsetLeft:number | undefined  = 0 ;
-  const [dropPosition, setDropPosition] = useState('bottom');
+  const [season, SetSeason] = useState('S0');
   const [position, setPosition] = useState<{
   top: number | string;
   left: number | string;
@@ -94,12 +94,7 @@ useEffect(() =>{
 
 {/* END*/}
 
-// const spellArray : String[] = ['name', 'description', 'cost', 'type', 'range', 'target', 'effect'];
-// const getSpellData = () => {
-// return spellArray.map((spell,index) => {
-//       return  <p key={index}> {spell}</p>
-//     });
-//   };
+
     return (
   <>
   {/* Header Start*/}
@@ -125,7 +120,7 @@ useEffect(() =>{
       <DropdownMenuContent className="w-56">
         <DropdownMenuLabel>Panel Position</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuRadioGroup value={dropPosition} onValueChange={setDropPosition}>
+        <DropdownMenuRadioGroup value={season} onValueChange={SetSeason}>
           <DropdownMenuRadioItem value="S1">Season 1</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="S2">Season 2</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="S3">Season 3</DropdownMenuRadioItem>
@@ -141,11 +136,6 @@ useEffect(() =>{
         >
     <div className=" relative rounded-lg p-4 w-[90%] h-[600px] max-w-4xl mt-7">
       {/* Top Section */} 
-        {/* { hero_spells && (
-        <div className="flex items-center gap-4 mt-6 mb-6 bg-gray-600 rounded-lg overflow-hidden">
-          <div className="w-24 h-24 bg-[#FBF8F4] border-2 border-[#D6D9F2] rounded-lg "></div>
-          <h2 className="text-3xl font-semibold">Hero Attack</h2>
-        </div>)} */}
         {/* Abilities Grid */}
       <div className=" flex flex-wrap gap-y-36 h-64 mt-10 justify-between">
         {hero_spells && Object.entries(hero_spells).map(([key,spell], i) => (
