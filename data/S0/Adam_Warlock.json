@@ -4,6 +4,8 @@
     "img": "",
     "name": "QUANTUM MAGIC\n",
     "description": "Launch quantum energy to deal damage. Critical hits reduce the cooldown of Avatar Life Stream.",
+    "change": 1,
+    "changeDescription": "Increased damage and critical hit chance.",
     "attributes": [
       { "label": "CASTING", "value": "Single-cast direct hit" },
       { "label": "DAMAGE", "value": "60 per round" },
@@ -20,6 +22,8 @@
     "img": "",
     "name": "KARMIC REVIVAL\n",
     "description": "Awaken the karma of allies to revive them. Allies revived have lower health but enjoy a brief period of Invincibility.",
+    "change": 0,
+    "changeDescription": "Increased revival range and duration of invincibility.",
     "attributes": [
       { "label": "CASTING", "value": "Persistent spell field that surrounds the caster" },
       { "label": "HEALTH UPON REVIVAL", "value": "30% of the Max Health" },
@@ -34,6 +38,8 @@
     "img": "",
     "name": "SOUL BOND\n",
     "description": "Forge a soul bond with allies, granting Healing Over Time and distributing damage taken across the bond.",
+    "change": 1,
+    "changeDescription": "Reduced healing amount and increased cooldown.",
     "attributes": [
       { "label": "CASTING", "value": "Instant Cast" },
       { "label": "HEALING AMOUNT", "value": "15/s" },
@@ -45,10 +51,12 @@
     ]
   },
   "spell4": {
-    "key": "",
+    "key": "E",
     "img": "",
     "name": "AVATAR LIFE STREAM\n",
     "description": "Target an ally for a bouncing stream of healing energy, which also heals himself upon casting; self-targets if no ally is selected.",
+    "change": 2,
+    "changeDescription": "Reduced cooldown and increased healing amount.",
     "attributes": [
       { "label": "CASTING", "value": "Targeted" },
       { "label": "HEALING AMOUNT", "value": "95" },
@@ -65,6 +73,8 @@
     "img": "",
     "name": "COSMIC CLUSTER\n",
     "description": "Gather quantum energy into a cluster and then swiftly launch it at the enemy.",
+    "change": 0,
+    "changeDescription": "Increased projectile speed and reduced charge time.",
     "attributes": [
       { "label": "CASTING", "value": "Charged release, with multiple delayed projectiles" },
       { "label": "DAMAGE", "value": "38" },
@@ -75,10 +85,12 @@
     ]
   },
   "spell6": {
-    "key": "",
+    "key": "Passive",
     "img": "",
     "name": "REGENERATIVE COCOON\n",
     "description": "Once his body perishes, Adam Warlock can freely move as a soul and reforge his body at a chosen spot.",
+    "change": 0,
+    "changeDescription": "Reduced respawn time and increased mobility while in soul form.",
     "attributes": []
   }
 }

@@ -18,12 +18,11 @@ export default function Home() {
 
   const [buffsBorder, setBuffsBorder] = useState<string[]>(['rgb(107 114 128)','rgba(170, 255, 0, 1)', 'rgba(199, 0, 57, 1)']); // Temp Border Colors
   const [activeId, setActiveId] = useState<number | null>(null)
-  const id :number = 1;
   const [scaledIndex, setScaledIndex] = useState<number | null>(null);
   const refs = useRef<Array<HTMLDivElement | null>>([]);
   let offtop:number | undefined = 0;
   let offsetLeft:number | undefined  = 0 ;
-  const [season, SetSeason] = useState('S1');
+  const [season, SetSeason] = useState('S0');
   const [position, setPosition] = useState<{
   top: number | string;
   left: number | string;
@@ -61,6 +60,8 @@ type spells = {
   img : string;
   name : string
   description: string;
+  change: number
+  changeDescription: string;
   attributes: {label: string; value: string}[];   
  }
 
@@ -145,10 +146,11 @@ useEffect(() =>{
            <div key={i}  className="w-[45%] h-fit" ref = {(el) =>{ refs.current[i] = el}}>
             <motion.div 
               className={`flex absolute w-[45%] h-28 bg-[#D9C9CF] rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer `}
-              style={{ border: `2px solid ${buffsBorder[0]}` }}
+              style={{ border: `2px solid ${buffsBorder[spell.change]}` }}
               onClick={(e) => {   
               handleClick(e, i);
               console.log(`top = ${positionRef.current.top}, left = ${positionRef.current.left}, height = ${positionRef.current.height}, width = ${positionRef.current.width}`);
+              console.log(`Spell change: ${spell.change}`);
             }}
               animate={
               scaledIndex == i ? {
@@ -171,12 +173,15 @@ useEffect(() =>{
                      transition={{ duration: 0.2 }}
                      style={{transformOrigin:'right'}}
                      >
-                    <div className="relative h-1/2 w-full bg-amber-700">
+                    <div className="relative h-full w-full bg-amber-700">
+                    <div className="relative w-full h-1/2 bg-blue-600">
                     <p className="text-white text-sm p-1">Hero Update Changes</p>
                     </div>
                     <div className=" relative h-1/2 w-full bg-green-600">
-                    <p className="text-white text-sm p-1">Hero Prestige Changes</p>
+                    <p className="text-white text-sm p-1">Hero CrossHair and Teamup ability</p>
                     </div>
+                    </div>
+                    
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -193,7 +198,7 @@ useEffect(() =>{
       isActive ={activeId == index + 1 } activeId={activeId} setActiveId = {setActiveId} compID ={index + 1} />
         ))} */}
          <Portrait src="/hero-prestige-images/adam-warlock_prestige.png" alt="My Portrait" heroName="PSYLOCKE" herotype="Strategist" 
-      isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} compID ={1} />
+      isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} compID ={1}/>
           <Portrait src="/jeff.webp" alt="My Portrait" heroName="PSYLOCKE" herotype="STRATEGIST" 
      isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  compID ={2}/>
       </div>
