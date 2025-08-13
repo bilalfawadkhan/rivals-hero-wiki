@@ -1,0 +1,239 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "ROTERSTERN",
+    "description": "Fire explosive rounds with his blaster, Roterstern, damaging the target hit and enemies behind them.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Straight-line projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "AMMO",
+        "value": "3"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "2.5 rounds per second"
+      },
+      {
+        "label": "RANGE",
+        "value": "Cone-shaped spell field with a 5m radius and an apex angle of 90\u00b0"
+      },
+      {
+        "label": "SPELL FIELD DAMAGE",
+        "value": "65"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Projectile: Yes; Spell Field: No"
+      },
+      {
+        "label": "SPECIAL MECHANIC",
+        "value": "Enemies that take damage from the projectile will no longer receive damage from the spell field"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "180 m/s"
+      },
+      {
+        "label": "PROJECTILE DAMAGE",
+        "value": "75"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 20m, decreasing to 60% at 40m"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Enemies that take damage from the projectile will no longer receive damage from the spell field"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Projectile +5 (70\u219275), Area -5 (70\u219265), falloff reduced (65%\u219260%)"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "KRAKEN IMPACT",
+    "description": "Leap high, then dash forward and slam down with the bionic arm, dealing damage to enemies in range, marking them for Culling. Marked enemies will perish instantly if their health falls below a certain threshold, recharging the bionic arm for another Kraken Impact within a short period",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Spherical Spell Field"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m spherical radius"
+      },
+      {
+        "label": "SPELL FIELD DAMAGE",
+        "value": "80"
+      },
+      {
+        "label": "CULLING DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "CULLING THRESHOLD",
+        "value": "15% Health"
+      },
+      {
+        "label": "NEXT KRAKEN IMPACT AFTER A CULLING",
+        "value": "8s"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3100"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "Stars Aligned (with Captain America)"
+      }
+    ],
+    "change": 2,
+    "changeDescription": "Bugfixes: corrected ultimate hit detection & reset edge cases; Base damage 100\u219280; Culling threshold 20%\u219215%"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "TROOPER'S FIST",
+    "description": "Dash forward, seizing enemies along the path and launching up enemies at the end of the dash",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Movement-based damage ability"
+      },
+      {
+        "label": "AVERAGE SPEED",
+        "value": "30 m/s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "RANGE",
+        "value": "Length: 4.5m, Width: 4.5m, Height: 2m"
+      },
+      {
+        "label": "KNOCKBACK DAMAGE",
+        "value": "65"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "9m"
+      },
+      {
+        "label": "SEIZE DAMAGE",
+        "value": "25"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "TAINTED VOLTAGE",
+    "description": "Charge up and launch a powerful electrical punch with the bionic arm in the target direction, dealing damage to enemies within range and Slowing them. This ability can Knock Down flying heroes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Projectile that fires in a straight trajectory"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "55"
+      },
+      {
+        "label": "SLOW RATE",
+        "value": "-35%"
+      },
+      {
+        "label": "SLOW DURATION",
+        "value": "2s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "6s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "100 m/s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Projectiles pierce through enemies"
+      },
+      {
+        "label": "CHARGE LEVELS",
+        "value": "2"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Adjusted to have 2 charge levels (cooldown unchanged)"
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "BIONIC HOOK",
+    "description": "Charge up and launch a hook with his bionic arm, reeling in the first target hit and enemies lurking behind",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Straight-line projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "RANGE",
+        "value": "The projectile can travel up to 10m with a 0.5s charge. As the charge time increases, it can reach a maximum distance of 20m with a 1s charge"
+      },
+      {
+        "label": "PROJECTILE DAMAGE",
+        "value": "15"
+      },
+      {
+        "label": "RANGE",
+        "value": "Cone-shaped spell field with a 4.5m radius and an apex angle of 80\u00b0"
+      },
+      {
+        "label": "SPELL FIELD DAMAGE",
+        "value": "20"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "80 m/s"
+      },
+      {
+        "label": "CHARGE TIME",
+        "value": "0.5s \u2013 4s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell6": {
+    "key": "Passive",
+    "img": "",
+    "name": "CEASELESS CHARGE",
+    "description": "Roterstern reloads automatically while the bionic arm is in action, granting Bonus Health to the Winter Soldier",
+    "attributes": [
+      {
+        "label": "RELOAD EFFECT",
+        "value": "Roterstern reloads automatically while the bionic arm is in action"
+      },
+      {
+        "label": "BONUS HEALTH (SELF)",
+        "value": "40 (Bionic Hook & Tainted Voltage), 50 (Trooper's Fist, Kraken Impact), 30 (Stellar Impact)"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Bionic Hook & Tainted Voltage Bonus Health increased 30\u219240"
+  }
+}

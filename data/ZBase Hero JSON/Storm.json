@@ -1,0 +1,70 @@
+{
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "WIND BLADE",
+    "description": "Launch forward-piercing Wind Blades",
+    "attributes": [
+      { "label": "CASTING", "value": "Projectile that fires in a straight trajectory" },
+      { "label": "DAMAGE", "value": "55 damage per round" },
+      { "label": "AMMO", "value": "12" },
+      { "label": "RELOAD TIME", "value": "1 second" },
+      { "label": "FIRE RATE", "value": "2 rounds per second" },
+      { "label": "CRITICAL HIT", "value": "No" },
+      { "label": "PROJECTILE SPEED", "value": "150m/s" },
+      { "label": "DAMAGE FALLOFF", "value": "Falloff begins at 20m, decreasing to 60% at 30m" },
+      { "label": "SPECIAL EFFECT", "value": "Wind Blade pierces through enemies" }
+    ]
+  },
+  "spell2": {
+    "key": "",
+    "img": "",
+    "name": "OMEGA HURRICANE",
+    "description": "Transform into a hurricane to draw in nearby enemies and deal damage",
+    "attributes": [
+      { "label": "CASTING", "value": "Spherical Spell Field" },
+      { "label": "MAXIMUM SELECTION DURATION", "value": "5s" },
+      { "label": "TORNADO DURATION", "value": "5s" },
+      { "label": "DAMAGE", "value": "80" },
+      { "label": "BONUS HEALTH (SELF)", "value": "450" },
+      { "label": "RANGE", "value": "8m spherical radius" },
+      { "label": "ATTACK INTERVAL", "value": "2 hits per second" },
+      { "label": "ENERGY COST", "value": "3100" },
+      { "label": "SPECIAL EFFECT", "value": "Weather effects will be disabled during the Ultimate" }
+    ]
+  },
+  "spell3": {
+    "key": "",
+    "img": "",
+    "name": "WEATHER CONTROL",
+    "description": "Switch the weather to empower allies: Tornado grants a Movement Boost; Thunder grants a Damage Boost",
+    "attributes": [
+      { "label": "RANGE", "value": "15m spherical radius" },
+      { "label": "◆ TORNADO \nMOVEMENT BOOST (SELF)", "value": "16%" }
+    ]
+  },
+  "spell4": {
+    "key": "",
+    "img": "",
+    "name": "GODDESS BOOST",
+    "description": "Channel the power of the weather to empower Storm: Tornado grants a Movement Boost and inflicts Slow on enemies; Thunder grants a Damage Boost and summons lightning to inflict damage",
+    "attributes": [
+      { "label": "CASTING", "value": "Spherical Spell Field" },
+      { "label": "DAMAGE", "value": "35" },
+      { "label": "DURATION", "value": "8s" },
+      { "label": "COOLDOWN", "value": "15s" },
+      { "label": "◆ ENHANCED TORNADO \nMOVEMENT BOOST (SELF)", "value": "40%" }
+    ]
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "BOLT RUSH",
+    "description": "Unleash a lightning bolt forward",
+    "attributes": [
+      { "label": "CASTING", "value": "Straight Spell Field" },
+      { "label": "DAMAGE", "value": "80" },
+      { "label": "COOLDOWN", "value": "8s" }
+    ]
+  }
+}

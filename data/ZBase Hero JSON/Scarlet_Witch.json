@@ -1,0 +1,80 @@
+{
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "CHAOS CONTROL",
+    "description": "Unleash Chaos Magic on enemies to deal damage based on a percentage of their Max Health and restore Chaos Energy.",
+    "attributes": [
+      { "label": "CASTING", "value": "Cylindrical Spell Field" },
+      { "label": "DAMAGE", "value": "8 base per tick" },
+      { "label": "AMMO", "value": "∞" },
+      { "label": "FIRE RATE", "value": "10 ticks/s" },
+      { "label": "RANGE", "value": "A cylindrical spell field with a radius of 3m and a height of 20m" },
+      { "label": "SPECIAL EFFECT", "value": "Attacks the nearest enemy within range" }
+    ]
+  },
+  "spell2": {
+    "key": "",
+    "img": "",
+    "name": "REALITY ERASURE",
+    "description": "Engage in free-flight while charging energy, then unleash it to deal massive damage.",
+    "attributes": [
+      { "label": "CASTING", "value": "Spherical Spell Field" },
+      { "label": "DAMAGE", "value": "850" },
+      { "label": "RANGE", "value": "13m spherical radius" },
+      { "label": "SLOW RATE", "value": "Begin to slow down by 1.5s, with the effect gradually increasing to -25% by 3.5s" },
+      { "label": "ABILITY DELAY", "value": "4s charge" },
+      { "label": "BONUS HEALTH (SELF)", "value": "100" },
+      { "label": "SPECIAL EFFECT", "value": "Enters a free-flight state upon cast" }
+    ]
+  },
+  "spell3": {
+    "key": "",
+    "img": "",
+    "name": "MYSTIC PROJECTION",
+    "description": "Enter the Phased state for free-flight. Press again to exit early.",
+    "attributes": [
+      { "label": "CASTING", "value": "Movement" },
+      { "label": "DURATION", "value": "1.5s" },
+      { "label": "CHARGES", "value": "2" },
+      { "label": "COOLDOWN", "value": "10s per charge" },
+      { "label": "MOVEMENT BOOST", "value": "50%" },
+      { "label": "SPECIAL EFFECT", "value": "Invincibility and immunity to all crowd control when phasing" }
+    ]
+  },
+  "spell4": {
+    "key": "",
+    "img": "",
+    "name": "DARK SEAL",
+    "description": "Land a hit on a target or the scene, or press E to generate a Force Field that periodically Stuns enemies within range.",
+    "attributes": [
+      { "label": "CASTING", "value": "Straight-line projectile that generates a spell field upon impact" },
+      { "label": "DURATION", "value": "4.5s spell field - 0.5s Stun duration" },
+      { "label": "COOLDOWN", "value": "12s" },
+      { "label": "INTERVAL", "value": "1.25/s" },
+      { "label": "RANGE", "value": "3m spherical radius" },
+      { "label": "PROJECTILE SPEED", "value": "40m/s" },
+      { "label": "ABILITY DELAY", "value": "0.8s" },
+      { "label": "SPECIAL EFFECT", "value": "Effect activates upon hitting a target or environment, but can be activated early in mid-air by pressing E." }
+    ]
+  },
+  "spell5": {
+    "key": "",
+    "img": "",
+    "name": "TELEKINESIS",
+    "description": "Hold Space to fall slowly.",
+    "attributes": []
+  },
+  "spell6": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "CHTHONIAN BURST",
+    "description": "Consume Chaos Energy to fire explosive magic missiles, damaging enemies.",
+    "attributes": [
+      { "label": "CASTING", "value": "Straight-line projectile that generates a spell field upon impact" },
+      { "label": "DAMAGE", "value": "40 per direct hit + 40 splash damage" },
+      { "label": "CHARGES", "value": "4" },
+      { "label": "COOLDOWN", "value": "0.2/s (without Chaos Control)" }
+    ]
+  }
+}

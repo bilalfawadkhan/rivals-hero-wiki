@@ -1,0 +1,218 @@
+{
+  
+  "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "PIERCING ARROW",
+    "description": "Shoot a powerful arrow.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Charged projectile with an arced trajectory"
+      },
+      {
+        "label": "MINIMUM CHARGE TIME",
+        "value": "0.7s"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "8 - 80 (Maximum damage is achieved after 0.9s of charging)"
+      },
+      {
+        "label": "AMMO",
+        "value": "\u221e"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "120 - 180 m/s (Maximum speed is achieved after 0.9s of charging)"
+      },
+      {
+        "label": "SLOW RATE WHILE CHARGING",
+        "value": "20%"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Left Click (Blast Mode)",
+    "img": "",
+    "name": "BLAST ARROW",
+    "description": "Shoot three explosive arrows.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Arced projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "16 (per projectile) - 34 (spell field)"
+      },
+      {
+        "label": "CHARGES",
+        "value": "3"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "0.5s"
+      },
+      {
+        "label": "RANGE",
+        "value": "3m spherical radius"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60m/s"
+      },
+      {
+        "label": "SLOW RATE WHILE CHARGING",
+        "value": "20%"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Q",
+    "img": "",
+    "name": "HUNTER'S SIGHT",
+    "description": "Capture Afterimages of enemies in his view. Damage dealt to an Afterimage is transferred to the corresponding enemy.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "DURATION",
+        "value": "10s"
+      },
+      {
+        "label": "AFTERIMAGE GENERATION INTERVAL",
+        "value": "0.5s"
+      },
+      {
+        "label": "AFTERIMAGE DURATION",
+        "value": "3s"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3100"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "CRESCENT SLASH",
+    "description": "Unsheathe a katana and slash forward, launching up enemies hit.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "40"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "Shift",
+    "img": "",
+    "name": "HYPERSONIC ARROW",
+    "description": "Shoot a Hypersonic Arrow, dealing two instances of damage to enemies in its path and inflicting them with Slow.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Straight-line projectile that is accompanied by a spell field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "55 per hit"
+      },
+      {
+        "label": "DURATION",
+        "value": "1s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "RANGE",
+        "value": "Length: 3m, Width: 3m, Height: 2.7m (first hit)"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "150m/s"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "Right Click",
+    "img": "",
+    "name": "RONIN SLASH",
+    "description": "Swing a wakizashi to strike frontal enemies, deflecting all incoming projectiles.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "3m"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "This ability cannot block explosions or effects created by projectiles on hit"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "Space",
+    "img": "",
+    "name": "SKYWARD LEAP",
+    "description": "Perform a double jump in the direction of movement.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": []
+  },
+  "spell8": {
+    "key": "Passive",
+    "img": "",
+    "name": "ARCHER'S FOCUS",
+    "description": "Aim at an enemy to improve focus, enhancing the damage inflicted by Piercing Arrow.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "DAMAGE",
+        "value": "0 - 75 (Maximum damage is achieved after 0.9s of aiming)"
+      },
+      {
+        "label": "TRIGGERING DISTANCE",
+        "value": "60m"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Apply bonus damage to the base damage of Piercing Arrow"
+      }
+    ]
+  }
+}

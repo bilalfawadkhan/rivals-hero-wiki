@@ -1,0 +1,197 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "ELEMENT GUNS",
+    "description": "Shoot enemies with dual Element Guns",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Rapid-fire shots with spread."
+      },
+      {
+        "label": "DAMAGE",
+        "value": "6.5 damage per round"
+      },
+      {
+        "label": "AMMO",
+        "value": "40"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "40 rounds per second"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 10m, decreasing to 60% at 25m"
+      },
+      {
+        "label": "CROSSHAIR SPREAD RADIUS (AT 10M)",
+        "value": "After 2 shots: 0.15m; after 5 shots: 0.24m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "GALACTIC LEGEND",
+    "description": "Engage in free-flight and lock onto enemies in sight.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Rapid-fire projectile."
+      },
+      {
+        "label": "DAMAGE",
+        "value": "6.5 per round"
+      },
+      {
+        "label": "DURATION",
+        "value": "8s"
+      },
+      {
+        "label": "AMMO",
+        "value": "40"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "40 rounds per sec"
+      },
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "20%"
+      },
+      {
+        "label": "RELOAD TIME REDUCTION",
+        "value": "70%"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3100"
+      },
+      {
+        "label": "MAXIMUM LOCKING DISTANCE",
+        "value": "30m"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "During this period, Star-Lord\u2019s reload speed increases significantly."
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "No"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 25m, decreasing to 60% at 40m"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "Leader's Soul (with Adam Warlock & Mantis)"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "ROCKET PROPULSION",
+    "description": "Consume energy to gain a Movement Boost and soar forward.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Movement"
+      },
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "100%"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "300/s"
+      },
+      {
+        "label": "MAXIMUM ENERGY",
+        "value": "1200"
+      },
+      {
+        "label": "ENERGY RECOVERY SPEED",
+        "value": "100/s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "BLASTER BARRAGE",
+    "description": "Fire a frenzy of shots, causing damage to enemies within range.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Spherical Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "8 per hit"
+      },
+      {
+        "label": "DURATION",
+        "value": "3s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "RANGE",
+        "value": "8m spherical radius"
+      },
+      {
+        "label": "ATTACK INTERVAL",
+        "value": "0.1s per hit"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "STELLAR SHIFT",
+    "description": "Dodge in the direction of movement and swiftly reload.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Movement"
+      },
+      {
+        "label": "DURATION",
+        "value": "0.37"
+      },
+      {
+        "label": "CHARGES",
+        "value": "2"
+      },
+      {
+        "label": "INVINCIBILITY DURATION",
+        "value": "0.37s"
+      },
+      {
+        "label": "RECHARGE SPEED",
+        "value": "5s per charge"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "PSIONIC CROSSBOW",
+    "description": "Unleash bolts with psionic crossbows to damage enemies and reduce the cooldowns of all her abilities.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Double projectile hitscan with spread"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "12 per bolt"
+      },
+      {
+        "label": "PROJECTILES PER CAST",
+        "value": "4"
+      },
+      {
+        "label": "AMMO",
+        "value": "16"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "0.2/s per cast, 0.6/s between casts"
+      },
+      {
+        "label": "CROSSHAIR SPREAD",
+        "value": "0.2m after 10m"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 15m, decreasing to 60% at 30m"
+      },
+      {
+        "label": "COOLDOWN REDUCTION",
+        "value": "0.25s per bolt"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "DANCE OF THE BUTTERFLY",
+    "description": "Slash nearby enemies with a psionic katana, dealing massive damage.",
+    "change": 0,
+    "changeDescription": "QoL: Ultimate now checks for barriers when selecting targets",
+    "attributes": [
+      {
+        "label": "DAMAGE",
+        "value": "150 per hit"
+      },
+      {
+        "label": "DURATION",
+        "value": "4s"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "2 hits per second"
+      },
+      {
+        "label": "RANGE",
+        "value": "10m spherical radius"
+      },
+      {
+        "label": "SLOW RATE",
+        "value": "30%"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "2800"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Psylocke will slash a random enemy or barrier, giving priority to the one who has been hit the least"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "PSI-BLADE DASH",
+    "description": "Dash forward and slice through enemies along the path with psionic blades.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "DAMAGE",
+        "value": "50"
+      },
+      {
+        "label": "CHARGES",
+        "value": "2"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s per charge"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "12m"
+      },
+      {
+        "label": "AVERAGE SPEED",
+        "value": "43m/s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Casting this ability will automatically recall Wing Shurikens. The Shurikens will first travel to Psylocke's starting position before returning to her."
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "PSYCHIC STEALTH",
+    "description": "Enter stealth and gain a Movement Boost.",
+    "change": 2,
+    "changeDescription": "Invisibility duration reduced 3s \u2192 2s",
+    "attributes": [
+      {
+        "label": "DURATION",
+        "value": "2s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s"
+      },
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "50%"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "When attacked while in stealth, Psylocke will remain in stealth but will briefly become visible for a short duration"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "WING SHURIKENS",
+    "description": "Launch a volley of psionic shurikens that stick to enemies, dealing damage and granting herself Bonus Health. Press again to recall the shurikens.",
+    "change": 2,
+    "changeDescription": "Recall damage reduced 14 \u2192 12",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Projectile that fires in a straight trajectory."
+      },
+      {
+        "label": "DAMAGE",
+        "value": "8 per Shuriken - 12 on recall"
+      },
+      {
+        "label": "DURATION",
+        "value": "3s before recall"
+      },
+      {
+        "label": "PROJECTILES PER CAST",
+        "value": "5"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "120m/s"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 15m, decreasing to 80% at 25m"
+      },
+      {
+        "label": "BONUS HEALTH",
+        "value": "10 per Shuriken"
+      },
+      {
+        "label": "SPREAD ANGLE",
+        "value": "0.86\u00b0"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Shurikens travel towards crosshair when recalled before returning to Psylocke"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "C",
+    "img": "",
+    "name": "PSYCHIC ECHOES (Team-Up)",
+    "description": "Emma Frost creates Mental Projections of Magneto and Psylocke, forming a Duplicate Illusion that moves and casts abilities to confuse foes.",
+    "change": 2,
+    "changeDescription": "Illusion damage proportion reduced 30% \u2192 20%",
+    "attributes": [
+      {
+        "label": "INVISIBILITY DURATION",
+        "value": "1s"
+      },
+      {
+        "label": "DUPLICATE DAMAGE REDUCTION",
+        "value": "70%"
+      },
+      {
+        "label": "DUPLICATE MAX DAMAGE RECEIVED",
+        "value": "150"
+      },
+      {
+        "label": "ILLUSION DAMAGE PROPORTION",
+        "value": "20%"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "30s"
+      }
+    ]
+  }
+}

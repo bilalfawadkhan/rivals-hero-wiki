@@ -1,0 +1,99 @@
+{
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "CRESCENT DART",
+    "description": "Unleash Crescent Darts forward that can bounce between enemies and Ankhs, dealing damage to enemies.",
+    "attributes": [
+      { "label": "CASTING", "value": "Triple shot that fires in a straight trajectory" },
+      { "label": "DAMAGE", "value": "25 per round" },
+      { "label": "PROJECTILE SPEED", "value": "150m/s" },
+      { "label": "AMMO", "value": "30" },
+      { "label": "FIRE RATE", "value": "0.05s between shots - 0.57s between rounds of shooting" },
+      { "label": "CRITICAL HIT", "value": "Yes" },
+      { "label": "DAMAGE FALLOFF", "value": "Falloff begins at 30m, decreasing to 50% at 50m" },
+      { "label": "MAXIMUM BOUNCE DISTANCE", "value": "7m" },
+      { "label": "NUMBER OF BOUNCES", "value": "3" }
+    ]
+  },
+  "spell2": {
+    "key": "",
+    "img": "",
+    "name": "HAND OF KHONSHU",
+    "description": "Open a portal that allows Khonshu to bombard enemies with his talons.",
+    "attributes": [
+      { "label": "CASTING", "value": "Delayed Spherical Spell Field" },
+      { "label": "DAMAGE", "value": "150 per hit" },
+      { "label": "DAMAGE FALLOFF", "value": "Begins at 1.5m from the center of the spell field, decreasing to 70% falloff at 5m" },
+      { "label": "DURATION", "value": "4.5s" },
+      { "label": "RANGE", "value": "8m radius (area of effect) - 5m (projectile explosion)" },
+      { "label": "NUMBER OF HITS", "value": "18" },
+      { "label": "ABILITY DELAY", "value": "1.5s" }
+    ]
+  },
+  "spell3": {
+    "key": "",
+    "img": "",
+    "name": "NIGHT GLIDER",
+    "description": "Hold SHIFT to glide.",
+    "attributes": []
+  },
+  "spell4": {
+    "key": "",
+    "img": "",
+    "name": "ANCIENT ANKH",
+    "description": "Fire an Ankh to launch up enemies within its radius towards the center.",
+    "attributes": [
+      { "label": "CASTING", "value": "Straight-line projectile that generates a spell field upon impact" },
+      { "label": "COOLDOWN", "value": "12s" },
+      { "label": "PROJECTILE SPEED", "value": "60m/s" },
+      { "label": "BOUNCING RANGE", "value": "7m spherical radius" },
+      { "label": "PULL", "value": "IN RANGE -  5m spherical radius" }
+    ]
+  },
+  "spell5": {
+    "key": "",
+    "img": "",
+    "name": "MOONLIGHT HOOK",
+    "description": "Launch a frontal grappling hook that pulls Moon Knight towards it.",
+    "attributes": [
+      { "label": "CASTING", "value": "Dash" },
+      { "label": "COOLDOWN", "value": "15s" },
+      { "label": "RANGE", "value": "25m" },
+      { "label": "MAXIMUM DISTANCE", "value": "21.5m/s" }
+    ]
+  },
+  "spell6": {
+    "key": "",
+    "img": "",
+    "name": "RISING LEAP",
+    "description": "Perform a double jump.",
+    "attributes": []
+  },
+  "spell7": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "MOON BLADE",
+    "description": "Launch forward a Moon Blade that can bounce between enemies and Ankhs, dealing damage to enemies.",
+    "attributes": [
+      { "label": "CASTING", "value": "Projectile that fires in a straight trajectory" },
+      { "label": "DAMAGE", "value": "80" },
+      { "label": "COOLDOWN", "value": "6s" },
+      { "label": "CRITICAL HIT", "value": "Yes" },
+      { "label": "PROJECTILE SPEED", "value": "120m/s" },
+      { "label": "DAMAGE FALLOFF", "value": "Falloff begins at 30m, decreasing to 50% at 50m" },
+      { "label": "MAXIMUM BOUNCE DISTANCE", "value": "7m" },
+      { "label": "NUMBER OF BOUNCES", "value": "3" },
+      { "label": "BONUS HEALTH GENERATED", "value": "25 per bounce" }
+    ]
+  },
+  "spell8": {
+    "key": "",
+    "img": "",
+    "name": "TRIPLE ECLIPSE",
+    "description": "Perform a combo with his truncheon, and the third strike will launch up the enemy hit slightly.",
+    "attributes": [
+      { "label": "CASTING", "value": "Melee" }
+    ]
+  }
+}

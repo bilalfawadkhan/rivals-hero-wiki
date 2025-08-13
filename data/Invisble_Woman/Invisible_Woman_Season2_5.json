@@ -1,0 +1,212 @@
+{
+  
+  "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "ORB PROJECTION",
+    "description": "Launch a force field that can pierce heroes, flying to maximum distance before returning to Invisible Woman; damaging enemies and healing teammates.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with delayed impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "25 per hit (on launch)"
+      },
+      {
+        "label": "HEALING",
+        "value": "45 per hit (on launch)"
+      },
+      {
+        "label": "AMMO",
+        "value": "10"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "0.5s per hit"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "30m"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "120m/s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Orbs can pierce heroes and return to Invisible Woman after reaching their maximum distance. They damage enemies and heal teammates"
+      },
+      {
+        "label": "RETURN DAMAGE",
+        "value": "20"
+      },
+      {
+        "label": "RETURN HEALING",
+        "value": "40"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "INVISIBLE BOUNDARY",
+    "description": "Manifest an unseen forcefield within a chosen area, rendering allies inside undetectable by enemies and providing healing over time. Enemies that pass through the field are slowed.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted, generates a cylindrical spell field"
+      },
+      {
+        "label": "HEALING",
+        "value": "165/s"
+      },
+      {
+        "label": "DURATION",
+        "value": "8s (Forcefield) - 1s (Enemy slow down)"
+      },
+      {
+        "label": "RANGE",
+        "value": "10m radius, 40m height"
+      },
+      {
+        "label": "SLOW RATE",
+        "value": "55%"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "4300"
+      }
+    ],
+    "change": 2,
+    "changeDescription": "Energy cost increased from 4000 to 4300"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "PSIONIC VORTEX",
+    "description": "Gather psionic energy and cast it, upon hitting a target, scene or pressing the LShift key again, it erupts into a psionic vortex, continuously drawing in enemies and causing damage.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with delayed impact that also generates a spell field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "35/s"
+      },
+      {
+        "label": "DURATION",
+        "value": "4s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m radius"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "80m/s"
+      },
+      {
+        "label": "SLOW RATE",
+        "value": "Center 50% - Edge 0%"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Applies a slow effect to enemies within the spell field; the closer they are to the center of the field, the greater the slow effect"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "FORCE PHYSICS",
+    "description": "Manipulate psionic energy to push or pull enemies in front of you.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Cylindrical Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "55"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "RANGE",
+        "value": "1.5m radius, 30m length (Cast)  12m (Push)  7m (Pull)"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "On cast, press  to push enemies away, or  to pull enemies in."
+      }
+    ]
+  },
+  "spell5": {
+    "key": "V",
+    "img": "",
+    "name": "AGILE STRIKE",
+    "description": "Release a three-hit combo, the third attack will launch up enemies in front.",
+    "attributes": []
+  },
+  "spell6": {
+    "key": "Space",
+    "img": "",
+    "name": "VEILED STEP",
+    "description": "Generate a force field at your feet, stepping on it propels you into Invisible state.",
+    "attributes": []
+  },
+  "spell7": {
+    "key": "Right Click",
+    "img": "",
+    "name": "GUARDIAN SHIELD",
+    "description": "Generate a force field in front of a selected ally. The shield can block damage and provide Healing Over Time to nearby allies. Enemies that pass through the shield are slowed.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "6s upon destruction"
+      },
+      {
+        "label": "RANGE",
+        "value": "3m radius"
+      },
+      {
+        "label": "SLOW RATE",
+        "value": "30% for 3s"
+      },
+      {
+        "label": "MAXIMUM SHIELD VALUE",
+        "value": "250"
+      },
+      {
+        "label": "RECOVERY SHIELD VALUE",
+        "value": "41.66/s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Before the shield is destroyed, Invisible Woman can choose to reproject the shield onto a selected teammate at any time. After the shield has been damaged, Invisible Woman can press the F key to reclaim the shield and restore its value."
+      }
+    ],
+    "change": 2,
+    "changeDescription": "Shield recovery reduced from 50/s to 41.66/s"
+  },
+  "spell8": {
+    "key": "Passive",
+    "img": "",
+    "name": "COVERT ADVANCE",
+    "description": "Enter Invisible state some time after disengaging from combat and grant yourself healing over time.",
+    "attributes": []
+  }
+}

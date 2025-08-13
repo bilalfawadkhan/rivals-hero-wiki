@@ -1,0 +1,269 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "SPIDER-POWER",
+    "description": "Swing fists forward to strike, dealing extra damage to the enemy with a Spider-Tracer.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "Ground combo: 25, 25, 40. Midair slam: 55. (One strike deals extra damage if target has Spider\u2011Tracer)"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "The first two strikes have an interval of 0.37s between them, while the third strike has a 0.82s interval from the second strike"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell2": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "CYBER-WEB CLUSTER",
+    "description": "Shoot a Web-Cluster that deals damage and attaches a Spider-Tracer to the hit enemy.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Projectile that fires in a straight trajectory"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "30 (consuming Spider-Tracer with another ability deals a further 45)"
+      },
+      {
+        "label": "AMMO",
+        "value": "5"
+      },
+      {
+        "label": "RECHARGE SPEED",
+        "value": "2.5s per shot"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "No"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "120 m/s"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 20m, decreasing to 50% at 40m"
+      },
+      {
+        "label": "SPIDER-TRACER DURATION",
+        "value": "3s"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Recharge (energize) time reduced 3.0s \u2192 2.5s"
+  },
+  "spell3": {
+    "key": "Q",
+    "img": "",
+    "name": "SPECTACULAR SPIN",
+    "description": "Launch Web-Clusters all around to damage and Stun enemies.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Spherical Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "12 per hit"
+      },
+      {
+        "label": "DURATION",
+        "value": "2.4s"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "0.08s per shot"
+      },
+      {
+        "label": "RANGE",
+        "value": "8m spherical radius"
+      },
+      {
+        "label": "ABILITY HEALTH",
+        "value": "Bonus Health: 250"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "2800"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Striking an enemy applies a stacking -3% Slow effect for 1 second, and after reaching 20 hits, the enemy will be Stunned for 1.5s."
+      },
+      {
+        "label": "DAMAGE PER SECOND",
+        "value": "150"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "ESU Alumnus (with Squirrel Girl)"
+      },
+      {
+        "label": "TEAM-UP: SUIT EXPULSION",
+        "value": "Duration 1s (was 4s); Invincibility (replaces 50% DR)"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Removed from Symbiote Bond (Venom & Peni Parker)"
+  },
+  "spell4": {
+    "key": "Shift",
+    "img": "",
+    "name": "WEB-SWING",
+    "description": "Shoot a strand of webbing to swing.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Dash"
+      },
+      {
+        "label": "CHARGES",
+        "value": "3"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "6s per charge"
+      },
+      {
+        "label": "RANGE",
+        "value": "30m"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "If the Easy Swing setting is off, the player can perform a Web Zip with this ability by aiming at a surface below them."
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell5": {
+    "key": "E",
+    "img": "",
+    "name": "GET OVER HERE!",
+    "description": "Shoot webbing to reel in the hit enemy. If the enemy is tagged with a Spider-Tracer, Spider-Man will get pulled to them instead.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Projectile that fires in a straight trajectory"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "Pull: 25"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "Pull: 20m"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "80 m/s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "If the target is marked by a Spider-Tracer, the player can perform a Web Strike that automatically locks onto the enemy."
+      },
+      {
+        "label": "DAMAGE (WEB STRIKE KICK)",
+        "value": "55"
+      },
+      {
+        "label": "MAXIMUM DISTANCE (WEB STRIKE)",
+        "value": "24m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell6": {
+    "key": "F",
+    "img": "",
+    "name": "AMAZING COMBO",
+    "description": "Launch an enemy upward, dealing extra damage to the enemy with a Spider-Tracer.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "60 (damage increases for one strike when hitting with Spider-Tracer)"
+      },
+      {
+        "label": "CHARGES",
+        "value": "2"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "2s"
+      },
+      {
+        "label": "RECHARGE SPEED",
+        "value": "6s per charge"
+      },
+      {
+        "label": "DAMAGE RADIUS",
+        "value": "4m"
+      }
+    ],
+    "change": 2,
+    "changeDescription": "Damage radius reduced 5m \u2192 4m"
+  },
+  "spell7": {
+    "key": "Space",
+    "img": "",
+    "name": "THWIP AND FLIP",
+    "description": "Perform a double jump.",
+    "attributes": [
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Can only be cast again after landing"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell8": {
+    "key": "Space",
+    "img": "",
+    "name": "WALL CRAWL",
+    "description": "Press Space to wall crawl, and while crawling, left-click to sprint.",
+    "attributes": [
+      {
+        "label": "WALL",
+        "value": "CRAWLING SPEED - 3 m/s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell9": {
+    "key": "Passive",
+    "img": "",
+    "name": "SPIDER-SENSE",
+    "description": "Give a warning of enemies that have been around.",
+    "attributes": [
+      {
+        "label": "RANGE",
+        "value": "8m spherical radius"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

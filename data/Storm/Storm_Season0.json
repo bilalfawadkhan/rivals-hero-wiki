@@ -1,0 +1,213 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "WIND BLADE",
+    "description": "Launch forward-piercing Wind Blades",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Projectile that fires in a straight trajectory"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "50 damage per round"
+      },
+      {
+        "label": "AMMO",
+        "value": "12"
+      },
+      {
+        "label": "RELOAD TIME",
+        "value": "1 second"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "2 rounds per second"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "No"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "100m/s"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 20m, decreasing to 70% at 30m"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Wind Blade pierces through enemies"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "OMEGA HURRICANE",
+    "description": "Transform into a hurricane to draw in nearby enemies and deal damage",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Spherical Spell Field"
+      },
+      {
+        "label": "MAXIMUM SELECTION DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "TORNADO DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "75"
+      },
+      {
+        "label": "BONUS HEALTH (SELF)",
+        "value": "350"
+      },
+      {
+        "label": "RANGE",
+        "value": "8m spherical radius"
+      },
+      {
+        "label": "ATTACK INTERVAL",
+        "value": "2 hits per second"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3100"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Weather effects will be disabled during the Ultimate"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "Voltaic Union (with Thor & Captain America)"
+      },
+      {
+        "label": "BONUS HEALTH DECAY",
+        "value": "Instant removal at end"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "WEATHER CONTROL",
+    "description": "Switch the weather to empower allies: Tornado grants a Movement Boost; Thunder grants a Damage Boost",
+    "attributes": [
+      {
+        "label": "RANGE",
+        "value": "15m spherical radius"
+      },
+      {
+        "label": "\u25c6 TORNADO \nMOVEMENT BOOST (SELF)",
+        "value": "16%"
+      },
+      {
+        "label": "\u25c6 TORNADO \nMOVEMENT BOOST (ALLY)",
+        "value": "8%"
+      },
+      {
+        "label": "\u25c6 THUNDER \nDAMAGE BOOST (SELF)",
+        "value": "16%"
+      },
+      {
+        "label": "\u25c6 THUNDER \nDAMAGE BOOST (ALLY)",
+        "value": "8%"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "GODDESS BOOST",
+    "description": "Channel the power of the weather to empower Storm: Tornado grants a Movement Boost and inflicts Slow on enemies; Thunder grants a Damage Boost and summons lightning to inflict damage",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Spherical Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "35"
+      },
+      {
+        "label": "DURATION",
+        "value": "8s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s"
+      },
+      {
+        "label": "\u25c6 ENHANCED TORNADO \nMOVEMENT BOOST (SELF)",
+        "value": "40%"
+      },
+      {
+        "label": "\u25c6 ENHANCED TORNADO \nMOVEMENT BOOST (ALLY)",
+        "value": "20%"
+      },
+      {
+        "label": "\u25c6 ENHANCED TORNADO \nENEMY SLOW RATE",
+        "value": "-15%"
+      },
+      {
+        "label": "\u25c6 ENHANCED THUNDER \nDAMAGE BOOST (SELF)",
+        "value": "30%"
+      },
+      {
+        "label": "\u25c6 ENHANCED THUNDER \nDAMAGEBOOST (ALLY)",
+        "value": "12%"
+      },
+      {
+        "label": "\u25c6 ENHANCED THUNDER \nSTRIKE FREQUENCY",
+        "value": "2s per strike"
+      },
+      {
+        "label": "\u25c6 ENHANCED THUNDER \nRANGE",
+        "value": "15m spherical radius"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "BOLT RUSH",
+    "description": "Unleash a lightning bolt forward",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Straight Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "80"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "RANGE",
+        "value": "A cylindrical spell field with a radius of 1m and a height of 40m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

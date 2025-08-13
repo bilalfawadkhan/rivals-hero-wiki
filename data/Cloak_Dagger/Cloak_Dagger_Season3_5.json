@@ -1,0 +1,261 @@
+{
+  
+  "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "LIGHTFORCE DAGGER",
+    "description": "Unleash a bouncing Lightforce Dagger to damage enemies and heal nearby allies.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile that generates a spell area upon impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "15 per dagger"
+      },
+      {
+        "label": "HEALING PER HIT",
+        "value": "10 per hit"
+      },
+      {
+        "label": "AREA OF EFFECT HEALING",
+        "value": "18 per hit"
+      },
+      {
+        "label": "RANGE",
+        "value": "8m spherical radius"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "2.27 hits per second"
+      },
+      {
+        "label": "AMMO",
+        "value": "12"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Projectile attraction pulls toward target; spell field heals allies"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Right Click",
+    "img": "",
+    "name": "DAGGER STORM",
+    "description": "Launch a volley of daggers, creating a Healing Over Time field at the impact area.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with delayed impact that generates a spell field"
+      },
+      {
+        "label": "HEALING AMOUNT",
+        "value": "55/s"
+      },
+      {
+        "label": "DURATION",
+        "value": "6s"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m spherical radius"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "E",
+    "img": "",
+    "name": "VEIL OF LIGHTFORCE",
+    "description": "Deploy a Veil of Lightforce to heal allies upon touch and grant them a Healing Boost.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Spell field that advances along casting path"
+      },
+      {
+        "label": "HEALING AMOUNT",
+        "value": "45"
+      },
+      {
+        "label": "HEALING BOOST",
+        "value": "15%"
+      },
+      {
+        "label": "DURATION",
+        "value": "4s"
+      },
+      {
+        "label": "RANGE",
+        "value": "Width: 6m, Height: 4.5m"
+      },
+      {
+        "label": "MOVEMENT SPEED",
+        "value": "20m/s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "25m"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "Left Click (Cloak)",
+    "img": "",
+    "name": "DARKFORCE CLOAK",
+    "description": "Inflict continuous Darkforce damage on an enemy.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Cylindrical spell field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "75/s"
+      },
+      {
+        "label": "RANGE",
+        "value": "20m"
+      },
+      {
+        "label": "AMMO",
+        "value": "\u221e"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "No"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Auto\u2011targets nearest enemy to crosshair"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "Right Click (Cloak)",
+    "img": "",
+    "name": "DARK TELEPORTATION",
+    "description": "Enshroud nearby allies in the Darkforce Dimension, granting invisibility and movement boost.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Persistent spell field"
+      },
+      {
+        "label": "RANGE",
+        "value": "10m spherical radius"
+      },
+      {
+        "label": "DURATION",
+        "value": "2s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Allies become untargetable, invisible, gain movement boost"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "E (Cloak)",
+    "img": "",
+    "name": "TERROR CAPE",
+    "description": "Deploy a Veil of Darkforce, damaging, blinding, and applying vulnerability to enemies.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Spell field that advances along casting path"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "55"
+      },
+      {
+        "label": "RANGE",
+        "value": "Width: 6m, Height: 4.5m (visibility obstructed beyond 10m)"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "VULNERABILITY",
+        "value": "28%"
+      },
+      {
+        "label": "BLIND DURATION",
+        "value": "1.5s"
+      },
+      {
+        "label": "VULNERABILITY DURATION",
+        "value": "3s"
+      },
+      {
+        "label": "MOVEMENT SPEED",
+        "value": "20m/s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "25m"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "Q",
+    "img": "",
+    "name": "ETERNAL BOND",
+    "description": "Perform four rapid dashes, healing allies and damaging enemies along the path.",
+    "change": 2,
+    "changeDescription": "Energy cost increased from 4000 to 4300",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Persistent spell field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "30/s"
+      },
+      {
+        "label": "HEALING AMOUNT",
+        "value": "250/s"
+      },
+      {
+        "label": "DURATION",
+        "value": "13s"
+      },
+      {
+        "label": "RANGE",
+        "value": "4m radius, 15m length per dash"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "4300  // Energy cost increased from 4000 to 4300"
+      }
+    ]
+  }
+}

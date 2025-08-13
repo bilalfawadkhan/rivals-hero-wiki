@@ -1,0 +1,244 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "ROCKY JAB",
+    "description": "Rapidly punch forward.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "40 per hit"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "Double strike 0.33s between attacks, 1s between sets."
+      },
+      {
+        "label": "RANGE",
+        "value": "4m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Hero not released in Season 0 (values shown are later-baseline)"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "CLOBBERIN' TIME",
+    "description": "Uses immense power to launch all enemies in front of you into the air.",
+    "attributes": [
+      {
+        "label": "RANGE",
+        "value": "Step spell field: 3m high, 10m wide, advancing 2m every 0.1 seconds, up to a maximum of 18m"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "100"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "2800"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Stun duration 2.5s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Hero not released in Season 0"
+  },
+  "spell3": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "STONE HAYMAKER",
+    "description": "Deliver a devastating Heavy Blow.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "90"
+      },
+      {
+        "label": "RANGE",
+        "value": "8m"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Move forward 3 meters while punching, gaining 50 Bonus Health during skill activation"
+      },
+      {
+        "label": "CHARGE TIME",
+        "value": "2s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Hero not released in Season 0"
+  },
+  "spell4": {
+    "key": "Shift",
+    "img": "",
+    "name": "YANCY STREET CHARGE",
+    "description": "Continuously charge forward, launching up enemies and leaving behind a zone at the final position that prevents the use of mobility abilities.",
+    "attributes": [
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "100%"
+      },
+      {
+        "label": "DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "Charge: 30; ground slam: 20; immobilization zone: 15 per/s"
+      },
+      {
+        "label": "SPELL FIELD RANGE",
+        "value": "Ground slam: 8m radius, 2.5m high cylindrical spell field. Immobilization zone: 8m radius, 4m high cylindrical spell field"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "10s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Gain 200 Bonus Health during skill activation\u26ac Leave behind a zone at final position that prevents the use of mobility spells"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Hero not released in Season 0"
+  },
+  "spell5": {
+    "key": "E",
+    "img": "",
+    "name": "EMBATTLED LEAP",
+    "description": "Jump towards your ally and apply damage reduction to both of you.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "3s"
+      },
+      {
+        "label": "CHARGES",
+        "value": "2"
+      },
+      {
+        "label": "RECHARGE TIME",
+        "value": "10s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Apply a 30% damage reduction effect to self and target ally for 3s; Shares a cooldown and recharge time with Battle Blitz"
+      },
+      {
+        "label": "RANGE",
+        "value": "20m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Hero not released in Season 0"
+  },
+  "spell6": {
+    "key": "F",
+    "img": "",
+    "name": "BATTLE BLITZ",
+    "description": "Jump toward an enemy and apply damage reduction to self.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "3s"
+      },
+      {
+        "label": "CHARGES",
+        "value": "2"
+      },
+      {
+        "label": "RECHARGE TIME",
+        "value": "TBA"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Apply a 30% damage reduction effect to self for 3s; Shares a cooldown and recharge time with Embattled Leap"
+      },
+      {
+        "label": "RANGE",
+        "value": "TBA"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Hero not released in Season 0"
+  },
+  "spell7": {
+    "key": "Passive",
+    "img": "",
+    "name": "UNYIELDING WILL",
+    "description": "Immune to launch up, knockback, and other displacement effects.",
+    "attributes": [],
+    "change": 0,
+    "changeDescription": "Hero not released in Season 0"
+  },
+  "spell8": {
+    "key": "Z",
+    "img": "",
+    "name": "COSMIC FASTBALL",
+    "description": "Wolverine, Hulk and The Thing can interact with eachother. Once both parties can confirm, Hulk or The Thing can lift Wolverine and press the key to hurl him forward.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "3s when not thrown, 15s when thrown"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "20m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Hero not released in Season 0"
+  },
+  "spell9": {
+    "key": "C",
+    "img": "",
+    "name": "COOPERATIVE COMRADES",
+    "description": "The Invisible Woman taps into her powers, channeling Psionic Might to fortify the entire Fantastic Four team. This formidable force bolsters Mister Fantastic, The Thing and Human Torch, granting damage resistance. Once activated they can continually generate bonus health, making up for lost health with each passing moment.",
+    "attributes": [
+      {
+        "label": "DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "20s"
+      },
+      {
+        "label": "BONUS HEALTH GROWTH",
+        "value": "Generate 5 Bonus Health per 0.1s"
+      },
+      {
+        "label": "BONUS MAX HEALTH",
+        "value": "100"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Hero not released in Season 0"
+  }
+}

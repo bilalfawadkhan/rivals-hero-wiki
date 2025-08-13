@@ -1,0 +1,217 @@
+{
+  
+  "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "SENTINEL STRIKE",
+    "description": "Get up close to strike enemies. Landing the second hit enables a shield throw that can ricochet four times.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Change Form"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "40 (Melee) - 45 (Flying Shield)"
+      },
+      {
+        "label": "CHARGES",
+        "value": "4"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "Melee 1st Hit: 0.4s, Melee 2nd Hit: 0.5s"
+      },
+      {
+        "label": "RANGE",
+        "value": "4m (Melee) - 25m (Flying Shield)"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60m/s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Automatically target enemies near the crosshair"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "FREEDOM CHARGE",
+    "description": "Shield held high, carve a path forward, granting both himself and allies along the path continuous Bonus Health and Movement Boosts.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Activation"
+      },
+      {
+        "label": "DURATION",
+        "value": "10s (spell field) - 5s (spell area)"
+      },
+      {
+        "label": "RANGE",
+        "value": "A spherical spell field with a 4m radius enveloping the caster, and a spell area with a width of 4m along the path"
+      },
+      {
+        "label": "HEALTH RECOVERY",
+        "value": "Cast to gain 150 Bonus Health and grant allies 100 Bonus Health. Every second afterward, gain 100 Bonus Health and grant allies 60 Bonus Health"
+      },
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "30%"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3400"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "LEADING DASH",
+    "description": "Boost speed and enable Fearless Leap to leap into the air.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Channeled"
+      },
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "33.40%"
+      },
+      {
+        "label": "FEARLESS LEAP HEIGHT",
+        "value": "5m"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "VIBRANIUM ENERGY SAW",
+    "description": "Hurl the energy-charged shield to strike enemies in a path.",
+    "change": 1,
+    "changeDescription": "speed increased",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile that can ricochet"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "Start at 70, with a 20% reduction for each ricochet"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "25m"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "80m/s  // Buff: speed increased"
+      },
+      {
+        "label": "NUMBER OF RICOCHETS",
+        "value": "3"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "F",
+    "img": "",
+    "name": "LIBERTY RUSH",
+    "description": "Raise the shield and charge forward.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast forward dash"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "30"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "DASH DISTANCE",
+        "value": "12m"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "Left Click",
+    "img": "",
+    "name": "SUPER-SOLDIER SLAM",
+    "description": "Slam down from the sky onto the targeted area, Launching Up enemies.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "30"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "20m (horizontal)"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "Right Click",
+    "img": "",
+    "name": "LIVING LEGEND",
+    "description": "Raise the shield to deflect incoming projectiles, sending them ricocheting in random directions.",
+    "change": 2,
+    "changeDescription": "shield value reduced",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Channeled"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "1s - 5s (if destroyed)"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "50%"
+      },
+      {
+        "label": "MAXIMUM SHIELD VALUE",
+        "value": "350  // Nerf: shield value reduced"
+      },
+      {
+        "label": "RECOVERY SHIELD VALUE",
+        "value": "50/s"
+      },
+      {
+        "label": "SHIELD RESTORE DELAY",
+        "value": "3s"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "ELEMENT GUNS",
+    "description": "Shoot enemies with dual Element Guns",
+    "attributes": [
+      { "label": "CASTING", "value": "Rapid-fire shots with spread." },
+      { "label": "DAMAGE", "value": "6.5 damage per round" },
+      { "label": "AMMO", "value": "40" },
+      { "label": "FIRE RATE", "value": "40 rounds per second" },
+      { "label": "CRITICAL HIT", "value": "Yes" },
+      { "label": "DAMAGE FALLOFF", "value": "Falloff begins at 10m, decreasing to 60% at 25m" }
+    ]
+  },
+  "spell2": {
+    "key": "",
+    "img": "",
+    "name": "GALACTIC LEGEND",
+    "description": "Engage in free-flight and lock onto enemies in sight.",
+    "attributes": [
+      { "label": "CASTING", "value": "Rapid-fire projectile." },
+      { "label": "DAMAGE", "value": "6.5 per round" },
+      { "label": "DURATION", "value": "8s" },
+      { "label": "AMMO", "value": "40" },
+      { "label": "FIRE RATE", "value": "40 rounds per sec" },
+      { "label": "MOVEMENT BOOST", "value": "20%" },
+      { "label": "RELOAD TIME REDUCTION", "value": "80m" },
+      { "label": "ENERGY COST", "value": "3100" },
+      { "label": "MAXIMUM LOCKING DISTANCE", "value": "70%" },
+      { "label": "SPECIAL EFFECT", "value": "During this period, Star-Lord’s reload speed increases significantly." }
+    ]
+  },
+  "spell3": {
+    "key": "",
+    "img": "",
+    "name": "ROCKET PROPULSION",
+    "description": "Consume energy to gain a Movement Boost and soar forward.",
+    "attributes": [
+      { "label": "CASTING", "value": "Movement" },
+      { "label": "MOVEMENT BOOST", "value": "100%" },
+      { "label": "ENERGY COST", "value": "300/s" }
+    ]
+  },
+  "spell4": {
+    "key": "",
+    "img": "",
+    "name": "BLASTER BARRAGE",
+    "description": "Fire a frenzy of shots, causing damage to enemies within range.",
+    "attributes": [
+      { "label": "CASTING", "value": "Spherical Spell Field" },
+      { "label": "DAMAGE", "value": "8 damage per hit" },
+      { "label": "DURATION", "value": "3s" },
+      { "label": "COOLDOWN", "value": "8s" }
+    ]
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "STELLAR SHIFT",
+    "description": "Dodge in the direction of movement and swiftly reload.",
+    "attributes": [
+      { "label": "CASTING", "value": "Movement" },
+      { "label": "DURATION", "value": "0.37" },
+      { "label": "CHARGES", "value": "2" }
+    ]
+  }
+}

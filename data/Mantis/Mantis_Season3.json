@@ -1,0 +1,273 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "LIFE ENERGY BLAST",
+    "description": "Fire an energy thorn and regain one Life Orb after a critical hit.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with delayed impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "55 per round"
+      },
+      {
+        "label": "AMMO",
+        "value": "20"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "2.5/s"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "None"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Damage increased 50 \u2192 55 per round"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "SOUL RESURGENCE",
+    "description": "Release energy around her while moving, providing Healing Over Time and Movement Boosts for surrounding allies. Excess healing converts to Bonus Health.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Persistent spell field that surrounds the caster"
+      },
+      {
+        "label": "HEALING",
+        "value": "200 on cast - 150/s (Reduced to 105/s when overhealing)"
+      },
+      {
+        "label": "DURATION",
+        "value": "8s"
+      },
+      {
+        "label": "RANGE",
+        "value": "15m spherical radius"
+      },
+      {
+        "label": "CONVERSION RATE",
+        "value": "150 maximum health on overheal"
+      },
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "3m/s"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "Guardian Revival (with Adam Warlock & Star-Lord)"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "4300"
+      },
+      {
+        "label": "EXCESS HEALING CONVERSION",
+        "value": "0.7 (70%) to Bonus Health"
+      },
+      {
+        "label": "BONUS MAX HEALTH (CAP)",
+        "value": "150"
+      },
+      {
+        "label": "TEAM-UP COOLDOWNS",
+        "value": "Leader's Soul & Nature's Soul: 135s (was 120s)"
+      }
+    ],
+    "change": 2,
+    "changeDescription": "Energy cost 3700 \u2192 4300; Bonus Max Health cap 100 \u2192 150"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "SPORE SLUMBER",
+    "description": "Throw a spore to Sedate the nearest enemy.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with delayed impact that also generates a spell field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "10"
+      },
+      {
+        "label": "DURATION",
+        "value": "3.5s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s"
+      },
+      {
+        "label": "RANGE",
+        "value": "3m spherical radius"
+      },
+      {
+        "label": "ABILITY HEALTH",
+        "value": "100"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "A Mantis illusion will manifest beside the sedated heroes. Allies can attack this illusion to awaken the affected hero"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "ALLIED INSPIRATION",
+    "description": "Consume Life Orbs to grant allies a Damage Boost.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "DURATION -\n1 Stack",
+        "value": "8s"
+      },
+      {
+        "label": "CHARGES",
+        "value": "4"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "3s per Life Orb"
+      },
+      {
+        "label": "DAMAGE BOOST",
+        "value": "12%"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Life Orb charges & cooldowns shared between Allied Inspiration, Natural Anger, and Healing Flower"
+      },
+      {
+        "label": "STACKING",
+        "value": "Duration stacks up to 16s total"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Allied Inspiration now stacks duration up to 16s"
+  },
+  "spell5": {
+    "key": "F",
+    "img": "",
+    "name": "NATURAL ANGER",
+    "description": "Consume Life Orbs to grant herself a Damage Boost.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Instant Cast"
+      },
+      {
+        "label": "DURATION",
+        "value": "8s"
+      },
+      {
+        "label": "CHARGES",
+        "value": "4"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "3s per Life Orb"
+      },
+      {
+        "label": "DAMAGE BOOST",
+        "value": "12%"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Life Orb charges & cooldowns shared between Allied Inspiration, Natural Anger, and Healing Flower"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell6": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "HEALING FLOWER",
+    "description": "Consume Life Orbs to grant allies Healing Over Time.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "HEALING",
+        "value": "55 on cast - 12.5/s"
+      },
+      {
+        "label": "PERCENTAGE HEALING",
+        "value": "Heal allies equal to 2.5% of Max Health/s"
+      },
+      {
+        "label": "DURATION",
+        "value": "8s"
+      },
+      {
+        "label": "CHARGES",
+        "value": "4"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "3s per Life Orb"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Life Orb charges & cooldowns shared between Allied Inspiration, Natural Anger, and Healing Flower \u26ac Has stacking properties, meaning that if you apply this to an ally twice, the duration is increased instead of resetting the timer."
+      }
+    ],
+    "change": 2,
+    "changeDescription": "Healing Flower HoT reduced 20/s \u2192 12.5/s; adds 2.5%/s Max Health healing"
+  },
+  "spell7": {
+    "key": "Passive",
+    "img": "",
+    "name": "NATURE'S FAVOR",
+    "description": "Receive a Movement Boost when not injured and Healing Over Time when consuming Life Orbs.",
+    "attributes": [
+      {
+        "label": "HEALING",
+        "value": "12.5/s"
+      },
+      {
+        "label": "DURATION",
+        "value": "8s"
+      },
+      {
+        "label": "TRIGGER CONDITION",
+        "value": "Out of combat for over 3s"
+      },
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "2.5m/s"
+      },
+      {
+        "label": "LIFE ORB REGEN",
+        "value": "Regenerates 1 Life Orb every 3s, up to 4"
+      },
+      {
+        "label": "BASE HEALTH",
+        "value": "250"
+      }
+    ],
+    "change": 2,
+    "changeDescription": "Base health reduced 275 \u2192 250"
+  }
+}

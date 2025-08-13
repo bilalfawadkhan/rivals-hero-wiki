@@ -1,0 +1,195 @@
+{
+  
+  "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "MYSTICAL MISSILE",
+    "description": "Fire Mystical Missiles to heal allies or deal damage to enemies",
+    "attributes": [
+      {
+        "label": "ABILITY TYPE",
+        "value": "Single-cast projectile with delayed impact that also generates a spell field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "The projectile deals no damage, while the spell field inflicts 30 damage per cast"
+      },
+      {
+        "label": "HEALING",
+        "value": "The projectile does not provide healing, but the spell field provides 40 Health per cast"
+      },
+      {
+        "label": "AMMO",
+        "value": "12"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "1.75/s"
+      },
+      {
+        "label": "RANGE",
+        "value": "3m spherical radius"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "No"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "100m/s"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 0.5m, decreasing to 50% at 2.5m"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Ammo increased from 10 to 12"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "GOD OF MISCHIEF",
+    "description": "Shapeshift into a targeted ally or enemy hero and use all their abilities except any of their Team-Up Abilities.",
+    "attributes": [
+      {
+        "label": "ABILITY TYPE",
+        "value": "Targeted"
+      },
+      {
+        "label": "DURATION",
+        "value": "15s"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "4000"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "After transforming, Loki's Ultimate ability will be fully charged. Casting a transformation-type Ultimate ability will extend the duration of Devious Exchange until the transformation ability ends."
+      }
+    ],
+    "change": 2,
+    "changeDescription": "Energy cost increased from 3400 to 4000"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "REGENERATION DOMAIN",
+    "description": "Use Rune Stones to create a magical field that provides allies Healing and converts incoming damage into further healing.",
+    "attributes": [
+      {
+        "label": "ABILITY TYPE",
+        "value": "Release a spell field at the location of Loki and the Illusion"
+      },
+      {
+        "label": "HEALING",
+        "value": "100/s"
+      },
+      {
+        "label": "DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "25s"
+      },
+      {
+        "label": "RANGE",
+        "value": "A cylindrical spell field with a radius of 5m and a height of 2m"
+      },
+      {
+        "label": "ABILITY HEALTH",
+        "value": "100"
+      },
+      {
+        "label": "CONVERSION RATE",
+        "value": "30%"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "The spell field is sustained by Rune Stones. It will disappear if the Rune Stone is destroyed or if its maximum duration is reached. Allies within the field will receive healing over time, and any damage taken will be converted into healing based on the amount of damage taken"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "DOPPELGANGER",
+    "description": "Project an Illusion that can cast some of Loki's abilities.",
+    "attributes": [
+      {
+        "label": "ABILITY TYPE",
+        "value": "Targeted"
+      },
+      {
+        "label": "CHARGES",
+        "value": "2"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s per charge"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "30m"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "F",
+    "img": "",
+    "name": "DEVIOUS EXCHANGE",
+    "description": "Swap with the selected Illusion.",
+    "attributes": [
+      {
+        "label": "ABILITY TYPE",
+        "value": "Targeted"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "V",
+    "img": "",
+    "name": "BACKSTAB",
+    "description": "Pull out a dagger to stab enemies, dealing extra damage when attacking an enemy from behind",
+    "attributes": [
+      {
+        "label": "ABILITY TYPE",
+        "value": "Single-cast Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "30 (Melee) - 45 (Backstab)"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "Right Click",
+    "img": "",
+    "name": "DECEPTION",
+    "description": "Become Invisible and conjure an Illusion to deceive enemies.",
+    "attributes": [
+      {
+        "label": "ABILITY TYPE",
+        "value": "Instant Cast"
+      },
+      {
+        "label": "HEALING",
+        "value": "20/s whilst invisible"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Loki leaves an illusion in his place and becomes invisible while continuously healing himself. This invisibility has no time limit, but any actions other than casting Devious Exchange, reloading, or casting Doppelganger will render him visible"
+      }
+    ]
+  }
+}

@@ -9,7 +9,8 @@ export async function GET(
 ) {
     const {season,hero} = await params;
 
-const filePath = path.join(process.cwd(), "data",season,`${hero}.json`);
+const filePath = path.join(process.cwd(),"data",hero,`${hero}_${season}.json`);
+console.log("File path: ", filePath);
 
 if(!existsSync(filePath)){
     return NextResponse.json({ error: "Hero not found" }, { status: 404 });

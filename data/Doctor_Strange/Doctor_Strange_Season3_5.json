@@ -1,0 +1,189 @@
+{
+  
+  "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "DAGGERS OF DENAK",
+    "description": "Cast Daggers of Denak forward.",
+    "change": 1,
+    "changeDescription": "Projectile charge count increased from 8 to 10",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Five-round delayed hit projectiles"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "16"
+      },
+      {
+        "label": "AMMO",
+        "value": "10 (1 dagger per release)"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "5.56 rounds per second, with a 0.03-second interval between every two rounds"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "No"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60m/s"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 10m, decreasing to 80% at 20m"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "EYE OF AGAMOTTO",
+    "description": "Separate nearby enemies' Souls from their bodies. Damage dealt to these Souls is transferred to their physical bodies.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast spell field that surrounds the caster"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "60"
+      },
+      {
+        "label": "DURATION",
+        "value": "3s"
+      },
+      {
+        "label": "RANGE",
+        "value": "10m spherical radius"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3100"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "CLOAK OF LEVITATION",
+    "description": "Ascend and then enter a brief state of sustained flight",
+    "change": 1,
+    "changeDescription": "Cooldown reduced from 15s to 12s",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Instant Cast"
+      },
+      {
+        "label": "DURATION",
+        "value": "6s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "DASH DISTANCE",
+        "value": "8m"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "MAELSTROM OF MADNESS",
+    "description": "Release Dark Magic to deal damage to nearby enemies.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast spell field that surrounds the caster"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "Each point of Dark Magic deals 1.2 damage."
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "RANGE",
+        "value": "8m spherical radius"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "F",
+    "img": "",
+    "name": "PENTAGRAM OF FARALLAH",
+    "description": "Open portals between two locations, enabling all units to travel through them.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Multi-segment release"
+      },
+      {
+        "label": "DURATION",
+        "value": "20s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "180s"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "Right Click",
+    "img": "",
+    "name": "SHIELD OF THE SERAPHIM",
+    "description": "Create a protective barrier against damage.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Channeled"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "3s (if destroyed)"
+      },
+      {
+        "label": "MAXIMUM SHIELD VALUE",
+        "value": "800"
+      },
+      {
+        "label": "RECOVERY SHIELD VALUE",
+        "value": "80/s"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "Passive",
+    "img": "",
+    "name": "PRICE OF MAGIC",
+    "description": "Dark Magic accumulates with every hit on an enemy. If Dark Magic peaks for too long, Doctor Strange will be cursed with Anti-Heal.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "DURATION",
+        "value": "2s"
+      },
+      {
+        "label": "ANTI",
+        "value": "HEAL ACTIVATION DELAY AT PEAK DARK MAGIC -  3s"
+      }
+    ]
+  }
+}

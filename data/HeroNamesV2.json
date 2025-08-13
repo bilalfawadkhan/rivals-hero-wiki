@@ -1,0 +1,51 @@
+{
+  "heroes": [
+    { "name": "Adam_Warlock", "type": "Strategist", "season": 0 },
+    { "name": "Black_Panther", "type": "Duelist", "season": 0 },
+    { "name": "Black_Widow", "type": "Duelist", "season": 0 },
+    { "name": "Captain_America", "type": "Vanguard", "season": 0 },
+    { "name": "Cloak_&_Dagger", "type": "Strategist", "season": 0 },
+    { "name": "Doctor_Strange", "type": "Vanguard", "season": 0 },
+    { "name": "Groot", "type": "Vanguard", "season": 0 },
+    { "name": "Hawkeye", "type": "Duelist", "season": 0 },
+    { "name": "Hela", "type": "Duelist", "season": 0 },
+    { "name": "Hulk", "type": "Vanguard", "season": 0 },
+    { "name": "Iron_Fist", "type": "Duelist", "season": 0 },
+    { "name": "Iron_Man", "type": "Duelist", "season": 0 },
+    { "name": "Jeff_the_Land_Shark", "type": "Strategist", "season": 0 },
+    { "name": "Loki", "type": "Strategist", "season": 0 },
+    { "name": "Luna_Snow", "type": "Strategist", "season": 0 },
+    { "name": "Magik", "type": "Duelist", "season": 0 },
+    { "name": "Magneto", "type": "Vanguard", "season": 0 },
+    { "name": "Mantis", "type": "Strategist", "season": 0 },
+    { "name": "Moon_Knight", "type": "Duelist", "season": 0 },
+    { "name": "Namor", "type": "Duelist", "season": 0 },
+    { "name": "Peni_Parker", "type": "Vanguard", "season": 0 },
+    { "name": "Psylocke", "type": "Duelist", "season": 0 },
+    { "name": "Rocket_Raccoon", "type": "Strategist", "season": 0 },
+    { "name": "Scarlet_Witch", "type": "Duelist", "season": 0 },
+    { "name": "Spider-Man", "type": "Duelist", "season": 0 },
+    { "name": "Squirrel_Girl", "type": "Duelist", "season": 0 },
+    { "name": "Star-Lord", "type": "Duelist", "season": 0 },
+    { "name": "Storm", "type": "Duelist", "season": 0 },
+    { "name": "The_Punisher", "type": "Duelist", "season": 0 },
+    { "name": "Thor", "type": "Vanguard", "season": 0 },
+    { "name": "Venom", "type": "Vanguard", "season": 0 },
+    { "name": "Winter_Soldier", "type": "Duelist", "season": 0 },
+    { "name": "Wolverine", "type": "Duelist", "season": 0 },
+
+    { "name": "Invisible_Woman", "type": "Strategist", "season": 1 },
+    { "name": "Mister_Fantastic", "type": "Duelist", "season": 1 },
+
+    { "name": "Human_Torch", "type": "Duelist", "season": 1.5 },
+    { "name": "The_Thing", "type": "Vanguard", "season": 1.5 },
+
+    { "name": "Emma_Frost", "type": "Vanguard", "season": 2 },
+
+    { "name": "Ultron", "type": "Strategist", "season": 2.5 },
+
+    { "name": "Phoenix", "type": "Duelist", "season": 3 },
+
+    { "name": "Blade", "type": "Duelist", "season": 3.5 }
+  ]
+}

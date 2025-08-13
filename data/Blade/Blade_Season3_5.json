@@ -1,0 +1,293 @@
+{
+  "season": "3.5",
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "ANCESTRAL SWORD",
+    "description": "Slash forward with Blade's Ancestral Sword. Hold primary fire to perform a spin attack.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      },
+      {
+        "label": "DAMAGE (SINGLE SLASH)",
+        "value": "22"
+      },
+      {
+        "label": "DAMAGE (DOUBLE STRIKE)",
+        "value": "13 per hit"
+      },
+      {
+        "label": "ATTACK INTERVAL",
+        "value": "2 strikes/s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "4.5m"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "HUNTER'S SHOTGUN",
+    "description": "Fire a slug that travels straight, then breaks into shrapnel after a set distance.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Projectile in straight trajectory; breaks into shrapnel after distance"
+      },
+      {
+        "label": "INITIAL PROJECTILE MAX DISTANCE",
+        "value": "8m"
+      },
+      {
+        "label": "INITIAL PROJECTILE SPEED",
+        "value": "150m/s"
+      },
+      {
+        "label": "INITIAL PROJECTILE DAMAGE",
+        "value": "45"
+      },
+      {
+        "label": "SHRAPNEL AMOUNT",
+        "value": "12"
+      },
+      {
+        "label": "DAMAGE PER SHRAPNEL HIT",
+        "value": "8"
+      },
+      {
+        "label": "SHRAPNEL PROJECTILE SPEED",
+        "value": "150m/s"
+      },
+      {
+        "label": "DAMAGE FALLOFF (SHRAPNEL)",
+        "value": "Falloff begins at 20m, decreasing to 40% at 30m"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "SCARLET SHROUD",
+    "description": "Parry with the Ancestral Sword to become Unstoppable briefly, reducing damage taken from the front and decreasing Daywalker Dash's cooldown as damage is resisted.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "COOLDOWN",
+        "value": "3s"
+      },
+      {
+        "label": "MAXIMUM ENERGY",
+        "value": "120"
+      },
+      {
+        "label": "ENERGY COST (CHANNEL)",
+        "value": "60/s"
+      },
+      {
+        "label": "ENERGY RECOVERY SPEED",
+        "value": "15/s"
+      },
+      {
+        "label": "ACTIVATION COST",
+        "value": "15"
+      },
+      {
+        "label": "UNSTOPPABLE DURATION",
+        "value": "0.4s after activation"
+      },
+      {
+        "label": "DAMAGE REDUCTION",
+        "value": "80% (from the front)"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Every 200 damage resisted grants 1 charge for Daywalker Dash"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "Shift",
+    "img": "",
+    "name": "DAYWALKER DASH",
+    "description": "Dash forward. If wielding your gun, shoot on impact to apply Healing Reduction; if wielding your sword, deliver a cleaving strike that inflicts Slow.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Dash; applies different effects based on weapon"
+      },
+      {
+        "label": "DASH DISTANCE",
+        "value": "15m"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "20"
+      },
+      {
+        "label": "GUN SECOND HIT DAMAGE",
+        "value": "20"
+      },
+      {
+        "label": "SWORD SECOND HIT DAMAGE",
+        "value": "15 per hit \u00d7 4"
+      },
+      {
+        "label": "HEALING REDUCTION",
+        "value": "40% for 3.5s (gun)"
+      },
+      {
+        "label": "SLOW",
+        "value": "35% for 1s (sword)"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "E",
+    "img": "",
+    "name": "BLOODLINE AWAKENING",
+    "description": "Awaken the Dhampir bloodline: attacks gain Lifesteal and a Movement Boost but suffer Reduced Healing. Sword/Shift hits build attack speed stacks; after 5 hits, trigger a Whirlwind Slash.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "LIFESTEAL",
+        "value": "60%"
+      },
+      {
+        "label": "SELF REDUCED HEALING",
+        "value": "40%"
+      },
+      {
+        "label": "MOVEMENT SPEED BOOST",
+        "value": "1.5 m/s"
+      },
+      {
+        "label": "MAX ATTACK SPEED STACKS",
+        "value": "10"
+      },
+      {
+        "label": "STACKS PER LEFT-CLICK HIT",
+        "value": "1"
+      },
+      {
+        "label": "STACKS PER SHIFT HIT",
+        "value": "5"
+      },
+      {
+        "label": "ATTACK SPEED PER STACK",
+        "value": "10%"
+      },
+      {
+        "label": "DURATION PER STACK",
+        "value": "0.7s"
+      },
+      {
+        "label": "WHIRLWIND SLASH DAMAGE",
+        "value": "56"
+      },
+      {
+        "label": "HITS TO TRIGGER WHIRLWIND",
+        "value": "5"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "Q",
+    "img": "",
+    "name": "THOUSAND-FOLD SLASH",
+    "description": "Charge power and draw the Sword of Dracula, dashing forward to strike and leave a slashing zone that automatically cuts enemies. Enemies hit suffer Reduced Healing.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "ENERGY COST",
+        "value": "2800"
+      },
+      {
+        "label": "SELF SLOW",
+        "value": "25%"
+      },
+      {
+        "label": "MAXIMUM CHARGE TIME",
+        "value": "3s"
+      },
+      {
+        "label": "CHARGE TIME FOR MAX DISTANCE",
+        "value": "1s"
+      },
+      {
+        "label": "DASH DISTANCE",
+        "value": "10m (24m fully charged)"
+      },
+      {
+        "label": "DIRECT HIT DAMAGE",
+        "value": "100"
+      },
+      {
+        "label": "SLASHING ZONE DoT",
+        "value": "225/s"
+      },
+      {
+        "label": "SLASHING ZONE SIZE",
+        "value": "Length: max dash distance; Width: 6m; Height: 4.5m"
+      },
+      {
+        "label": "SLASHING ZONE DURATION",
+        "value": "2s"
+      },
+      {
+        "label": "HEALING REDUCTION",
+        "value": "20% for 4s"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "C",
+    "img": "",
+    "name": "NEW MOON (Team-Up)",
+    "description": "With Cloak & Dagger: create a Light & Dark Realm where Blade becomes invisible and heals over time; can perform Swift Strike toward a targeted enemy.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Spherical Spell Field; Targeted Dash"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "25s"
+      },
+      {
+        "label": "HEALING AMOUNT",
+        "value": "50/s"
+      },
+      {
+        "label": "MAXIMUM SELECT DISTANCE",
+        "value": "20m"
+      },
+      {
+        "label": "SWIFT STRIKE DAMAGE",
+        "value": "60"
+      },
+      {
+        "label": "SWIFT STRIKE RANGE",
+        "value": "Cylinder 2m radius \u00d7 2.5m height"
+      },
+      {
+        "label": "SWIFT STRIKE COOLDOWN",
+        "value": "3s"
+      }
+    ]
+  }
+}

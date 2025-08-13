@@ -1,0 +1,204 @@
+{
+    "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "VINE STRIKE",
+    "description": "Launch vines to attack enemies.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with delayed impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "65"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "0.7s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "120m/s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "20m"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "No"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "STRANGLING PRISON",
+    "description": "Fire a massive vine cluster that pulls nearby enemies to its center and Imprisons them.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with a downward delay that creates a spell field upon impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "The projectile deals 10 damage, while the spell field deals 70 damage. While imprisoning enemies, it deals 20 damage every 0.5s"
+      },
+      {
+        "label": "DURATION",
+        "value": "3.5s"
+      },
+      {
+        "label": "RANGE",
+        "value": "8m spherical radius"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60m/s"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "2800"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "THORNLASH WALL",
+    "description": "Target a location and grow a Thornlash Wall. When Awakened, it strikes nearby enemies attacked by Groot and his allies.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "60/s"
+      },
+      {
+        "label": "CHARGES",
+        "value": "2"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "18m"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "6s per charge"
+      },
+      {
+        "label": "THORNLASH WALL HEALTH",
+        "value": "250"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Deals 60 damage every 0.5s to enemies attacked by Groot or allies"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "IRONWOOD WALL",
+    "description": "Target a location and grow an Ironwood Wall. When Awakened, damage dealt by Groot and nearby allies grants Groot Bonus Health.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "HEALING",
+        "value": "40 Bonus Health per second, up to 250"
+      },
+      {
+        "label": "IRONWOOD WALL HEALTH",
+        "value": "600"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "10m"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "Right Click",
+    "img": "",
+    "name": "SPORE BOMB",
+    "description": "Throw an explosive Spore Bomb that splits into multiple small explosive spores.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with a downward delay that creates a spell field upon impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "The projectile itself deals no damage, while Spore Bomb deals 55 damage and explosive spores deal 10 damage"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60m/s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "6s"
+      },
+      {
+        "label": "RANGE",
+        "value": "Spore Bomb generates a spell field with a 5m spherical radius, while small explosive spores create a spell field with a 1.5m spherical radius"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Explodes into 6 spores"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "Passive",
+    "img": "",
+    "name": "FLORA COLOSSUS",
+    "description": "Wooden walls near Groot will Awaken, activating an extra effect.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Persistent spell field that surrounds the caster"
+      },
+      {
+        "label": "RANGE",
+        "value": "20m radius, 40m height"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "V",
+    "img": "",
+    "name": "FURIOUS FLORA",
+    "description": "Perform a combo with his arms, third strike slightly launches enemy.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "RANGE",
+        "value": "First two strikes 3m, third strike 4m"
+      }
+    ]
+  }
+}

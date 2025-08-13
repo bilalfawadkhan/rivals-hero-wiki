@@ -1,0 +1,97 @@
+{  
+  "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "QUANTUM MAGIC\n",
+    "description": "Launch quantum energy to deal damage. Critical hits reduce the cooldown of Avatar Life Stream.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      { "label": "CASTING", "value": "Single-cast direct hit" },
+      { "label": "DAMAGE", "value": "60 per round" },
+      { "label": "DAMAGE FALLOFF", "value": "Falloff begins at 20m, decreasing to 60% at 40m" },
+      { "label": "FIRE RATE", "value": "2/s" },
+      { "label": "AMMO", "value": "15" },
+      { "label": "CRITICAL HIT", "value": "Yes" },
+      { "label": "AVATAR LIFE STREAM COOLDOWN REDUCTION", "value": "1s per critical hit" },
+      { "label": "SPECIAL EFFECT", "value": "Shares ammo with Cosmic Cluster." }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "KARMIC REVIVAL\n",
+    "description": "Awaken the karma of allies to revive them. Allies revived have lower health but enjoy a brief period of Invincibility.",
+    "change": 1,
+    "changeDescription": "Energy cost reduced from 5000 to 4700; revived allies gain 70\u202f% max health as bonus health for 5\u202fs (decaying over 2\u202fs)",
+    "attributes": [
+      { "label": "CASTING", "value": "Persistent spell field that surrounds the caster" },
+      { "label": "HEALTH UPON REVIVAL", "value": "30% of the Max Health" },
+      { "label": "RANGE", "value": "30m spherical radius" },
+      { "label": "DURATION", "value": "10s" },
+      { "label": "ENERGY COST", "value": "4700" },
+      { "label": "BONUS HEALTH", "value": "70% of max health for 5s (decays over 2s)" },
+      { "label": "SPECIAL EFFECT", "value": "Revive allies within range, centered on Adam. Continuously monitor for fallen allies within this range; if they enter the area, they can be revived at the casting location." }
+    ]
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "SOUL BOND\n",
+    "description": "Forge a soul bond with allies, granting Healing Over Time and distributing damage taken across the bond.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      { "label": "CASTING", "value": "Instant Cast" },
+      { "label": "HEALING AMOUNT", "value": "15/s" },
+      { "label": "RANGE", "value": "15m" },
+      { "label": "DURATION", "value": "6s" },
+      { "label": "MAXIMUM DAMAGE SHARED PER TARGET", "value": "250" },
+      { "label": "COOLDOWN", "value": "40s" },
+      { "label": "SPECIAL EFFECT", "value": "Adam Warlock will share a portion of the damage sustained by linked allies. If Adam Warlock sustains damage that would KO him due to the link, then the link will be broken, and he will retain 1 Health. The link will also break once enough damage is sustained, if Adam Warlock or the linked ally leave the link's range, or after a certain length of time has passed" }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "AVATAR LIFE STREAM\n",
+    "description": "Target an ally for a bouncing stream of healing energy, which also heals himself upon casting; self-targets if no ally is selected.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      { "label": "CASTING", "value": "Targeted" },
+      { "label": "HEALING AMOUNT", "value": "95" },
+      { "label": "HEALING AMOUNT (SELF)", "value": "35" },
+      { "label": "NUMBER OF BOUNCES", "value": "2" },
+      { "label": "RANGE", "value": "20m spherical radius" },
+      { "label": "COOLDOWN", "value": "6s per charge" },
+      { "label": "CHARGES", "value": "2" },
+      { "label": "SPECIAL EFFECT", "value": "Bouncing target does not include Adam Warlock" }
+    ]
+  },
+  "spell5": {
+    "key": "Right Click",
+    "img": "",
+    "name": "COSMIC CLUSTER\n",
+    "description": "Gather quantum energy into a cluster and then swiftly launch it at the enemy.",
+    "change": 1,
+    "changeDescription": "Each hit now reduces Avatar Life Stream charge time by 0.3\u202fs",
+    "attributes": [
+      { "label": "CASTING", "value": "Charged release, with multiple delayed projectiles" },
+      { "label": "DAMAGE", "value": "38" },
+      { "label": "MAXIMUM PROJECTILE COUNT", "value": "5" },
+      { "label": "FIRE RATE", "value": "The firing interval for a single charged shot is 0.3s, while the interval for multiple shots is 0.07s" },
+      { "label": "PROJECTILE SPEED", "value": "100m/s" },
+      { "label": "SPECIAL EFFECT", "value": "Shares ammo with Quantum Magic. Each hit reduces Avatar Life Stream charge time by 0.3s" }
+    ]
+  },
+  "spell6": {
+    "key": "Passive",
+    "img": "",
+    "name": "REGENERATIVE COCOON\n",
+    "description": "Once his body perishes, Adam Warlock can freely move as a soul and reforge his body at a chosen spot.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": []
+  }
+}

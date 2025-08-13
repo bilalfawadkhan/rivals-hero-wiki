@@ -1,0 +1,261 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "CYBER-WEB CLUSTER",
+    "description": "Launch forward a Cyber-Web Cluster",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Rapid-fire, delayed projectile that is accompanied by a spell field."
+      },
+      {
+        "label": "DAMAGE",
+        "value": "15 (projectile & spell field)"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "3.33 rounds/s"
+      },
+      {
+        "label": "RANGE",
+        "value": "1.5m spherical radius"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "120m/s"
+      },
+      {
+        "label": "MOVEMENT SPEED PENALTY WHILE FIRING",
+        "value": "40%"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "SPIDER-SWEEPER",
+    "description": "Enhance the SP//dr suit, launching up enemies in its path and deploying Arachno-Mines, Spider-Drones, and Cyber-Webs repeatedly.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Enhancement"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "60 per sweep"
+      },
+      {
+        "label": "AMMO",
+        "value": "7 (Arachno-Mines)"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "1s (sweep)"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m (sweep)"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Gain 450 Bonus Health and a 70% Movement Boost"
+      },
+      {
+        "label": "INTERVAL (ARACHNO-MINES)",
+        "value": "0.7s"
+      },
+      {
+        "label": "INTERVAL (SPIDER-DRONES)",
+        "value": "0.7s"
+      },
+      {
+        "label": "RANGE (CYBER-WEB LOS)",
+        "value": "4m spherical radius"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "Symbiote Bond (with Venom & Spider-Man)"
+      },
+      {
+        "label": "ARMOR EXPULSION \u2014 DAMAGE",
+        "value": "50 on cast + 50/s"
+      },
+      {
+        "label": "ARMOR EXPULSION \u2014 DURATION",
+        "value": "4s"
+      },
+      {
+        "label": "ARMOR EXPULSION \u2014 DEFENSE",
+        "value": "50% Damage Reduction"
+      },
+      {
+        "label": "ARMOR EXPULSION \u2014 COOLDOWN",
+        "value": "30s"
+      },
+      {
+        "label": "ARMOR EXPULSION \u2014 RANGE",
+        "value": "5m spherical radius"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "BIONIC SPIDER-NEST",
+    "description": "Generate a Spider-Nest at a targeted area, periodically spawning Spider-Drones and creating Cyber-Webs. While in the Cyber-Web, gain Healing Over Time and a Movement Boost. Excess healing converts into Bonus Health.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "40 per Spider-Drone"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "Two Spider-Drones every 3s"
+      },
+      {
+        "label": "RANGE",
+        "value": "12m spherical radius"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "10m"
+      },
+      {
+        "label": "ABILITY HEALTH",
+        "value": "350"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "ARACHNO-MINE",
+    "description": "Deploy Arachno-Mines that can be concealed within the confines of a Cyber-Web.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "100"
+      },
+      {
+        "label": "CHARGES",
+        "value": "4"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "4s per charge"
+      },
+      {
+        "label": "RANGE",
+        "value": "3m spherical radius"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell5": {
+    "key": "F",
+    "img": "",
+    "name": "CYBER-BOND",
+    "description": "Shoot a web strand that links to the targeted area or Cyber-Web. If stretched too far, it will trigger a pullback.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Dash"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "3s"
+      },
+      {
+        "label": "RANGE",
+        "value": "10m pullback range"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "19m"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "100m/s"
+      },
+      {
+        "label": "DASH DISTANCE",
+        "value": "Min. 10m - Max. 30m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell6": {
+    "key": "Space",
+    "img": "",
+    "name": "WALL CRAWL",
+    "description": "Hold Jump to crawl on vertical surfaces.",
+    "attributes": [
+      {
+        "label": "MOVEMENT SPEED",
+        "value": "7.2m/s"
+      },
+      {
+        "label": "BASE HEALTH",
+        "value": "650"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell7": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "CYBER-WEB SNARE",
+    "description": "Cast futuristic webbing that Immobilizes enemies or creates a Cyber-Web. While in the Cyber-Web, gain Healing Over Time and a Movement Boost. Excess healing converts into Bonus Health.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with delayed impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "5"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "3s"
+      },
+      {
+        "label": "RANGE",
+        "value": "3m spherical radius"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60m/s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Enemies hit are ensnared for 0.7s. While in the Cyber-Web, Peni Parker receives 25 healing per second. Any excess healing is converted into Bonus Health, up to a maximum of 150 Health, and grants a 25% Movement Boost"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

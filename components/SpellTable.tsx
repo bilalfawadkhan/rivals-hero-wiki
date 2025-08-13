@@ -27,8 +27,6 @@ const SpellTable: React.FC<SpellTableProps> = ({ spell }) => {
       <p className="text-gray-300 text-sm mb-6">{spell.description}</p>
       {spell.attributes.length > 0 && (
       <table className="w-full text-sm">
-
-
         <thead>
           <tr className="text-gray-400 uppercase text-xs border-b border-gray-600">
             <th className="py-2 text-left">Attribute</th>

@@ -1,0 +1,153 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "BURST ACORN",
+    "description": "Shoot bouncing Burst Acorns",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Arced projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "80 m/s"
+      },
+      {
+        "label": "SPELL FIELD RANGE",
+        "value": "3m spherical radius"
+      },
+      {
+        "label": "SPELL FIELD DAMAGE",
+        "value": "110"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "70% falloff at 3m"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "1.49 acorns per second"
+      },
+      {
+        "label": "AMMO",
+        "value": "12"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "UNBEATABLE SQUIRREL TSUNAMI",
+    "description": "Summon a horde of squirrels to charge forward, dealing damage while bouncing against structures",
+    "attributes": [
+      {
+        "label": "DURATION",
+        "value": "10s"
+      },
+      {
+        "label": "RANGE",
+        "value": "Length: 3m, Width: 5m, Height: 1.75m"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "150"
+      },
+      {
+        "label": "SQUIRREL HORDE HEALTH",
+        "value": "300"
+      },
+      {
+        "label": "SQUIRREL HORDE MOVEMENT SPEED",
+        "value": "9 m/s"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "2800"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "The squirrels will rush towards the nearest enemy after bouncing instead of bouncing randomly"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "ESU Alumnus (with Spider-Man)"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Added target\u2011seeking behavior; Squirrel Horde Health reduced 600 \u2192 300"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "TAIL BOUNCE",
+    "description": "Rocket upwards with a bounce of her tail",
+    "attributes": [
+      {
+        "label": "JUMP HEIGHT",
+        "value": "9m"
+      },
+      {
+        "label": "CROWD CONTROL IMMUNITY",
+        "value": "Briefly during ascent"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "MAMMAL BOND",
+    "description": "Reload Burst Acorns and can use an ability without cooldown once in a short duration",
+    "attributes": [
+      {
+        "label": "MAXIMUM DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "EFFECT",
+        "value": "Reloads Burst Acorns; next ability has no cooldown within duration"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "SQUIRREL BLOCKADE",
+    "description": "Launch an acorn to unleash Squirrel Guards, Imprisoning the first hit enemy",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Charged projectile with an arced trajectory"
+      },
+      {
+        "label": "MAXIMUM CHARGE TIME",
+        "value": "1.5s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "20 - 60 m/s (Maximum speed is achieved after 0.7s of charging)"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "35"
+      },
+      {
+        "label": "IMPRISON DURATION",
+        "value": "1.33s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

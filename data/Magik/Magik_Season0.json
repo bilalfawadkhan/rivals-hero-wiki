@@ -1,0 +1,331 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "SOULSWORD",
+    "description": "Slash forward with the Soulsword.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "65"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "6.5m"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 4.5m, decreasing to 50% at 6.5m"
+      },
+      {
+        "label": "ATTACK INTERVAL",
+        "value": "0.83s per hit"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes",
+    "darkchildAttributes": [
+      {
+        "label": "DAMAGE",
+        "value": "85  // up from 65"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 4.5m, decreasing to 65% at 6.5m  // less falloff"
+      },
+      {
+        "label": "ATTACK INTERVAL",
+        "value": "0.78s per hit  // slightly faster swings"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "DARKCHILD",
+    "description": "Transform into Darkchild, enhancing all abilities.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Transformation"
+      },
+      {
+        "label": "DURATION",
+        "value": "12s"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3400"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "While in Darkchild, Soulsword, Magik Slash, Umbral Incursion, Eldritch Whirl, and Demon's Rage are empowered."
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "STEPPING DISCS",
+    "description": "Jump through a Stepping Disc, teleporting a short distance in the direction of movement. Become invincible while teleporting.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Dash"
+      },
+      {
+        "label": "AVERAGE SPEED",
+        "value": "12m/s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "10m"
+      },
+      {
+        "label": "COMBO ABILITY CASTING WINDOW",
+        "value": "3s"
+      },
+      {
+        "label": "CHARGES",
+        "value": "2"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "6s"
+      },
+      {
+        "label": "SPECIAL EFFECT 1",
+        "value": "Magik is invincible while moving"
+      },
+      {
+        "label": "SPECIAL EFFECT 2",
+        "value": "After exiting, press Left Click for Eldritch Whirl or Right Click for Demon's Rage"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "UMBRAL INCURSION",
+    "description": "Dash forward and launch up enemies on hit.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Movement-based damage ability"
+      },
+      {
+        "label": "AVERAGE SPEED",
+        "value": "46 m/s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "16m"
+      },
+      {
+        "label": "UPWARD SLASH DAMAGE",
+        "value": "85"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes",
+    "darkchildAttributes": [
+      {
+        "label": "UPWARD SLASH DAMAGE",
+        "value": "110  // up from 85"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "18m  // up from 16m"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "7s  // down from 8s"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "MAGIK SLASH",
+    "description": "Charge and launch an air slash in a straight line.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Charged projectile"
+      },
+      {
+        "label": "MAXIMUM CHARGE TIME",
+        "value": "2s"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "45\u201390 (max after ~1.8s charge)"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "6s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "80 m/s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes",
+    "darkchildAttributes": [
+      {
+        "label": "DAMAGE",
+        "value": "55\u2013110 (max after ~1.8s charge)  // up from 45\u201390"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "90 m/s  // up from 80 m/s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "5s  // down from 6s"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "Left mouse button (after Stepping Discs)",
+    "img": "",
+    "name": "ELDRITCH WHIRL",
+    "description": "After exiting a Stepping Disc, spin while swinging the Soulsword in an area.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "A cylindrical spell field in melee range"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "45"
+      },
+      {
+        "label": "RANGE",
+        "value": "Radius 6m, Height 5m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes",
+    "darkchildAttributes": [
+      {
+        "label": "DAMAGE",
+        "value": "60  // up from 45"
+      },
+      {
+        "label": "RANGE",
+        "value": "Radius 6.5m, Height 5m  // radius up from 6m"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "Right mouse button (after Stepping Discs)",
+    "img": "",
+    "name": "DEMON'S RAGE",
+    "description": "After exiting a Stepping Disc, summon a Limbo demon that repeatedly strikes ahead.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Cuboid spell field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "18 per hit"
+      },
+      {
+        "label": "ATTACK INTERVAL",
+        "value": "0.25s per hit"
+      },
+      {
+        "label": "RANGE",
+        "value": "Length 6.5m, Width 3m, Height 3m"
+      },
+      {
+        "label": "MAXIMUM DURATION",
+        "value": "4s"
+      },
+      {
+        "label": "SUMMON HEALTH",
+        "value": "100"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes",
+    "darkchildAttributes": [
+      {
+        "label": "DAMAGE",
+        "value": "22 per hit  // up from 18"
+      },
+      {
+        "label": "ATTACK INTERVAL",
+        "value": "0.22s per hit  // was 0.25s"
+      },
+      {
+        "label": "MAXIMUM DURATION",
+        "value": "5s  // up from 4s"
+      },
+      {
+        "label": "SUMMON HEALTH",
+        "value": "150  // up from 100"
+      }
+    ]
+  },
+  "spell8": {
+    "key": "Passive",
+    "img": "",
+    "name": "LIMBO'S MIGHT",
+    "description": "Convert damage inflicted on enemies into Bonus Health.",
+    "attributes": [
+      {
+        "label": "CONVERSION RATE",
+        "value": "30%"
+      },
+      {
+        "label": "BONUS MAX HEALTH",
+        "value": "150"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell9": {
+    "key": "C",
+    "img": "",
+    "name": "DISC MASTER (Team-Up)",
+    "description": "When Magik is on the field, Black Panther and Psylocke can tap into Limbo, rewinding to a previous position and gaining Bonus Health; Magik gains a damage bonus.",
+    "attributes": [
+      {
+        "label": "ANCHOR",
+        "value": "Magik"
+      },
+      {
+        "label": "SECONDARY HEROES",
+        "value": "Black Panther; Psylocke"
+      },
+      {
+        "label": "MAGIK DAMAGE BONUS",
+        "value": "+15%"
+      },
+      {
+        "label": "SECONDARY EFFECT",
+        "value": "Rewind to past position and gain Bonus Health based on missing health"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

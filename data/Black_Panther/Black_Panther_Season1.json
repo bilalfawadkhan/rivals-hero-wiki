@@ -1,0 +1,196 @@
+{
+  "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "VIBRANIUM CLAWS",
+    "description": "Slice Vibranium Claws forward.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "35"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "3m"
+      },
+      {
+        "label": "ATTACK INTERVAL",
+        "value": "0.44s per hit"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "BAST'S DESCENT",
+    "description": "Summon Bast, pouncing forward, dealing damage, and attaching a Vibranium Mark to enemies hit while refreshing Spirit Rend.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Cuboid Spell Field"
+      },
+      {
+        "label": "RANGE",
+        "value": "Length: 22m, Width: 20m, Height: 7m"
+      },
+      {
+        "label": "CASTING ANGLE",
+        "value": "150\u00b0"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "150"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3300"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "SPIRIT REND",
+    "description": "Lunge forward and deal damage to enemies. Vibranium Mark produces Bonus Health and refreshes the ability.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Movement-based damage ability"
+      },
+      {
+        "label": "AVERAGE SPEED",
+        "value": "50m/s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "15m"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "80"
+      },
+      {
+        "label": "BONUS HEALTH",
+        "value": "30"
+      },
+      {
+        "label": "BONUS MAX HEALTH",
+        "value": "75"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "SPINNING KICK",
+    "description": "Spiral forward and attach a Vibranium Mark to hit enemies",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Movement-based damage ability"
+      },
+      {
+        "label": "AVERAGE SPEED",
+        "value": "15m/s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "16m"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "70"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "Space",
+    "img": "",
+    "name": "SUBTLE STEP",
+    "description": "Hold Space to run on a wall; perform a jump after detaching from the wall.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "WALL-CRAWLING SPEED",
+        "value": "10m/s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "3s"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "Right Click",
+    "img": "",
+    "name": "SPEAR TOSS",
+    "description": "Toss a Vibranium energy spear forward, creating a Vibranium Force Field and attaching a Vibranium Mark to enemies in its radius.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Arced projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60m/s"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m spherical radius"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "45"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "6s"
+      },
+      {
+        "label": "CHARGES",
+        "value": "2"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "Passive",
+    "img": "",
+    "name": "PANTHER'S CUNNING",
+    "description": "Deal higher damage when at low Health.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "TRIGGER CONDITION",
+        "value": "Health drops below 100"
+      },
+      {
+        "label": "DAMAGE BOOST",
+        "value": "20%"
+      }
+    ]
+  }
+}

@@ -1,0 +1,197 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "DARK PREDATION",
+    "description": "Unleash tentacles forward to attack enemies",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Quad-cast delayed spell field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "20 per tendril"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "0.9s, with a 0.1s interval between each tendril"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "15m"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "FEAST OF THE ABYSS",
+    "description": "Burrow underground for free movement. After a duration or by pressing Primary 1, devour enemies above to deal damage based on the enemies current health and generate equivalent Bonus Health.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast spell field that surrounds the caster"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "Inflict damage equal to 50% of the target's health, followed by an additional 40 damage"
+      },
+      {
+        "label": "DURATION",
+        "value": "4s"
+      },
+      {
+        "label": "RANGE",
+        "value": "7m spherical radius"
+      },
+      {
+        "label": "SLOW RATE",
+        "value": "Increases movement speed by 80% while active."
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "2800"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "100% of damage dealt is converted into Bonus Health"
+      },
+      {
+        "label": "ULTIMATE",
+        "value": "Yes"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "Symbiote Bond (with Spider-Man & Peni Parker) \u2014 Team-Up Bonus: +Max Health (anchor)"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Launch baseline: base damage 40; energy 2800; Team\u2011Up Symbiote Bond active"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "VENOM SWING",
+    "description": "Launch webbing forward, allowing for a singular swing in the desired direction",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Dash"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "RANGE",
+        "value": "30m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "SYMBIOTIC RESILIENCE",
+    "description": "Generate Bonus Health against damage. The lower Venom's health, the greater the Bonus Health generated.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Instant cast"
+      },
+      {
+        "label": "HEALING",
+        "value": "100HP + 100% of missing health as bonus health"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Launch baseline: 100% missing-health ratio"
+  },
+  "spell5": {
+    "key": "F",
+    "img": "",
+    "name": "FRENZIED ARRIVAL",
+    "description": "Dash to the target location from a certain height. Upon landing, damage nearby enemies, Launching Them Up towards the landing point.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Ground Target"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "65 damage, with damage falloff starting at 2m from the center of the spell field and decreasing to 40% at 6m"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "RANGE",
+        "value": "6m spherical radius"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "40m (minimum 3m)"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell6": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "CELLULAR CORROSION",
+    "description": "Unleash tentacles to Slow enemies within reach. Enemies unable to break free in time will suffer damage",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Spell field that surrounds the caster"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "Deals 5 damage to nearby enemies, and an additional 80 damage if the target remains in the area at the end of the duration."
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "RANGE",
+        "value": "8m spherical radius"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Tendrils apply a 25% Slow on the target and take 3s to inflict damage. If the distance from Venom exceeds 11m, the tendrils will detach"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell7": {
+    "key": "Space",
+    "img": "",
+    "name": "ALIEN BIOLOGY",
+    "description": "Press Space to wall crawl, and while crawling, left-click to sprint",
+    "attributes": [
+      {
+        "label": "AVERAGE SPEED",
+        "value": "Wall-Crawl: 3 m/s; Sprint: 9 m/s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

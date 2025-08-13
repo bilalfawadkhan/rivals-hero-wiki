@@ -1,0 +1,281 @@
+{
+  
+  "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "JEET KUNE DO",
+    "description": "Strike the targeted enemy with Jeet Kune Do, reducing the cooldown of Dragon's Defense with every hit.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "The first four strikes each deal 30 damage, while the fifth strike deals 55 damage"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "The first four strikes have an interval of 0.45s between them, while the fifth strike has a 0.67s interval from the fourth strike"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "3m"
+      },
+      {
+        "label": "MAXIMUM PULL",
+        "value": "IN DISTANCE -  6m"
+      },
+      {
+        "label": "1ST STRIKE DAMAGE",
+        "value": "32"
+      },
+      {
+        "label": "2ND STRIKE DAMAGE",
+        "value": "32"
+      },
+      {
+        "label": "3RD STRIKE DAMAGE",
+        "value": "16"
+      },
+      {
+        "label": "4TH STRIKE DAMAGE",
+        "value": "16"
+      },
+      {
+        "label": "5TH STRIKE DAMAGE",
+        "value": "32"
+      },
+      {
+        "label": "FINAL STRIKE DAMAGE",
+        "value": "55"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell2": {
+    "key": "F",
+    "img": "",
+    "name": "YAT JEE CHUNG KUEN",
+    "description": "Dash forward to pursue the targeted enemy and unleash a flurry of attacks.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      },
+      {
+        "label": "BASE DAMAGE",
+        "value": "9"
+      },
+      {
+        "label": "PERCENTAGE DAMAGE",
+        "value": "Deal damage equal to 2.7% of the target's Max Health"
+      },
+      {
+        "label": "DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "7/s"
+      },
+      {
+        "label": "RANGE",
+        "value": "3m"
+      },
+      {
+        "label": "DASH SPEED",
+        "value": "12m/s (without target)"
+      },
+      {
+        "label": "DASH DISTANCE",
+        "value": "3m (without target)"
+      },
+      {
+        "label": "FIXED DAMAGE PER HIT",
+        "value": "19"
+      },
+      {
+        "label": "PERCENT MAX HEALTH DAMAGE",
+        "value": "0%"
+      },
+      {
+        "label": "DASH Z DISTANCE",
+        "value": "default"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell3": {
+    "key": "Q",
+    "img": "",
+    "name": "LIVING CHI",
+    "description": "Become living Chi to boost his speed, damage, and attack range, delivering stronger punches while reducing the cooldown of Dragon's Defense.",
+    "attributes": [
+      {
+        "label": "DURATION",
+        "value": "12s"
+      },
+      {
+        "label": "DAMAGE BOOST",
+        "value": "30%"
+      },
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "20%"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "100% range boost to K'un-Lun Kick and Yat Jee Chung Kuen"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "K'UN-LUN KICK",
+    "description": "Dash forward, delivering a flying kick when hitting an enemy or reaching full range, dealing damage to nearby enemies. Damage increases with lower enemy health.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Movement-based damage ability"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "35 (first kick)"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "DASH SPEED",
+        "value": "40m/s"
+      },
+      {
+        "label": "1ST STRIKE DAMAGE",
+        "value": "30"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell5": {
+    "key": "Shift",
+    "img": "",
+    "name": "HARMONY RECOVERY",
+    "description": "Cross legs and channel Chi, slowly gaining Bonus Health.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Channel"
+      },
+      {
+        "label": "HEALING",
+        "value": "100/s"
+      },
+      {
+        "label": "DURATION",
+        "value": "3s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "BONUS MAX HEALTH",
+        "value": "50"
+      },
+      {
+        "label": "BONUS HEALTH DECAY RATE",
+        "value": "0"
+      },
+      {
+        "label": "DECAY START TIME",
+        "value": "0s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell6": {
+    "key": "Space",
+    "img": "",
+    "name": "CRANE LEAP",
+    "description": "Perform up to three consecutive jumps while airborne.",
+    "attributes": [
+      {
+        "label": "CHARGES",
+        "value": "3"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell7": {
+    "key": "Right Click",
+    "img": "",
+    "name": "DRAGON'S DEFENSE",
+    "description": "Assume a defensive stance with the boost of Chi to block incoming attacks and gain Damage Reduction. Once he exits the defensive stance, he gains Bonus Health and can strike back with Yat Jee Chung Kuen.",
+    "attributes": [
+      {
+        "label": "DURATION",
+        "value": "1s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s - 3s (during Living Chi)"
+      },
+      {
+        "label": "CONVERSION RATE",
+        "value": "1.3 damage to bonus health conversion"
+      },
+      {
+        "label": "COOLDOWN REDUCTION PER HIT",
+        "value": "1s"
+      },
+      {
+        "label": "BONUS HEALTH CONVERSION",
+        "value": "1.5"
+      },
+      {
+        "label": "MAXIMUM BONUS HEALTH",
+        "value": "150"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell8": {
+    "key": "Passive",
+    "img": "",
+    "name": "WALL RUNNER",
+    "description": "Run horizontally along the walls.",
+    "attributes": [
+      {
+        "label": "ATLAS BOND DAMAGE BOOST",
+        "value": "15%"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell9": {
+    "key": "Passive",
+    "img": "",
+    "name": "CHI ABSORPTION",
+    "description": "Assist in taking down enemies allow him to absorb their Chi and gain Bonus Health.",
+    "attributes": [
+      {
+        "label": "BASE HEALTH",
+        "value": "250"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

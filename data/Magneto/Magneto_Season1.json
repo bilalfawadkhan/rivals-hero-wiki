@@ -1,0 +1,237 @@
+{
+  
+  "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "IRON VOLLEY",
+    "description": "Fire a volley of magnetic orbs forward. The range of the resulting explosion increases based on distance flown.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with delayed impact that also generates a spell field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "Projectile Damage: 35. The spell field deals 40 damage at its center, reducing to 50% within a 3m radius from the center"
+      },
+      {
+        "label": "CHARGES",
+        "value": "10"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "0.8s"
+      },
+      {
+        "label": "RANGE",
+        "value": "Initially, it produces a spell field with a 1m spherical radius; when the projectile reaches maximum distance, the explosion radius expands to a spell field with a 3m spherical radius"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "25m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "METEOR M",
+    "description": "Draw in all materials around to forge an iron meteor that deals massive damage upon impact. Absorbing enemy projectiles can enhance the meteor's power, yet overloading will cause it to self-destruct.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Create a persistent spell field that launches a projectile upon completion, which generates another spell field on impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "The projectile deals no damage. The base damage at the center of the spell field starts at 100 and increases to 300 when fully charged. Each point of Energy adds an extra 3 points of damage to the spell field, with damage reducing to 50% at a distance of 6m from the center"
+      },
+      {
+        "label": "DURATION",
+        "value": "4s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "30m/s"
+      },
+      {
+        "label": "SPELL FIELD RANGE",
+        "value": "Initially, the ability has a spherical range with a radius of 5m. After charging for 4s, it expands to an 8m radius"
+      },
+      {
+        "label": "PROJECTILE ABSORPTION RANGE",
+        "value": "15m spherical radius"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3100"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "For each point of projectile damage absorbed, the power increases by 0.125, with a maximum absorption of 800 projectile damage"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "Metallic Fusion (with Scarlet Witch)"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "METALLIC CURTAIN",
+    "description": "Change the magnetic field around to form a metallic curtain, blocking all incoming projectiles.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Shield"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "3s"
+      },
+      {
+        "label": "MAXIMUM ENERGY",
+        "value": "100"
+      },
+      {
+        "label": "ENERGY RECOVERY DELAY",
+        "value": "1s"
+      },
+      {
+        "label": "ENERGY RECOVERY SPEED",
+        "value": "11/s"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "50/s"
+      },
+      {
+        "label": "MAXIMUM DURATION",
+        "value": "2s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "METAL BULWARK",
+    "description": "Conjure a metal shield around a chosen ally. Damage taken will transform into rings on Magneto's back.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "DURATION",
+        "value": "2.5s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "20m"
+      },
+      {
+        "label": "MAXIMUM SHIELD VALUE",
+        "value": "300"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Cooldown shared with Iron Bulwark \u26ac The shield grants one charge of Iron Ring for every 100 damage it absorbs"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell5": {
+    "key": "F",
+    "img": "",
+    "name": "IRON BULWARK",
+    "description": "Conjure an iron shield around himself. Damage taken will transform into rings on Magneto's back.",
+    "attributes": [
+      {
+        "label": "DURATION",
+        "value": "2.5s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "MAXIMUM SHIELD VALUE",
+        "value": "300"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Cooldown shared with Metal Bulwark \u26ac The shield grants one charge of Iron Ring for every 100 damage it absorbs"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell6": {
+    "key": "Right Click",
+    "img": "",
+    "name": "MAG-CANNON",
+    "description": "Convert the iron rings on Magneto's back into a Mag-Cannon and launch a metallic mass forward. Higher stacks of rings increase damage, and full stacks knock back enemies.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with delayed impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "40 (Iron Rings first charge)"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "No cooldown, but the ability can only be activated when the Iron Ring has at least one charge"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "120m/s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "When fully charged, Mag-Cannon has a 6m knockback distance"
+      },
+      {
+        "label": "DAMAGE (SECOND CHARGE)",
+        "value": "65"
+      },
+      {
+        "label": "DAMAGE (THIRD CHARGE)",
+        "value": "90"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell7": {
+    "key": "Space",
+    "img": "",
+    "name": "MAGNETIC DESCENT",
+    "description": "Hold Space to fall slowly.",
+    "attributes": [
+      {
+        "label": "HORIZONTAL SPEED",
+        "value": "6m/s"
+      },
+      {
+        "label": "DESCENT SPEED",
+        "value": "3.5m/s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

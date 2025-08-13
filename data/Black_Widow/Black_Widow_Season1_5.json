@@ -1,0 +1,235 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "WIDOW'S BITE BATON",
+    "description": "Strike with the enhanced electric batons.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "45"
+      },
+      {
+        "label": "ATTACK INTERVAL",
+        "value": "2/s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "3m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell2": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "RED ROOM RIFLE",
+    "description": "Attack with the Red Room Rifle.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Multi-cast command grab"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "120 damage per round"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 10m, decreasing to 50% at 20m"
+      },
+      {
+        "label": "AMMO",
+        "value": "15"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "0.83/s"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Shares the same magazine with Straight Shooter. Straight Shooter activates only after aiming down sights for a specific duration; otherwise, it will fire from the Red Room Rifle.\u26ac While using Straight Shooter, the damage falloff is negated."
+      },
+      {
+        "label": "ADS TIME",
+        "value": "0.3s"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Magazine capacity increased 8 \u2192 15"
+  },
+  "spell3": {
+    "key": "Q",
+    "img": "",
+    "name": "ELECTRO-PLASMA EXPLOSION",
+    "description": "Switch the Red Room Rifle to Destruction mode and unleash an electro-plasma blast, damaging enemies within range and leaving plasma on the ground to Slow nearby enemies.",
+    "attributes": [
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "100m/s"
+      },
+      {
+        "label": "EXPLOSION RANGE",
+        "value": "5.6m - 8m (Maximum range is achieved after 0.6s of charging)"
+      },
+      {
+        "label": "EXPLOSION DAMAGE",
+        "value": "120 - 170 (Maximum damage is achieved after 0.6s of charging)"
+      },
+      {
+        "label": "NUMBER OF PLASMA GLOBULES",
+        "value": "7 - 20 (Maximum amount is achieved after 0.6s of charging)"
+      },
+      {
+        "label": "PLASMA RANGE",
+        "value": "1.5m spherical radius"
+      },
+      {
+        "label": "PLASMA DURATION",
+        "value": "10s"
+      },
+      {
+        "label": "SLOW RATE",
+        "value": "55%"
+      },
+      {
+        "label": "PLASMA DURATION",
+        "value": "10s"
+      },
+      {
+        "label": "VULNERABILITY EFFECT DURATION",
+        "value": "4s"
+      },
+      {
+        "label": "VULNERABILITY EFFECT RATE",
+        "value": "15%"
+      },
+      {
+        "label": "CHARGE TO MAX TIME",
+        "value": "0.6s"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "Allied Agents (with Hawkeye)"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Slow 80% \u2192 55% (nerf) and adds Vulnerability 15% for 4s (buff)"
+  },
+  "spell4": {
+    "key": "Shift",
+    "img": "",
+    "name": "FLEET FOOT",
+    "description": "Dash forward with those fertile feet and enable a powerful jump.",
+    "attributes": [
+      {
+        "label": "MAXIMUM ENERGY",
+        "value": "120"
+      },
+      {
+        "label": "ENERGY RECOVERY SPEED",
+        "value": "30/s"
+      },
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "33%"
+      },
+      {
+        "label": "POWER JUMP ENERGY COST",
+        "value": "24 per leap"
+      },
+      {
+        "label": "ENERGY COST (SPRINTING)",
+        "value": "12/s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Energy recovery from 0\u2192full reduced 12s \u2192 4s (30/s)"
+  },
+  "spell5": {
+    "key": "E",
+    "img": "",
+    "name": "EDGE DANCER",
+    "description": "Unleash a spinning kick to Knock enemies airborne. Landing the hit will allow her to zip to the target with a grappling hook for a second kick.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "35 (Spinning Kick & Flying Kick)"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "5m (Spinning Kick) - 12m (Flying Kick) - 100m (Edging)"
+      },
+      {
+        "label": "STUN DURATION",
+        "value": "1s"
+      },
+      {
+        "label": "SPINNING KICK RADIUS",
+        "value": "5m"
+      },
+      {
+        "label": "FLYING KICK CASTING WINDOW",
+        "value": "5s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Edge Dancer first\u2011effect radius increased 3m \u2192 5m"
+  },
+  "spell6": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "STRAIGHT SHOOTER",
+    "description": "Switch the Red Room Rifle to Sniper mode to fire high-energy rounds.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast direct hit"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "120 damage per hit"
+      },
+      {
+        "label": "AMMO",
+        "value": "15"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "0.83/s"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Shares the same magazine with Red Room Rifle."
+      },
+      {
+        "label": "ADS TIME",
+        "value": "0.3s"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Magazine capacity increased 8 \u2192 15"
+  }
+}

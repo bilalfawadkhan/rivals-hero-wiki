@@ -1,0 +1,253 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "MJOLNIR BASH",
+    "description": "Wield Mjolnir to strike enemies. When Awakened, Thor can launch lightning arc waves to deal damage",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "45"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "0.6s"
+      },
+      {
+        "label": "RANGE",
+        "value": "4m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "GOD OF THUNDER",
+    "description": "Soar upwards and smite the ground after charging for a duration, inflicting damage on enemies within range",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "A persistent spell field that generates a one-time spell field upon expiration."
+      },
+      {
+        "label": "DAMAGE",
+        "value": "While charging, create a sustained spell field that deals 40 damage every 0.5 seconds, followed by a one-time spell field that deals 220 damage."
+      },
+      {
+        "label": "DURATION",
+        "value": "1.5s"
+      },
+      {
+        "label": "RANGE",
+        "value": "The sustained spell field is cylindrical, measuring 8m in radius and 20m in height, whereas the one-time spell field has an 8m spherical radius"
+      },
+      {
+        "label": "HEIGHT",
+        "value": "9m"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "Ragnarok Rebirth (with Hela & Loki)"
+      },
+      {
+        "label": "CONTROL IMMUNITY",
+        "value": "Immune to control effects while active"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Team\u2011Ups: removed from Voltaic Union (Captain America & Storm)"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "STORM SURGE",
+    "description": "Hold to spin Mjolnir before dashing forward and knocking back enemies",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Charged Dash"
+      },
+      {
+        "label": "MAXIMUM CHARGE TIME",
+        "value": "2s"
+      },
+      {
+        "label": "DASH DISTANCE",
+        "value": "No charge: 10m; Full charge: 20m. When carrying an enemy, the ranges are 6m with no charge and 13m with full"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "No Charge Damage: 40; Full Charge Damage: 60"
+      },
+      {
+        "label": "THORFORCE COST",
+        "value": "1"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "LIGHTNING REALM",
+    "description": "Summon lightning that restores Thorforce based on the number of hit enemies",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Persistent Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "Deal 40 damage when enemies cross the boundaries"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m spherical radius"
+      },
+      {
+        "label": "MAXIMUM CHARGE TIME",
+        "value": "4s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "For each enemy within the spell area, 1 point of Thorforce is restored. Enemies that cross the boundary will be Slowed by 30%"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell5": {
+    "key": "F",
+    "img": "",
+    "name": "AWAKENING RUNE",
+    "description": "Consume Thorforce to enter the Awakened state, granting Bonus Health and enhancing Mjolnir Bash",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Ability Enhancement"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "Projectile Damage: 70, Spell Field Damage: 30 per second"
+      },
+      {
+        "label": "MAX SHIELD DURATION",
+        "value": "2.5s"
+      },
+      {
+        "label": "THORFORCE COST",
+        "value": "3"
+      },
+      {
+        "label": "DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "RANGE",
+        "value": "3m spherical radius"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60 m/s"
+      },
+      {
+        "label": "ATTACK INTERVAL",
+        "value": "The first three stages last for 0.4s each, while the fourth stage lasts for 0.8s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Inflict damage over time on nearby enemies"
+      },
+      {
+        "label": "SHARED COOLDOWN AFTER END",
+        "value": "No"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Removed shared cooldown after the Awakened state ends"
+  },
+  "spell6": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "HAMMER THROW",
+    "description": "Throw Mjolnir forward which then returns",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Launch a single-target projectile that returns after a delayed hit"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "Outward Projectile Damage: 45; Returning Projectile Damage: 20"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "6s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "24m"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "The projectile travels outward at a speed of 60m/s and returns at a speed of 80m/s"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "No"
+      },
+      {
+        "label": "SPECIAL EFFECT -",
+        "value": "Gain 1 point of Thorforce upon hit."
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell7": {
+    "key": "Passive",
+    "img": "",
+    "name": "THORFORCE",
+    "description": "Consume Thorforce to gain Bonus Health. Landing Mjolnir Bash on an enemy instantly recharges Thorforce",
+    "attributes": [
+      {
+        "label": "MAXIMUM THORFORCE",
+        "value": "3"
+      },
+      {
+        "label": "THORFORCE RECOVERY SPEED",
+        "value": "5s per Thorforce"
+      },
+      {
+        "label": "BONUS HEALTH PER THORFORCE",
+        "value": "Each point of Thorforce consumed grants 100 Bonus Health, while abilities that consume 3 points of Thorforce grant 200 Bonus Health"
+      },
+      {
+        "label": "BONUS MAX HEALTH",
+        "value": "200"
+      },
+      {
+        "label": "MJOLNIR BASH ENERGY RECOVERY PER THORFORCE",
+        "value": "5s"
+      },
+      {
+        "label": "THORFORCE CONSUMPTION COOLDOWN",
+        "value": "1.5s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

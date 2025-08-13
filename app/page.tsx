@@ -22,7 +22,7 @@ export default function Home() {
   const refs = useRef<Array<HTMLDivElement | null>>([]);
   let offtop:number | undefined = 0;
   let offsetLeft:number | undefined  = 0 ;
-  const [season, SetSeason] = useState('S0');
+  const [season, SetSeason] = useState('Season0');
   const [position, setPosition] = useState<{
   top: number | string;
   left: number | string;
@@ -124,10 +124,10 @@ useEffect(() =>{
         <DropdownMenuLabel>Panel Position</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={season} onValueChange={SetSeason}>
-          <DropdownMenuRadioItem value="S0">Season 0</DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="S1">Season 1</DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="S2">Season 2</DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="S3">Season 3</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="Season0">Season 0</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="Season1">Season 1</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="Season2">Season 2</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="Season3">Season 3</DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
@@ -178,7 +178,6 @@ useEffect(() =>{
                     <p className="text-white text-sm p-1">Hero Update Changes</p>
                     </div>
                     <div className=" relative h-1/2 w-full bg-green-600">
-                    <p className="text-white text-sm p-1">Hero CrossHair and Teamup ability</p>
                     </div>
                     </div>
                     
@@ -198,9 +197,9 @@ useEffect(() =>{
       isActive ={activeId == index + 1 } activeId={activeId} setActiveId = {setActiveId} compID ={index + 1} />
         ))} */}
          <Portrait src="/hero-prestige-images/adam-warlock_prestige.png" alt="My Portrait" heroName="PSYLOCKE" herotype="Strategist" 
-      isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} compID ={1}/>
+      isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} compID ={1} setScaledIndex = {setScaledIndex}/>
           <Portrait src="/jeff.webp" alt="My Portrait" heroName="PSYLOCKE" herotype="STRATEGIST" 
-     isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  compID ={2}/>
+     isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  compID ={2} setScaledIndex = {setScaledIndex} />
       </div>
       </>
     );

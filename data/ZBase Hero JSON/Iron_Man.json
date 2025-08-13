@@ -1,0 +1,88 @@
+{
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "REPULSOR BLAST",
+    "description": "Fire nano pulse cannons forward.",
+    "attributes": [
+      { "label": "CASTING", "value": "Straight-line projectile that generates a spell field upon impact" },
+      { "label": "DAMAGE", "value": "35 (Normal Attack)" },
+      { "label": "AMMO", "value": "100" },
+      { "label": "AMMO CONSUMPTION", "value": "10 (Normal Attack)" },
+      { "label": "FIRE RATE", "value": "1.67/s (Normal Attack)" },
+      { "label": "RANGE", "value": "3m spherical radius (Normal Attack)" },
+      { "label": "CRITICAL HIT", "value": "No" },
+      { "label": "PROJECTILE SPEED", "value": "60m/s (Normal Attack)" },
+      { "label": "SPELL FIELD DAMAGE", "value": "35 (Normal Attack)" },
+      { "label": "SPELL FIELD DAMAGE FALLOFF", "value": "40% falloff at 3m (Normal Attack)" },
+      { "label": "SPECIAL EFFECT", "value": "After firing the one-handed repulsor twice in a row, the next attack will fire two repulsors at once  ⚬ Repulsor Blast and Unibeam share the same ammo count" }
+    ]
+  },
+  "spell2": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "UNIBEAM",
+    "description": "Fire nano pulse cannons forward.",
+    "attributes": [
+      { "label": "CASTING", "value": "Channeled" },
+      { "label": "DAMAGE", "value": "140/s (Normal Attack)" },
+      { "label": "AMMO", "value": "100 (Normal Attack)" },
+      { "label": "AMMO CONSUMPTION", "value": "10/s" },
+      { "label": "RANGE", "value": "25m" },
+      { "label": "SPECIAL EFFECT", "value": "Repulsor Blast and Unibeam share the same ammo count" }
+    ]
+  },
+  "spell3": {
+    "key": "",
+    "img": "",
+    "name": "INVINCIBLE PULSE CANNON",
+    "description": "Fire a devastating pulse cannon in the targeted direction, delivering catastrophic damage to the targeted area upon impact.",
+    "attributes": [
+      { "label": "CASTING", "value": "Straight-line projectile that generates a spell field upon impact" },
+      { "label": "DAMAGE", "value": "300/s" },
+      { "label": "PROJECTILE SPEED", "value": "25m/s" },
+      { "label": "SPELL FIELD RANGE", "value": "10m spherical radius (Spell Field)" },
+      { "label": "SPELL FIELD DAMAGE", "value": "1000" },
+      { "label": "SPELL FIELD DAMAGE FALLOFF", "value": "5% falloff at 10m" },
+      { "label": "ENERGY COST", "value": "3400" },
+      { "label": "SPECIAL EFFECT", "value": "As the projectile travels, it creates a dispersive spell field that deals Damage Over Time to nearby enemies" }
+    ]
+  },
+  "spell4": {
+    "key": "",
+    "img": "",
+    "name": "HYPER-VELOCITY",
+    "description": "Activate Hyper-Velocity state for swift forward flight.",
+    "attributes": [
+      { "label": "CASTING", "value": "Movement" },
+      { "label": "MAXIMUM ENERGY", "value": "120 (Hyper-Velocity)" },
+      { "label": "ENERGY RECOVERY SPEED", "value": "10/s" },
+      { "label": "MOVEMENT BOOST", "value": "100%" }
+    ]
+  },
+  "spell5": {
+    "key": "",
+    "img": "",
+    "name": "ARMOR OVERDRIVE",
+    "description": "Activate Armor Overdrive state, enhancing the damage of Repulsor Blast and Unibeam.",
+    "attributes": [
+      { "label": "DURATION", "value": "10s" },
+      { "label": "BONUS HEALTH", "value": "50" }
+    ]
+  },
+  "spell6": {
+    "key": "",
+    "img": "",
+    "name": "MICRO-MISSILE BARRAGE",
+    "description": "When Hyper-Velocity or Armor Overdrive is used, Iron Man can launch a missile bombardment.",
+    "attributes": [
+      { "label": "CASTING", "value": "Scatter-type projectile that generates a spell area upon impact" },
+      { "label": "AMMO", "value": "16 (Micro-Missile Barrage)" },
+      { "label": "COOLDOWN", "value": "8s (Micro-Missile Barrage)" },
+      { "label": "RANGE", "value": "2m spherical radius" },
+      { "label": "PROJECTILE SPEED", "value": "15m/s (Micro-Missile Barrage)" },
+      { "label": "SPELL FIELD DAMAGE", "value": "20 per round (Micro-Missile Barrage)" },
+      { "label": "SPECIAL EFFECT", "value": "Launch missiles directly beneath Iron Man (Micro-Missile Barrage)  ⚬ Launch in the direction of Iron Man's crosshair (Armor Overdrive)" }
+    ]
+  }
+}

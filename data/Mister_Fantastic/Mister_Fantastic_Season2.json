@@ -1,0 +1,275 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "STRETCH PUNCH",
+    "description": "Stretch out a forward punch to attack enemies.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Straight Spell Field"
+      },
+      {
+        "label": "AMMO",
+        "value": "\u221e"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "1.1s per hit"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "None"
+      },
+      {
+        "label": "SPELL FIELD RANGE",
+        "value": "15m"
+      },
+      {
+        "label": "SPELL FIELD DAMAGE",
+        "value": "65"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Swinging your arms can attack multiple targets"
+      },
+      {
+        "label": "ELASTICITY GAIN PER HIT",
+        "value": "8"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Stretch Punch damage 60 \u2192 65; Elasticity per hit 5 \u2192 8"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "BRAINIAC BOUNCE",
+    "description": "Leap upward and smash the ground, slowing enemies within range. Can leap again upon landing a hit.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Spherical Spell Field"
+      },
+      {
+        "label": "RANGE",
+        "value": "10m spherical radius"
+      },
+      {
+        "label": "SPELL FIELD DAMAGE",
+        "value": "Initial 70, Each Additional Leap +14, Max 140"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Start at 3m, 50% falloff at 10m"
+      },
+      {
+        "label": "SLOW RATE",
+        "value": "Per Leap -10%, Can Stack, Max -60%"
+      },
+      {
+        "label": "SLOW DURATION",
+        "value": "3s"
+      },
+      {
+        "label": "MINIMUM LEAPS",
+        "value": "3"
+      },
+      {
+        "label": "MAXIMUM LEAPS",
+        "value": "6"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3400"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "After the minimum number of leaps, each additional leap must hit an enemy to trigger the next one"
+      },
+      {
+        "label": "BONUS HEALTH ON CAST",
+        "value": "400"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Grants Bonus Health on cast equal to inflated state (400)"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "REFLEXIVE RUBBER",
+    "description": "Stretch body to absorb damage before launching stored damage in the targeted direction.",
+    "attributes": [
+      {
+        "label": "SHIELD VALUE",
+        "value": "300"
+      },
+      {
+        "label": "MAXIMUM DURATION",
+        "value": "3s"
+      },
+      {
+        "label": "SELF SLOW RATE",
+        "value": "-35%"
+      },
+      {
+        "label": "DAMAGE ABSORBED",
+        "value": "DAMAGE REFLECTED CONVERSION RATE - 60%"
+      },
+      {
+        "label": "REFLECTED PROJECTILE SPEED",
+        "value": "80 m/s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "FLEXIBLE ELONGATION",
+    "description": "Gain a shield, select a target, and dash towards them, dealing damage to enemies and granting Shield to allies.",
+    "attributes": [
+      {
+        "label": "MAXIMUM SELECT DISTANCE",
+        "value": "15m"
+      },
+      {
+        "label": "BONUS HEALTH (SELF)",
+        "value": "75"
+      },
+      {
+        "label": "BONUS HEALTH (ALLY)",
+        "value": "75"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "30"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "GAINED ELASTICITY",
+        "value": "20"
+      },
+      {
+        "label": "CHARGES",
+        "value": "2"
+      },
+      {
+        "label": "LANDING SPELL FIELD RADIUS",
+        "value": "5m"
+      },
+      {
+        "label": "LANDING KNOCKBACK",
+        "value": "Yes (launches outward)"
+      },
+      {
+        "label": "SLOW RATE ON ENEMIES",
+        "value": "35% (on landing)"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Adds 35% slow to enemies on landing; cooldown 10s \u2192 8s"
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "DISTENDED GRIP",
+    "description": "Extend arms forward to entangle an enemy, then press  to pull the hit enemy toward you, or select and yank another enemy, knocking them airborne against each other.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Projectile that fires in a straight trajectory"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60 m/s"
+      },
+      {
+        "label": "INITIAL PROJECTILE RANGE",
+        "value": "20m"
+      },
+      {
+        "label": "SECONDARY RELEASE MAXIMUM DISTANCE",
+        "value": "25m"
+      },
+      {
+        "label": "INITIAL PROJECTILE DAMAGE",
+        "value": "20"
+      },
+      {
+        "label": "SECONDARY PROJECTILE DAMAGE",
+        "value": "20"
+      },
+      {
+        "label": "SINGLE",
+        "value": "TARGET PULL RANGE - 10m"
+      },
+      {
+        "label": "SINGLE",
+        "value": "TARGET PULL DAMAGE - 50"
+      },
+      {
+        "label": "DUAL",
+        "value": "TARGET PULL DAMAGE - 30"
+      },
+      {
+        "label": "GAINED ELASTICITY",
+        "value": "30"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell6": {
+    "key": "Passive",
+    "img": "",
+    "name": "ELASTIC STRENGTH",
+    "description": "Using abilities generates Elasticity, boosting attack power. Reaching full Elasticity triggers an Inflated state that grants Shield and boosts even more damage.",
+    "attributes": [
+      {
+        "label": "MAX ELASTICITY",
+        "value": "100"
+      },
+      {
+        "label": "INFLATED DURATION",
+        "value": "6s"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "80"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "8m"
+      },
+      {
+        "label": "ATTACK INTERVAL",
+        "value": "0.92s per hit"
+      },
+      {
+        "label": "BONUS HEALTH",
+        "value": "400"
+      },
+      {
+        "label": "ELASTICITY GAIN (PER ABILITY USE)",
+        "value": "20"
+      },
+      {
+        "label": "BASE HEALTH",
+        "value": "375"
+      }
+    ],
+    "change": 2,
+    "changeDescription": "Inflated Bonus Health 450 \u2192 400; per\u2011ability Elasticity 30 \u2192 20"
+  }
+}

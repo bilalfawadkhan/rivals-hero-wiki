@@ -1,0 +1,209 @@
+{
+  
+  "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "NIGHTSWORD THORN",
+    "description": "Throw Nightsword thorns.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast hitscan"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "75"
+      },
+      {
+        "label": "AMMO",
+        "value": "8"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "2/s"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "GODDESS OF DEATH",
+    "description": "Soar into the sky and unleash Nastrond Crows from each hand at will.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Straight-line projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "125"
+      },
+      {
+        "label": "DURATION",
+        "value": "10s"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "1.79/s"
+      },
+      {
+        "label": "RANGE",
+        "value": "6m spherical radius"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "80m/s"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "32% falloff at 4m"
+      },
+      {
+        "label": "ABILITY HEALTH",
+        "value": "1000"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "ASTRAL FLOCK",
+    "description": "Transform into a Nastrond Crow to glide forth, press again to undo the transformation.",
+    "change": 2,
+    "changeDescription": "Cooldown increased from 12s to 15s",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Dash"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s"
+      },
+      {
+        "label": "DASH SPEED",
+        "value": "15m/s"
+      },
+      {
+        "label": "DASH DISTANCE",
+        "value": "18m"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Invincible while transformed"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "SOUL DRAINER",
+    "description": "Project an explosive Hel sphere to Stun nearby enemies.",
+    "change": 1,
+    "changeDescription": "Cooldown reduced from 12s to 10s",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Arced projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "1 (projectile) - 40 (spell field damage)"
+      },
+      {
+        "label": "DURATION",
+        "value": "0.3s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "10s"
+      },
+      {
+        "label": "RANGE",
+        "value": "3m spherical radius"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "Right Click",
+    "img": "",
+    "name": "PIERCING NIGHT",
+    "description": "Fire multiple Nightsword thorns that detonate after a delay.",
+    "change": 1,
+    "changeDescription": "Spell field damage increased from 30 to 35",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Straight-line projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "10 (per projectile) - 35 (spell field damage per round)"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "80m/s"
+      },
+      {
+        "label": "NUMBER OF PROJECTILES",
+        "value": "4"
+      },
+      {
+        "label": "ABILITY DELAY",
+        "value": "3s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Projectiles stick to enemies on hit"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "Passive",
+    "img": "",
+    "name": "NASTROND CROWSTORM",
+    "description": "Defeating an enemy will generate a Nastrond Crow, exploding after a duration.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "DAMAGE",
+        "value": "80"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m spherical radius"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "Space",
+    "img": "",
+    "name": "HEL'S DESCENT",
+    "description": "Hold Space to fall slowly.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": []
+  },
+  "spell8": {
+    "key": "Passive",
+    "img": "",
+    "name": "QUEEN OF HEL",
+    "description": "When Hela lands a final hit in defeating an enemy, she can instantly resurrect Loki and Thor in the respawn phase, or grant them Bonus Health if they are still alive.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": []
+  }
+}

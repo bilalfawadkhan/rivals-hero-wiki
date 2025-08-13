@@ -1,0 +1,289 @@
+{
+  "season": "2",
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "TELEPATHIC PULSE",
+    "description": "Fire a psionic beam to deal damage; the longer the beam hits, the higher the damage.",
+    "change": 0,
+    "changeDescription": "Launch baseline. Bugfix 2025-05-23: Telepathic Pulse maintains beam/energy on Groot's walls.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Channeled"
+      },
+      {
+        "label": "AMMO",
+        "value": "70"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "Damage increases with energy: 0 - 70/s, 99 - 120/s, full energy - 150/s"
+      },
+      {
+        "label": "ATTACK RANGE",
+        "value": "15.5m"
+      },
+      {
+        "label": "AMMO CONSUMPTION",
+        "value": "10/s"
+      },
+      {
+        "label": "ENERGY GAIN",
+        "value": "Hero: 10/s; Sentience: 15/s; Common summons: 5/s; Shield: 10/s"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "MIND'S AEGIS",
+    "description": "Create a levitating barrier at the designated location.",
+    "change": 0,
+    "changeDescription": "Launch baseline.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Deployable Shield"
+      },
+      {
+        "label": "MAXIMUM SHIELD VALUE",
+        "value": "500"
+      },
+      {
+        "label": "RECOVERY SPEED",
+        "value": "70/s"
+      },
+      {
+        "label": "DELAYED RECOVERY AFTER RELEASE",
+        "value": "2s"
+      },
+      {
+        "label": "REPOSITION COOLDOWN",
+        "value": "3s"
+      },
+      {
+        "label": "COOLDOWN AFTER DESTROYED",
+        "value": "4s"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "PSYCHIC SPEAR",
+    "description": "Seize control of an enemy's sentience\u2014damage dealt to the sentience cascades to the physical form and can be pierced by Telepathic Pulse. When the sentience shatters, it unleashes extra damage on its owner.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast delayed projectile"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "80m/s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "24m"
+      },
+      {
+        "label": "SENTIENCE HEALTH",
+        "value": "25% of target's Max Health"
+      },
+      {
+        "label": "DIRECT HIT DAMAGE",
+        "value": "5"
+      },
+      {
+        "label": "SHATTER DAMAGE",
+        "value": "25% of target's Max Health"
+      },
+      {
+        "label": "LINK BREAK DISTANCE",
+        "value": "Link breaks if target and sentience are >15m apart"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "PSIONIC SEDUCTION",
+    "description": "Project a forward psychic assault that stuns foes and prevents them from unleashing their Ultimate Abilities; if the effect lingers, it gradually commandeers their mind, forcing them to move toward Emma Frost.",
+    "change": 0,
+    "changeDescription": "Launch baseline.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Large-ranged Persistent Spell Field"
+      },
+      {
+        "label": "DURATION",
+        "value": "6s"
+      },
+      {
+        "label": "RANGE",
+        "value": "Cone, 80\u00b0 angle, 30m length"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "80/s; distance falloff begins at 10m to 50% at 30m; angle falloff begins at 7\u00b0 to 80% at 20\u00b0"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3700"
+      },
+      {
+        "label": "CONTROL STACKS",
+        "value": "Enemies accumulate 10 stacks/s while exposed; decay 10/s out of field; control at 15 stacks (once per activation per enemy)"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "DIAMOND FORM",
+    "description": "Activate Diamond Form to transform your attack style while gaining Damage Reduction and becoming Unstoppable.",
+    "change": 0,
+    "changeDescription": "Launch baseline.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Switch Form"
+      },
+      {
+        "label": "DURATION",
+        "value": "8s"
+      },
+      {
+        "label": "DAMAGE REDUCTION",
+        "value": "30%"
+      },
+      {
+        "label": "CONTROL IMMUNITY",
+        "value": "Unstoppable (displacement immunity)"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "FACETED FURY (Diamond)",
+    "description": "In Diamond Form, deliver a crushing double-fisted strike to enemies.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "First & second hit: 50; third hit: 70; fourth hit: 80"
+      },
+      {
+        "label": "ATTACK RANGE",
+        "value": "4m"
+      }
+    ]
+  },
+  "spell8": {
+    "key": "E",
+    "img": "",
+    "name": "CARBON CRUSH (Diamond)",
+    "description": "In Diamond Form, lunge forward to grab an enemy, then execute a back slam to inflict damage.",
+    "change": 0,
+    "changeDescription": "Launch baseline. Bugfix 2025-04-25: Carbon Crush no longer catapults foes underground/off-map.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Dash Based Control"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "30"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "7m"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "5s"
+      },
+      {
+        "label": "CONTROL DURATION",
+        "value": "1.6s"
+      },
+      {
+        "label": "SPECIAL",
+        "value": "Cancels enemy Ultimates during start-up; can grapple airborne targets"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "CRYSTAL KICK (Diamond)",
+    "description": "In Diamond Form, unleash a flying kick forward and knock back enemies; extra damage is dealt if they're propelled into a wall.",
+    "change": 0,
+    "changeDescription": "Launch baseline.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast Spell Field"
+      },
+      {
+        "label": "HIT RANGE",
+        "value": "5m"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "50 (+100 on wall, total 150)"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "2s"
+      },
+      {
+        "label": "MAX KNOCKBACK DISTANCE",
+        "value": "10m"
+      }
+    ]
+  },
+  "spell9": {
+    "key": "Passive",
+    "img": "",
+    "name": "MIND LINK (Team-Up)",
+    "description": "With Psylocke & Magneto: creates a Mental Projection (Duplicate Illusion) in the enemy's perspective that confuses foes by moving and casting abilities. Emma, as the Anchor, gains +100 Max Health.",
+    "change": 0,
+    "changeDescription": "Team-Up introduced: Mind Link (+100 Max Health; illusions 30% dmg).",
+    "attributes": [
+      {
+        "label": "TEAM-UP BONUS",
+        "value": "+100 Max Health (Anchor)"
+      },
+      {
+        "label": "INVISIBILITY DURATION",
+        "value": "1s (on illusion spawn)"
+      },
+      {
+        "label": "DUPLICATE DAMAGE REDUCTION",
+        "value": "70%"
+      },
+      {
+        "label": "DUPLICATE MAX DAMAGE RECEIVED",
+        "value": "150"
+      },
+      {
+        "label": "ILLUSION DAMAGE PROPORTION",
+        "value": "30%"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "30s"
+      }
+    ]
+  }
+}

@@ -1,0 +1,238 @@
+{
+  
+  "spell1": {
+    "key": "Left Click",
+    "img": "",
+    "name": "FIRE CLUSTER",
+    "description": "Launch forward a splittable fireball",
+    "change": 2,
+    "changeDescription": "Shot damage reduced to 6",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Burst Projectile"
+      },
+      {
+        "label": "CHARGES",
+        "value": "6"
+      },
+      {
+        "label": "CHARGE SPEED",
+        "value": "0.33s per use"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "0.6s per round"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "150m/s"
+      },
+      {
+        "label": "SHOT DAMAGE",
+        "value": "6 per round"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 15m, decreasing to 60% at 40m."
+      },
+      {
+        "label": "CROSSHAIR SPREAD RADIUS (AT 10M)",
+        "value": "0.33m"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "SUPERNOVA",
+    "description": "Explode with cosmic fire to deal damage to enemies within range.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "ENERGY COST",
+        "value": "3400"
+      },
+      {
+        "label": "DURATION",
+        "value": "8s"
+      },
+      {
+        "label": "ACTIVATION SHOCK WAVE RANGE",
+        "value": "20m spherical radius"
+      },
+      {
+        "label": "ACTIVATION WAVE DAMAGE",
+        "value": "75"
+      },
+      {
+        "label": "FLAME TORNADO UNLEASH SPEED",
+        "value": "0.7s per use"
+      },
+      {
+        "label": "FLAME TORNADO RANGE",
+        "value": "3m spherical radius; 8m high capsule-shaped spell field."
+      },
+      {
+        "label": "FLAME TORNADO CONTINUOUS DAMAGE",
+        "value": "110/s"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Right Click",
+    "img": "",
+    "name": "BLAZING BLAST",
+    "description": "Launch a fireball to create a Flame Field at the targeted area",
+    "change": 2,
+    "changeDescription": "Charge speed slowed to 3s",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Straight-line projectile that generates a spherical spell field upon impact."
+      },
+      {
+        "label": "CHARGES",
+        "value": "3"
+      },
+      {
+        "label": "CHARGE SPEED",
+        "value": "3s per strike"
+      },
+      {
+        "label": "BLAZING BLAST PROJECTILE SPEED",
+        "value": "80m/s"
+      },
+      {
+        "label": "BLAZING BLAST DAMAGE",
+        "value": "40"
+      },
+      {
+        "label": "FLAME FIELD RANGE",
+        "value": "3m spherical radius"
+      },
+      {
+        "label": "FLAME FIELD DURATION",
+        "value": "6s"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "F",
+    "img": "",
+    "name": "FLAMING METEOR",
+    "description": "Dive towards the ground, dealing damage and detonating Flame Fields hit",
+    "change": 2,
+    "changeDescription": "Cooldown increased to 20s, Bonus Health 50",
+    "attributes": [
+      {
+        "label": "MAX DASH SPEED",
+        "value": "80m/s"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m spherical radius"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "40"
+      },
+      {
+        "label": "FLAME FIELD DETONATION RANGE",
+        "value": "3m spherical radius"
+      },
+      {
+        "label": "FLAME FIELD DETONATION DAMAGE",
+        "value": "55"
+      },
+      {
+        "label": "BONUS HEALTH",
+        "value": "50"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "Shift",
+    "img": "",
+    "name": "PLASMA BODY",
+    "description": "Enter a state of accelerated ascent",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "50%"
+      },
+      {
+        "label": "MAXIMUM ENERGY",
+        "value": "120"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "15/s"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "E",
+    "img": "",
+    "name": "PYRO-PRISON",
+    "description": "Form a fire wall between Fire Fields to burn enemies",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "MAX LINK DISTANCE",
+        "value": "40m"
+      },
+      {
+        "label": "MAX LINK HEIGHT",
+        "value": "2m"
+      },
+      {
+        "label": "FIRE WALL DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "FIRE WALL DAMAGE",
+        "value": "65"
+      },
+      {
+        "label": "PYRO-PRISON CONTINUOUS DAMAGE",
+        "value": "50/s"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "Space",
+    "img": "",
+    "name": "STORM SIBLINGS",
+    "description": "Channel Psionic Might to fortify teammates, granting damage resistance and Bonus Health",
+    "change": 2,
+    "changeDescription": "Cooldown increased to 25s",
+    "attributes": [
+      {
+        "label": "DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "25s"
+      },
+      {
+        "label": "BONUS HEALTH GROWTH",
+        "value": "Generate 5 Bonus Health per 0.1s"
+      }
+    ]
+  },
+  "spell8": {
+    "key": "Passive",
+    "img": "",
+    "name": "PYROKINETIC ENERGY",
+    "description": "Store energy for Inferno Blast Team\u2011Up with Spider\u2011Man",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": []
+  }
+}

@@ -1,0 +1,263 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "BOMBARD MODE",
+    "description": "Fire energy projectiles that deal damage.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Rapid-fire, delayed projectile."
+      },
+      {
+        "label": "DAMAGE",
+        "value": "16 per round"
+      },
+      {
+        "label": "AMMO",
+        "value": "45"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "12.05 rounds per second"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "150m/s"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 10m, decreasing to 40% at 20m"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell2": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "REPAIR MODE",
+    "description": "Shoot bouncing spheres to heal allies.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with delayed impact that also generates a spell field"
+      },
+      {
+        "label": "HEALING",
+        "value": "50/s (allies) - 25/s (self)"
+      },
+      {
+        "label": "DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "AMMO",
+        "value": "8"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "2 rounds per second"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m spherical radius"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60m/s"
+      },
+      {
+        "label": "PROJECTILE SPEED REDUCTION",
+        "value": "7 m/s"
+      },
+      {
+        "label": "SPECIAL EFFECTS",
+        "value": "Bouncing Spheres will bounce off surfaces upon contact, with a maximum of 10 bounces. When they approach injured allies, their speed will reduce to 7m/s"
+      },
+      {
+        "label": "DIRECT HIT HEAL (ALLY)",
+        "value": "55"
+      },
+      {
+        "label": "SELF-HEALING MULTIPLIER",
+        "value": "0.5x of ally healing rate"
+      }
+    ],
+    "change": 2,
+    "changeDescription": "Healing over time reduced 70/s \u2192 50/s; new +55 direct-hit heal; speed reduction 4.5 \u2192 7 m/s"
+  },
+  "spell3": {
+    "key": "Q",
+    "img": "",
+    "name": "C.Y.A.",
+    "description": "Deploy a Cosmic Yarn Amplifier that grants allies a Damage Boost and Bonus Health over time.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Summon"
+      },
+      {
+        "label": "DURATION",
+        "value": "12s"
+      },
+      {
+        "label": "RANGE",
+        "value": "20m"
+      },
+      {
+        "label": "ABILITY HEALTH",
+        "value": "800"
+      },
+      {
+        "label": "DAMAGE BOOST",
+        "value": "25%"
+      },
+      {
+        "label": "BONUS HEALTH",
+        "value": "100/s, capped at 150"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "4000"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Bonus Health falls off after 1s at 75/s when link breaks"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "Ammo Overload (Punisher & Winter Soldier); Planet X Pals (Groot & Jeff)"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Reworked: 40%\u219225% damage but adds +100/s Bonus Health (cap 150) and energy 3700\u21924000"
+  },
+  "spell4": {
+    "key": "Shift",
+    "img": "",
+    "name": "JETPACK DASH",
+    "description": "Dash forward.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Dash"
+      },
+      {
+        "label": "CHARGES",
+        "value": "2"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "10s per charge"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "8m"
+      }
+    ],
+    "change": 2,
+    "changeDescription": "Cooldown 6s \u2192 10s; distance 10m \u2192 8m"
+  },
+  "spell5": {
+    "key": "E",
+    "img": "",
+    "name": "B.R.B.",
+    "description": "Deploy a Battle Rebirth Beacon that revives a fallen ally and periodically produces armor packs and rocket jet packs.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Summon"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "50m"
+      },
+      {
+        "label": "BONUS HEALTH",
+        "value": "25 (Armor Pack)"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "B.R.B generates an Armor Pack or Rocket Boots every 3s"
+      },
+      {
+        "label": "BEACON HEALTH",
+        "value": "150"
+      },
+      {
+        "label": "DURATION",
+        "value": "300s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell6": {
+    "key": "Space",
+    "img": "",
+    "name": "WILD CRAWL",
+    "description": "Hold Space to run on a wall.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Movement"
+      },
+      {
+        "label": "MOVEMENT SPEED",
+        "value": "10m/s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell7": {
+    "key": "Space",
+    "img": "",
+    "name": "FLYING ACE",
+    "description": "Hold Space to fall slowly.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Movement"
+      },
+      {
+        "label": "MOVEMENT SPEED",
+        "value": "3.5m/s (descending)"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell8": {
+    "key": "C",
+    "img": "",
+    "name": "OLD FRIENDS",
+    "description": "Jeff the Land Shark and Rocket Raccoon can ride on Groot's shoulders, receiving Damage Reduction.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "RANGE",
+        "value": "12m"
+      },
+      {
+        "label": "DAMAGE REDUCTION",
+        "value": "0.35"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Pressing Shift will end the Team-Up with Groot."
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

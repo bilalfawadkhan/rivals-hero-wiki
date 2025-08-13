@@ -1,0 +1,70 @@
+{
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "TRIDENT OF NEPTUNE",
+    "description": "Throw the trident forward, reducing Aquatic Dominion's cooldown upon enemy impact. Critical hits cause Monstro Spawn to enter a berserk state, gaining increased Attack Speed.",
+    "attributes": [
+      { "label": "CASTING", "value": "Projectile with an arced trajectory" },
+      { "label": "DAMAGE", "value": "75" },
+      { "label": "AMMO", "value": "∞" },
+      { "label": "FIRE RATE", "value": "1.09/s" },
+      { "label": "CRITICAL HIT", "value": "Yes" },
+      { "label": "PROJECTILE SPEED", "value": "150m/s" },
+      { "label": "SPECIAL EFFECT", "value": "Each hit charges Aquatic Dominion by 0.084" }
+    ]
+  },
+  "spell2": {
+    "key": "",
+    "img": "",
+    "name": "HORN OF PROTEUS",
+    "description": "Summon Giganto to leap atop enemies within range, disabling their mobility abilities.",
+    "attributes": [
+      { "label": "CASTING", "value": "Cylindrical Spell Field" },
+      { "label": "DAMAGE", "value": "500 (inner circle) - 180 (outer circle)" },
+      { "label": "DURATION", "value": "1.5s" },
+      { "label": "RANGE", "value": "A cylindrical spell field with an inner circle radius of 3.5m, an outer circle radius of 9m, and a height of 3m" },
+      { "label": "MAXIMUM DISTANCE", "value": "30m" },
+      { "label": "ABILITY DELAY", "value": "1.5s" }
+    ]
+  },
+  "spell3": {
+    "key": "",
+    "img": "",
+    "name": "BLESSING OF THE DEEP",
+    "description": "Summon a protective barrier while flying upwards.",
+    "attributes": [
+      { "label": "DURATION", "value": "3s" },
+      { "label": "COOLDOWN", "value": "20s" }
+    ]
+  },
+  "spell4": {
+    "key": "",
+    "img": "",
+    "name": "AQUATIC DOMINION",
+    "description": "Summon a Monstro Spawn that can autonomously attack enemies.",
+    "attributes": [
+      { "label": "CASTING", "value": "Arced Trajectory (Summon Monstro Spawn) - Direct Hit (Monstro Spawn)" },
+      { "label": "DAMAGE", "value": "17 (Default) - 11 (Enhanced)" },
+      { "label": "DURATION", "value": "8s (Summon Monstro Spawn) - 2s (Enhance Duration)" },
+      { "label": "CHARGES", "value": "2" },
+      { "label": "FIRE RATE", "value": "2/s (Default) - 5/s (Enhanced)" },
+      { "label": "RANGE", "value": "40m" },
+      { "label": "MAXIMUM QUANTITY", "value": "2" },
+      { "label": "PROJECTILE SPEED", "value": "30m/s (Summon Monstro Spawn)" },
+      { "label": "DAMAGE FALLOFF", "value": "Falloff begins at 20m, decreasing to 50% at 40m" }
+    ]
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "WRATH OF THE SEVEN SEAS",
+    "description": "Launch the trident forward to damage nearby enemies, then direct all Monstro Spawn to perform an enhanced attack on the nearest hit enemy. When the trident hits an enemy, Monstro Spawn to enter a berserk state, gaining increased Attack Speed.",
+    "attributes": [
+      { "label": "CASTING", "value": "Arced projectile that generates a spell field upon impact" },
+      { "label": "DAMAGE", "value": "40 (Default) - 60 (Enhanced)" },
+      { "label": "RANGE", "value": "3m spherical radius" },
+      { "label": "PROJECTILE SPEED", "value": "150m/s" }
+    ]
+  }
+}

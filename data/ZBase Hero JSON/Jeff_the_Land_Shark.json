@@ -1,0 +1,114 @@
+{
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "JOYFUL SPLASH",
+    "description": "Unleash a healing splash.",
+    "attributes": [
+      { "label": "CASTING", "value": "Rapid-fire, delayed projectile" },
+      { "label": "HEALING AMOUNT", "value": "130/s" },
+      { "label": "DAMAGE", "value": "70/s" },
+      { "label": "DAMAGE FALLOFF", "value": "Falloff begins at 20m, decreasing to a maximum of 65% at 40m" },
+      { "label": "AMMO", "value": "100" },
+      { "label": "FIRE RATE", "value": "20/s" }
+    ]
+  },
+  "spell2": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "AQUA BURST",
+    "description": "Launch a high-speed water sphere that bursts upon impact, dealing damage to enemies within range.",
+    "attributes": [
+      { "label": "CASTING", "value": "Single-cast projectile with delayed impact that also generates a spell field" },
+      { "label": "DAMAGE", "value": "25" },
+      { "label": "SPELL FIELD DAMAGE", "value": "45" },
+      { "label": "DAMAGE FALLOFF", "value": "Falloff begins at 1m, decreasing to 50% at 3m (projectile damage has no falloff)" },
+      { "label": "AMMO", "value": "12" },
+      { "label": "FIRE RATE", "value": "1.75/s" },
+      { "label": "RANGE", "value": "3m spherical radius" },
+      { "label": "CRITICAL HIT", "value": "No" },
+      { "label": "PROJECTILE SPEED", "value": "100m/s" },
+      { "label": "COOLDOWN", "value": "3s per charge" },
+      { "label": "CHARGES", "value": "3" },
+      { "label": "SPECIAL EFFECT -", "value": "Direct hits can launch enemies up" }
+    ]
+  },
+  "spell3": {
+    "key": "",
+    "img": "",
+    "name": "IT'S JEFF!",
+    "description": "Deep dive into the scene and resurface to swallow both enemies and allies within range, activating Hide and Seek for a brief duration before ejecting the swallowed heroes forward.",
+    "attributes": [
+      { "label": "CASTING", "value": "Targeted" },
+      { "label": "DAMAGE", "value": "25/s" },
+      { "label": "HEALING", "value": "225/s" },
+      { "label": "BONUS HEALTH (ALLY)", "value": "Overflow healing on swallowed allies grants 45 Health per second as Bonus Health, up to 150" },
+      { "label": "DURATION", "value": "6s" },
+      { "label": "RANGE", "value": "5m high cylinder with a 20m diameter" },
+      { "label": "ENERGY COST", "value": "4500" },
+      { "label": "SPECIAL EFFECT", "value": "After swallowing allies and enemies, Jeff will deal damage to enemies and heal allies for the duration of the effect, during which they will also benefit from Hide and Seek" }
+    ]
+  },
+  "spell4": {
+    "key": "",
+    "img": "",
+    "name": "HIDE AND SEEK",
+    "description": "Dive into the scene with only his dorsal fin exposed, granting himself a Movement Boost. Jeff can heal while submerged and gains the wall-crawl ability.",
+    "attributes": [
+      { "label": "CASTING", "value": "Instant Cast" },
+      { "label": "HEALING", "value": "35/s" },
+      { "label": "MOVEMENT BOOST", "value": "60%" },
+      { "label": "MAXIMUM ENERGY", "value": "120" },
+      { "label": "ENERGY COST", "value": "20/s" },
+      { "label": "ENERGY RECOVERY SPEED", "value": "15/s" },
+      { "label": "SPECIAL EFFECT", "value": "During the duration of the dive, gain Passive Healing, Movement Boost, and Stun Immunity." }
+    ]
+  },
+  "spell5": {
+    "key": "",
+    "img": "",
+    "name": "HEALING BUBBLE",
+    "description": "Spit a bubble that heals the ally who collects it, granting them Healing Boost and Movement Boost while also launching up nearby enemies.",
+    "attributes": [
+      { "label": "CASTING", "value": "Summons" },
+      { "label": "HEALING AMOUNT", "value": "30/s" },
+      { "label": "HEALING BOOST", "value": "15%" },
+      { "label": "MOVEMENT BOOST", "value": "60%" },
+      { "label": "BUFF DURATION", "value": "4s" },
+      { "label": "DURATION", "value": "180s" },
+      { "label": "CHARGES", "value": "3" },
+      { "label": "COOLDOWN", "value": "6s per charge" },
+      { "label": "SPECIAL EFFECT", "value": "Touching the bubble will immediately activate its effect" }
+    ]
+  },
+  "spell6": {
+    "key": "",
+    "img": "",
+    "name": "OBLIVIOUS CUTENESS",
+    "description": "Reduce damage taken from critical hits.",
+    "attributes": []
+  },
+  "spell7": {
+    "key": "",
+    "img": "",
+    "name": "IT'S JEFF-NADO!",
+    "description": "When Storm activates Omega Hurricane and Jeff the Land Shark's It's Jeff is ready, they can unleash a powerful Team-Up Ability. During this period, Storm's Omega Hurricane merges with Jeff to form a Jeff-nado",
+    "attributes": [
+      { "label": "SELECT RANGE", "value": "60m radius, 90° fan-shaped area in front of Jeff" },
+      { "label": "SWALLOW TIME REQUIRED", "value": "1.2s" },
+      { "label": "WARNING BEFORE SWALLOW", "value": "0.1s" },
+      { "label": "SWALLOW RANGE", "value": "10m spherical radius centered around Storm" },
+      { "label": "SWALLOW DAMAGE", "value": "80" }
+    ]
+  },
+  "spell8": {
+    "key": "",
+    "img": "",
+    "name": "NEW FRIENDS",
+    "description": "Jeff the Land Shark and Rocket Raccoon can ride on Groot's shoulders, receiving Damage Reduction.",
+    "attributes": [
+      { "label": "CASTING", "value": "Targeted" },
+      { "label": "RANGE", "value": "12m" }
+    ]
+  }
+}

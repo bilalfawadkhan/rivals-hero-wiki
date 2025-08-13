@@ -2,7 +2,7 @@
   "spell1": {
     "key": "Left mouse button",
     "img": "",
-    "name": "QUANTUM MAGIC\n",
+    "name": "QUANTUM MAGIC",
     "description": "Launch quantum energy to deal damage. Critical hits reduce the cooldown of Avatar Life Stream.",
     "attributes": [
       { "label": "CASTING", "value": "Single-cast direct hit" },
@@ -18,7 +18,7 @@
   "spell2": {
     "key": "",
     "img": "",
-    "name": "KARMIC REVIVAL\n",
+    "name": "KARMIC REVIVAL",
     "description": "Awaken the karma of allies to revive them. Allies revived have lower health but enjoy a brief period of Invincibility.",
     "attributes": [
       { "label": "CASTING", "value": "Persistent spell field that surrounds the caster" },
@@ -32,7 +32,7 @@
   "spell3": {
     "key": "",
     "img": "",
-    "name": "SOUL BOND\n",
+    "name": "SOUL BOND",
     "description": "Forge a soul bond with allies, granting Healing Over Time and distributing damage taken across the bond.",
     "attributes": [
       { "label": "CASTING", "value": "Instant Cast" },
@@ -41,13 +41,13 @@
       { "label": "DURATION", "value": "6s" },
       { "label": "MAXIMUM DAMAGE SHARED PER TARGET", "value": "250" },
       { "label": "COOLDOWN", "value": "40s" },
-      { "label": "SPECIAL EFFECT", "value": "Adam Warlock will share a portion of the damage sustained by linked allies. If Adam Warlock sustains damage that would KO him due to the link, then the link will be broken, and he will retain 1 Health. The link will also break once enough damage is sustained, if Adam Warlock or the linked ally leave the link's range, or after a certain length of time has passed" }
+      { "label": "SPECIAL EFFECT", "value": "Adam Warlock will share a portion of the damage sustained by linked allies. If Adam Warlock sustains damage that would KO him due to the link, then the link will be broken, and he will retain 1 Health. The link will also break once enough damage is sustained, if Adam Warlock or the linked ally leave the link's range, or after a certain length of time has passed." }
     ]
   },
   "spell4": {
     "key": "",
     "img": "",
-    "name": "AVATAR LIFE STREAM\n",
+    "name": "AVATAR LIFE STREAM",
     "description": "Target an ally for a bouncing stream of healing energy, which also heals himself upon casting; self-targets if no ally is selected.",
     "attributes": [
       { "label": "CASTING", "value": "Targeted" },
@@ -57,13 +57,13 @@
       { "label": "RANGE", "value": "20m spherical radius" },
       { "label": "COOLDOWN", "value": "6s per charge" },
       { "label": "CHARGES", "value": "2" },
-      { "label": "SPECIAL EFFECT", "value": "Bouncing target does not include Adam Warlock" }
+      { "label": "SPECIAL EFFECT", "value": "Bouncing target does not include Adam Warlock." }
     ]
   },
   "spell5": {
     "key": "Right mouse button",
     "img": "",
-    "name": "COSMIC CLUSTER\n",
+    "name": "COSMIC CLUSTER",
     "description": "Gather quantum energy into a cluster and then swiftly launch it at the enemy.",
     "attributes": [
       { "label": "CASTING", "value": "Charged release, with multiple delayed projectiles" },
@@ -77,7 +77,7 @@
   "spell6": {
     "key": "",
     "img": "",
-    "name": "REGENERATIVE COCOON\n",
+    "name": "REGENERATIVE COCOON",
     "description": "Once his body perishes, Adam Warlock can freely move as a soul and reforge his body at a chosen spot.",
     "attributes": []
   }

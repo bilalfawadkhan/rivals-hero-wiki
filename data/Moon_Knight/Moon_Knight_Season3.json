@@ -1,0 +1,275 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "CRESCENT DART",
+    "description": "Unleash Crescent Darts forward that can bounce between enemies and Ankhs, dealing damage to enemies.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Triple shot that fires in a straight trajectory"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "25 per round"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "150m/s"
+      },
+      {
+        "label": "AMMO",
+        "value": "30"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "0.05s between shots - 0.57s between rounds of shooting"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 30m, decreasing to 50% at 50m"
+      },
+      {
+        "label": "MAXIMUM BOUNCE DISTANCE",
+        "value": "7m"
+      },
+      {
+        "label": "NUMBER OF BOUNCES",
+        "value": "3"
+      },
+      {
+        "label": "DAMAGE FALLOFF PER BOUNCE",
+        "value": "-20%"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Projectile speed increased 120m/s \u2192 150m/s"
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "HAND OF KHONSHU",
+    "description": "Open a portal that allows Khonshu to bombard enemies with his talons.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Delayed Spherical Spell Field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "150 per hit"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Begins at 1.5m from center, 70% at 5m"
+      },
+      {
+        "label": "DURATION",
+        "value": "4.5s"
+      },
+      {
+        "label": "RANGE",
+        "value": "8m radius (area of effect) - 5m (projectile explosion)"
+      },
+      {
+        "label": "NUMBER OF HITS",
+        "value": "18"
+      },
+      {
+        "label": "ABILITY DELAY",
+        "value": "1.5s"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "2800"
+      },
+      {
+        "label": "FREQUENCY",
+        "value": "4 hits per second"
+      },
+      {
+        "label": "ACTIVATION DELAY",
+        "value": "1.2s"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Extended duration 3.5s \u2192 4.5s (hits 14 \u2192 18) and added falloff"
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "NIGHT GLIDER",
+    "description": "Hold SHIFT to glide.",
+    "attributes": [
+      {
+        "label": "HORIZONTAL MOVEMENT SPEED",
+        "value": "8.7m/s"
+      },
+      {
+        "label": "DESCENDING SPEED",
+        "value": "1.5m/s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "ANCIENT ANKH",
+    "description": "Fire an Ankh to launch up enemies within its radius towards the center.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Straight-line projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "12s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60m/s"
+      },
+      {
+        "label": "BOUNCING RANGE",
+        "value": "7m spherical radius"
+      },
+      {
+        "label": "PULL-IN RANGE",
+        "value": "5m spherical radius"
+      },
+      {
+        "label": "PULL-IN DAMAGE",
+        "value": "20"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell5": {
+    "key": "F",
+    "img": "",
+    "name": "MOONLIGHT HOOK",
+    "description": "Launch a frontal grappling hook that pulls Moon Knight towards it.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Dash"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s"
+      },
+      {
+        "label": "RANGE",
+        "value": "25m"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "21.5m/s"
+      },
+      {
+        "label": "GRAPPLING HOOK SPEED",
+        "value": "120m/s"
+      },
+      {
+        "label": "GRAPPLING HOOK LENGTH",
+        "value": "25m"
+      },
+      {
+        "label": "STARTUP TIME",
+        "value": "0.15s"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "Pull startup reduced 0.4s \u2192 0.15s"
+  },
+  "spell6": {
+    "key": "Space",
+    "img": "",
+    "name": "RISING LEAP",
+    "description": "Perform a double jump.",
+    "attributes": [
+      {
+        "label": "COOLDOWN",
+        "value": "6s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell7": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "MOON BLADE",
+    "description": "Launch forward a Moon Blade that can bounce between enemies and Ankhs, dealing damage to enemies.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Projectile that fires in a straight trajectory"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "80"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "6s"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "120m/s"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 30m, decreasing to 50% at 50m"
+      },
+      {
+        "label": "MAXIMUM BOUNCE DISTANCE",
+        "value": "7m"
+      },
+      {
+        "label": "NUMBER OF BOUNCES",
+        "value": "3"
+      },
+      {
+        "label": "BONUS HEALTH GENERATED",
+        "value": "25 per hit (up to 100; decays 20/s after 3s)"
+      },
+      {
+        "label": "BONUS HEALTH MAX",
+        "value": "100"
+      },
+      {
+        "label": "BONUS HEALTH DECAY",
+        "value": "20/s after 3s"
+      }
+    ],
+    "change": 1,
+    "changeDescription": "New effect: gains 25 Bonus Health per enemy hit (max 100), decays after 3s"
+  },
+  "spell8": {
+    "key": "V",
+    "img": "",
+    "name": "TRIPLE ECLIPSE",
+    "description": "Perform a combo with his truncheon, and the third strike will launch up the enemy hit slightly.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

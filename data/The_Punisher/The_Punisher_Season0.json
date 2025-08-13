@@ -1,0 +1,309 @@
+{
+  
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "ADJUDICATION",
+    "description": "Fire at enemies with Adjudication, his Automatic Rifle.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Rapid-fire projectile"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "18 damage per round"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 20m, decreasing to 70% at 40m"
+      },
+      {
+        "label": "CROSSHAIR SPREAD RADIUS (AT 10M)",
+        "value": "Up to a 0.09m radius."
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "10 rounds per second"
+      },
+      {
+        "label": "AMMO",
+        "value": "30"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Launch values (pre\u2011S2.5): 18 dmg, 30 ammo"
+  },
+  "spell2": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "DELIVERANCE",
+    "description": "Fire at enemies with Deliverance, his Shotgun.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Shotgun projectiles that hit instantly"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "10 damage per round"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 8m, decreasing to 40% at 15m"
+      },
+      {
+        "label": "BULLETS FIRED EACH CAST",
+        "value": "14"
+      },
+      {
+        "label": "CROSSHAIR SPREAD RADIUS (AT 10M)",
+        "value": "0.6m"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "1.43 rounds per second"
+      },
+      {
+        "label": "AMMO",
+        "value": "8"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell3": {
+    "key": "Q",
+    "img": "",
+    "name": "FINAL JUDGEMENT",
+    "description": "Unleash two Gatling guns and missiles to attack enemies.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Rapid-fire projectiles that hit instantly and have a tracking trajectory"
+      },
+      {
+        "label": "DURATION",
+        "value": "10s"
+      },
+      {
+        "label": "SLOW RATE WHILE IDLING",
+        "value": "-20%"
+      },
+      {
+        "label": "SLOW RATE WHILE SHOOTING",
+        "value": "-40%"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3400"
+      },
+      {
+        "label": "\u25c6 GATLING GUN \nDAMAGE",
+        "value": "8 damage per round"
+      },
+      {
+        "label": "\u25c6 GATLING GUN \nDAMAGE FALLOFF",
+        "value": "Falloff begins at 20m, decreasing to 70% at 40m"
+      },
+      {
+        "label": "\u25c6 GATLING GUN \nCROSSHAIR SPREAD RADIUS (AT 10M)",
+        "value": "Start 0.6m; reduces to 0.3m after 50 shots; 0.15m after 100 shots"
+      },
+      {
+        "label": "\u25c6 GATLING GUN \nFIRE RATE",
+        "value": "33.33 rounds per second"
+      },
+      {
+        "label": "\u25c6 GATLING GUN \nAMMO",
+        "value": "\u221e"
+      },
+      {
+        "label": "\u25c6 GATLING GUN \nCRITICAL HIT",
+        "value": "Yes"
+      },
+      {
+        "label": "\u25c6 SHOULDER-MOUNTED MISSILES \nPROJECTILE SPEED",
+        "value": "60 m/s"
+      },
+      {
+        "label": "\u25c6 SHOULDER-MOUNTED MISSILES \nDAMAGE",
+        "value": "50"
+      },
+      {
+        "label": "\u25c6 SHOULDER-MOUNTED MISSILES \nINTERVAL BETWEEN VOLLEYS",
+        "value": "3s"
+      },
+      {
+        "label": "\u25c6 SHOULDER-MOUNTED MISSILES \nINTERVAL BETWEEN MISSILES",
+        "value": "0.3s"
+      },
+      {
+        "label": "\u25c6 SHOULDER-MOUNTED MISSILES \nMAXIMUM NUMBER OF MISSILES PER VOLLEY",
+        "value": "8"
+      },
+      {
+        "label": "\u25c6 SHOULDER-MOUNTED MISSILES \nMAXIMUM NUMBER OF LOCKED-ON MISSILES PER TARGET",
+        "value": "3"
+      },
+      {
+        "label": "\u25c6 SHOULDER-MOUNTED MISSILES \nMAXIMUM LOCKING DISTANCE",
+        "value": "40m"
+      },
+      {
+        "label": "TEAM-UPS",
+        "value": "Ammo Overload (with Rocket Raccoon & Winter Soldier)"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Movement slow -20% (idle)/-40% (firing); Energy 3400 (pre\u2011S3)"
+  },
+  "spell4": {
+    "key": "Shift",
+    "img": "",
+    "name": "VANTAGE CONNECTION",
+    "description": "Launch a hook to generate a cable that enables the Punisher to move rapidly by pressing F.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Dash"
+      },
+      {
+        "label": "CABLE ATTACHMENT ANGLE",
+        "value": "20\u00b0 - 160\u00b0"
+      },
+      {
+        "label": "CABLE LENGTH",
+        "value": "5m - 35m"
+      },
+      {
+        "label": "DASH SPEED",
+        "value": "25 m/s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "20s"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell5": {
+    "key": "E",
+    "img": "",
+    "name": "CULLING TURRET",
+    "description": "Deploy a Culling Turret that grounds Punisher and blocks damage from the front while dealing massive damage.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Rapid-fire projectiles that create a spell field upon impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "12 damage per round"
+      },
+      {
+        "label": "EXPLOSION DAMAGE",
+        "value": "12 damage per round"
+      },
+      {
+        "label": "EXPLOSION RANGE",
+        "value": "3m spherical radius"
+      },
+      {
+        "label": "CROSSHAIR SPREAD RADIUS (AT 10M)",
+        "value": "Start with a spread radius of 0.2m, which reduces to 0.1m after 10 shots, and further decreases to 0.05m after 20 shots"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "12.5 rounds per second"
+      },
+      {
+        "label": "AMMO",
+        "value": "200"
+      },
+      {
+        "label": "TURRET HEALTH",
+        "value": "600"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "20s"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "None (turret bullets ignore falloff)"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "Launch damage 12/12 (pre\u2011S3)"
+  },
+  "spell6": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "SCOURGE GRENADE",
+    "description": "Throw a smoke grenade forward to obscure enemy vision and leap backward.",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Projectile with an arced trajectory"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "40 m/s"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m spherical radius"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "45"
+      },
+      {
+        "label": "BACKWARD JUMP DISTANCE",
+        "value": "9m"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Create a temporary smokescreen that obstructs vision"
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  },
+  "spell7": {
+    "key": "Passive",
+    "img": "",
+    "name": "WARRIOR'S GAZE",
+    "description": "Retain vision of enemies that disappear from view for a short duration.",
+    "attributes": [
+      {
+        "label": "DURATION",
+        "value": "3s"
+      },
+      {
+        "label": "RANGE",
+        "value": "30m spherical radius"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Retain vision of enemies that disappear from view for a short duration."
+      }
+    ],
+    "change": 0,
+    "changeDescription": "no changes"
+  }
+}

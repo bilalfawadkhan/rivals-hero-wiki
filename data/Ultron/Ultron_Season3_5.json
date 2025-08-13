@@ -1,0 +1,271 @@
+{
+  "season": "3.5",
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "ENCEPHALO-RAY",
+    "description": "Unleash a burning energy beam. Ultron fires a first constant hitscan beam for multiple rounds, then emits a burst of energy as a cylindrical spell field.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "First constant beam; Second single-cast cylindrical spell field"
+      },
+      {
+        "label": "AMMO",
+        "value": "6"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "First beam 6 rounds in 0.5s, 12 per hit; Second single-cast spell field 75 per hit"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 20m, decreasing to 75% at 30m"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "1.58s per round"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "RAGE OF ULTRON",
+    "description": "Summon Ultron Drones to fire Encephalo-Rays, damaging enemies or healing allies. Creates a spell field upon impact; Ultron is Unstoppable during the ultimate and self-heals.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Straight-line projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "120m/s"
+      },
+      {
+        "label": "BEAM DAMAGE",
+        "value": "8"
+      },
+      {
+        "label": "BEAM HEALING AMOUNT",
+        "value": "25"
+      },
+      {
+        "label": "TOTAL RAY AMOUNT",
+        "value": "5"
+      },
+      {
+        "label": "RAY AMOUNT PER SHOT",
+        "value": "5"
+      },
+      {
+        "label": "FIRE INTERVAL BETWEEN SHOTS",
+        "value": "0.2s"
+      },
+      {
+        "label": "ULTIMATE TOTAL FIRE ROUNDS",
+        "value": "5 rounds"
+      },
+      {
+        "label": "FIRE INTERVAL BETWEEN ROUNDS",
+        "value": "0.5s"
+      },
+      {
+        "label": "SPELL FIELD RANGE",
+        "value": "3m spherical radius"
+      },
+      {
+        "label": "DURATION",
+        "value": "9s"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3400"
+      },
+      {
+        "label": "ULTIMATE SELF-HEALING",
+        "value": "50/s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Ultron gains Unstoppable during the duration"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "IMPERATIVE: FIREWALL",
+    "description": "Summon drones to grant Bonus Health to allies within range, centered on Ultron and the ally marked by Imperative: Patch.",
+    "change": 2,
+    "changeDescription": "Bonus Health reduced: self 75\u219265; allies 55\u219250",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Instant Cast"
+      },
+      {
+        "label": "BONUS HEALTH TO ULTRON",
+        "value": "65"
+      },
+      {
+        "label": "BONUS HEALTH TO ALLIES NEAR ULTRON AND THE DRONES",
+        "value": "50"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "10s"
+      },
+      {
+        "label": "RANGE",
+        "value": "8m spherical radius"
+      },
+      {
+        "label": "BONUS HEALTH FALLOFF BEGINS AT",
+        "value": "3s"
+      },
+      {
+        "label": "BONUS HEALTH FALLOFF SPEED",
+        "value": "40/s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Grants Bonus Health to Ultron and allies within range; affects the ally designated by Imperative: Patch"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "IMPERATIVE: PATCH",
+    "description": "Command a giant drone to follow an ally, constantly healing allies in its radius (higher HPS on the designated ally).",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "TARGET DISTANCE",
+        "value": "25m"
+      },
+      {
+        "label": "HEALING AMOUNT TO THE TARGETED ALLY",
+        "value": "45/s"
+      },
+      {
+        "label": "HEALING AMOUNT TO OTHER ALLIES WITHIN RANGE",
+        "value": "30/s"
+      },
+      {
+        "label": "DRONE HEALING RANGE",
+        "value": "8m spherical radius"
+      },
+      {
+        "label": "MAXIMUM VISION",
+        "value": "30m"
+      },
+      {
+        "label": "MAX TOLERANCE DURATION OUT OF SIGHT",
+        "value": "5s"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "DYNAMIC FLIGHT",
+    "description": "Fly quickly in the direction of movement and then enter an Accelerated state.",
+    "change": 2,
+    "changeDescription": "Accelerate duration reduced 8s \u2192 6s",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Dash"
+      },
+      {
+        "label": "DASH DIRECTION",
+        "value": "Reticle direction combined with key input"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "DASH DISTANCE",
+        "value": "12m"
+      },
+      {
+        "label": "ACCELERATE DURATION",
+        "value": "6s"
+      },
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "40%"
+      },
+      {
+        "label": "BONUS HEALTH (SELF)",
+        "value": "50"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Triggers a one-time dash followed by a constant accelerated effect"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "C",
+    "img": "",
+    "name": "NANO RAY (Team-Up)",
+    "description": "With Iron Man (Stark Protocol): Ultron channels a piercing Nano Ray that damages enemies and heals allies.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Channeled"
+      },
+      {
+        "label": "AMMO",
+        "value": "\u221e"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "No"
+      },
+      {
+        "label": "RANGE",
+        "value": "2.5m radius, infinite length cylindrical spell field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "70/s"
+      },
+      {
+        "label": "DAMAGE FALLOFF",
+        "value": "Falloff begins at 20m, decreasing to 75% at 30m"
+      },
+      {
+        "label": "HEAL",
+        "value": "85/s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "30s"
+      },
+      {
+        "label": "SPELL FIELD DURATION",
+        "value": "8s"
+      },
+      {
+        "label": "TEAM-UP",
+        "value": "Stark Protocol (Iron Man Anchor; also pairs with Squirrel Girl for Squirrel Missile)"
+      }
+    ]
+  }
+}

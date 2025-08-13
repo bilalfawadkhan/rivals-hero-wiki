@@ -1,0 +1,107 @@
+{
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "SAVAGE CLAW",
+    "description": "Slash with Adamantium claws for a Claw Strike. Unleashing Feral Leap will enhance it to Berserk Claw Strike for a brief period.",
+    "attributes": [
+      { "label": "CASTING", "value": "Melee" },
+      { "label": "BASED DAMAGE", "value": "15" },
+      { "label": "PERCENTAGE DAMAGE", "value": "Deal damage equal to 1.5% of the target's Max Health, with an extra 0.045% damage for each point of Rage" },
+      { "label": "MAXIMUM DISTANCE", "value": "3.5" }
+    ]
+  },
+  "spell2": {
+    "key": "",
+    "img": "",
+    "name": "LAST STAND",
+    "description": "Knock enemies ahead airborne and spiral through the air, sweeping up enemies along the path and delivering a devastating impact at the landing point.",
+    "attributes": [
+      { "label": "CASTING", "value": "Area" },
+      { "label": "KNOCKBACK RANGE", "value": "8m spherical radius" },
+      { "label": "KNOCKBACK DAMAGE", "value": "50" },
+      { "label": "SNATCHING DAMAGE OVER TIME", "value": "20/s" },
+      { "label": "IMPACT RANGE", "value": "8m spherical radius" },
+      { "label": "IMPACT BASE DAMAGE", "value": "50" },
+      { "label": "IMPACT PERCENTAGE DAMAGE", "value": "Deal damage equal to 10% of the target's Max Health, with an extra 0.3% damage for each point of Rage" }
+    ]
+  },
+  "spell3": {
+    "key": "",
+    "img": "",
+    "name": "FERAL LEAP",
+    "description": "Leap like an animal to snatch the first enemy upon impact and Smash them to the ground. Unleashing this ability will enhance his normal attack to Berserk Claw Strike for a brief period.",
+    "attributes": [
+      { "label": "CASTING", "value": "Jump Melee" },
+      { "label": "SNATCH DAMAGE", "value": "35" },
+      { "label": "SMASH DAMAGE", "value": "35" },
+      { "label": "KNOCKDOWN DURATION", "value": "0.75s" },
+      { "label": "BERSERK CLAW STRIKE DURATION", "value": "5s" },
+      { "label": "BERSERK CLAW STRIKE BASE DAMAGE", "value": "6" },
+      { "label": "BERSERK CLAW STRIKE MAXIMUM DISTANCE", "value": "3.5" },
+      { "label": "BERSERK CLAW STRIKE ATTACK INTERVAL", "value": "5.88 strikes per second" },
+      { "label": "LEAP DISTANCE", "value": "20m" }
+    ]
+  },
+  "spell4": {
+    "key": "",
+    "img": "",
+    "name": "UNDYING ANIMAL",
+    "description": "Unleash a fierce howl to briefly reduce incoming damage.",
+    "attributes": [
+      { "label": "CASTING", "value": "Self" },
+      { "label": "DURATION", "value": "5s" },
+      { "label": "DAMAGE BOOST", "value": "40%" }
+    ]
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "VICIOUS RAMPAGE",
+    "description": "Dash forward and unleash a Claw Strike.",
+    "attributes": [
+      { "label": "CASTING", "value": "Movement-based damage ability" },
+      { "label": "AVERAGE SPEED", "value": "44m/s" },
+      { "label": "DAMAGE", "value": "15" },
+      { "label": "COOLDOWN", "value": "3s" },
+      { "label": "RANGE", "value": "3m" }
+    ]
+  },
+  "spell6": {
+    "key": "",
+    "img": "",
+    "name": "REGENERATIVE HEALING FACTOR",
+    "description": "Begin to heal and rise with a hefty Bonus Health, shaking off all debuffs. After a brief moment, any remaining Bonus Health morphs into a one-off heal, zeroing out his Rage. Assists in KOs reduce this cooldown.",
+    "attributes": [
+      { "label": "CASTING", "value": "Self" },
+      { "label": "COOLDOWN", "value": "90s" },
+      { "label": "BONUS HEALTH", "value": "150 - 300 (Damage increases with Rage)" },
+      { "label": "BONUS HEALTH DURATION", "value": "3s" },
+      { "label": "BONUS HEALTH/HEALING CONVERSION", "value": "1" }
+    ]
+  },
+  "spell7": {
+    "key": "",
+    "img": "",
+    "name": "BERSERKER RAGE",
+    "description": "Rage builds when Wolverine attacks or takes hits, boosting the damage of his Claw Strikes and the Bonus Health from his regenerative healing factor.",
+    "attributes": [
+      { "label": "CASTING", "value": "Self" },
+      { "label": "MAX RAGE", "value": "100" },
+      { "label": "RAGE PER SAVAGE CLAW HIT", "value": "7" },
+      { "label": "RAGE PER VICIOUS RAMPAGE HIT", "value": "20" },
+      { "label": "RAGE PER FERAL LEAP SNATCH", "value": "20" },
+      { "label": "RAGE PER BERSERK CLAW STRIKE HIT", "value": "7" },
+      { "label": "RAGE PER LAST STAND KNOCKBACK", "value": "25" }
+    ]
+  },
+  "spell8": {
+    "key": "",
+    "img": "",
+    "name": "METAL CANNONBALL",
+    "description": "Wolverine, Hulk, and The Thing can interact with each other. Once both parties confirm, Hulk can lift Wolverine and press the key to hurl him forward.",
+    "attributes": [
+      { "label": "DURATION", "value": "5s Maximum" }
+    ]
+  }
+}

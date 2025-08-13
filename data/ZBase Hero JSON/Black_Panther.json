@@ -1,0 +1,82 @@
+{
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "VIBRANIUM CLAWS",
+    "description": "Slice Vibranium Claws forward.",
+    "attributes": [
+      { "label": "CASTING", "value": "Melee" },
+      { "label": "DAMAGE", "value": "35" },
+      { "label": "MAXIMUM DISTANCE", "value": "3m" }
+    ]
+  },
+  "spell2": {
+    "key": "",
+    "img": "",
+    "name": "BAST'S DESCENT",
+    "description": "Summon Bast, pouncing forward, dealing damage, and attaching a Vibranium Mark to enemies hit while refreshing Spirit Rend.",
+    "attributes": [
+      { "label": "CASTING", "value": "Cuboid Spell Field" },
+      { "label": "RANGE", "value": "Length: 22m, Width: 20m, Height: 7m" },
+      { "label": "CASTING ANGLE", "value": "150°" },
+      { "label": "DAMAGE", "value": "150" }
+    ]
+  },
+  "spell3": {
+    "key": "",
+    "img": "",
+    "name": "SPIRIT REND",
+    "description": "Lunge forward and deal damage to enemies. Vibranium Mark produces Bonus Health and refreshes the ability.",
+    "attributes": [
+      { "label": "CASTING", "value": "Movement-based damage ability" },
+      { "label": "AVERAGE SPEED", "value": "50m/s" },
+      { "label": "MAXIMUM DISTANCE", "value": "15m" },
+      { "label": "DAMAGE", "value": "80" },
+      { "label": "BONUS HEALTH", "value": "30" },
+      { "label": "BONUS MAX HEALTH", "value": "75" }
+    ]
+  },
+  "spell4": {
+    "key": "",
+    "img": "",
+    "name": "SPINNING KICK",
+    "description": "Spiral forward and attach a Vibranium Mark to hit enemies",
+    "attributes": [
+      { "label": "CASTING", "value": "Movement-based damage ability" },
+      { "label": "AVERAGE SPEED", "value": "15m/s" },
+      { "label": "MAXIMUM DISTANCE", "value": "16m" },
+      { "label": "DAMAGE", "value": "70" }
+    ]
+  },
+  "spell5": {
+    "key": "",
+    "img": "",
+    "name": "SUBTLE STEP",
+    "description": "Hold Space to run on a wall; perform a jump after detaching from the wall.",
+    "attributes": [
+      { "label": "WALL", "value": "CRAWLING SPEED - 10m/s" }
+    ]
+  },
+  "spell6": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "SPEAR TOSS",
+    "description": "Toss a Vibranium energy spear forward, creating a Vibranium Force Field and attaching a Vibranium Mark to enemies in its radius.",
+    "attributes": [
+      { "label": "CASTING", "value": "Arced projectile that generates a spell field upon impact" },
+      { "label": "PROJECTILE SPEED", "value": "60m/s" },
+      { "label": "RANGE", "value": "5m spherical radius" },
+      { "label": "DAMAGE", "value": "45" },
+      { "label": "COOLDOWN", "value": "6s" }
+    ]
+  },
+  "spell7": {
+    "key": "",
+    "img": "",
+    "name": "PANTHER'S CUNNING",
+    "description": "Deal higher damage when at low Health.",
+    "attributes": [
+      { "label": "TRIGGER CONDITION", "value": "Health drops below 100" }
+    ]
+  }
+}
