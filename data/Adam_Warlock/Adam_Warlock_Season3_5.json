@@ -23,7 +23,7 @@
     "name": "KARMIC REVIVAL\n",
     "description": "Awaken the karma of allies to revive them. Allies revived have lower health but enjoy a brief period of Invincibility.",
     "change": 1,
-    "changeDescription": "Energy cost reduced from 5000 to 4700; revived allies gain 70\u202f% max health as bonus health for 5\u202fs (decaying over 2\u202fs)",
+    "changeDescription": "Energy cost reduced from 5000 to 4700, revived allies gain 70\u202f% max health as bonus health for 5\u202fs (decaying over 2\u202fs)",
     "attributes": [
       { "label": "CASTING", "value": "Persistent spell field that surrounds the caster" },
       { "label": "HEALTH UPON REVIVAL", "value": "30% of the Max Health" },

@@ -22,7 +22,7 @@ export default function Home() {
   const refs = useRef<Array<HTMLDivElement | null>>([]);
   let offtop:number | undefined = 0;
   let offsetLeft:number | undefined  = 0 ;
-  const [season, SetSeason] = useState('Season0');
+  const [season, SetSeason] = useState('Season3_5');
   const [position, setPosition] = useState<{
   top: number | string;
   left: number | string;
@@ -126,32 +126,34 @@ useEffect(() =>{
         <DropdownMenuRadioGroup value={season} onValueChange={SetSeason}>
           <DropdownMenuRadioItem value="Season0">Season 0</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="Season1">Season 1</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="Season1_5">Season 1.5</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="Season2">Season 2</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="Season2_5">Season 2.5</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="Season3">Season 3</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="Season3_5">Season 3.5</DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
   </div>
    {/* Header end*/}
 
-    <motion.div className={`absolute z-50 bg-black w-full h-full flex items-center justify-center ${activeId ? '' : 'hidden'}`}
-        animate={{ opacity: activeId ? 0.8 : 0}}
-        transition={{ duration: 0.3,delay: 0.1 }}
-        >
+<motion.div className={`absolute z-50 bg-black w-full h-full flex items-center justify-center ${activeId ? '' : 'hidden'}`}
+  animate={{ opacity: activeId ? 0.8 : 0}}
+  transition={{ duration: 0.3,delay: 0.1 }}
+  >
     <div className=" relative rounded-lg p-4 w-[90%] h-[600px] max-w-4xl mt-7">
       {/* Top Section */} 
         {/* Abilities Grid */}
       <div className=" flex flex-wrap gap-y-36 h-64 mt-10 justify-between">
         {hero_spells && Object.entries(hero_spells).map(([key,spell], i) => (
-           <div key={i}  className="w-[45%] h-fit" ref = {(el) =>{ refs.current[i] = el}}>
+          <div key={i}  className="w-[45%] h-fit" ref = {(el) =>{ refs.current[i] = el}}>
             <motion.div 
               className={`flex absolute w-[45%] h-28 bg-[#D9C9CF] rounded-xl overflow-hidden ${scaledIndex === i ? 'z-50' : 'z-10'} shadow-lg cursor-pointer `}
               style={{ border: `2px solid ${buffsBorder[spell.change]}` }}
               onClick={(e) => {   
               handleClick(e, i);
               console.log(`top = ${positionRef.current.top}, left = ${positionRef.current.left}, height = ${positionRef.current.height}, width = ${positionRef.current.width}`);
-              console.log(`Spell change: ${spell.change}`);
-            }}
+              console.log(`Spell change: ${spell.change}`);}}
               animate={
               scaledIndex == i ? {
                 top: positionRef.current.top,
@@ -161,7 +163,7 @@ useEffect(() =>{
               }:{}
               }
               transition={{duration:0.2}}
-            >  
+              >  
               <div className=" w-full relative bg-blue-900">
                  <SpellTable spell={spell} />
                   <AnimatePresence>
@@ -174,23 +176,31 @@ useEffect(() =>{
                      style={{transformOrigin:'right'}}
                      >
                     <div className="relative h-full w-full bg-amber-700">
-                    <div className="relative w-full h-1/2 bg-blue-600">
-                    <p className="text-white text-sm p-1">Hero Update Changes</p>
+                      <div className="relative w-full h-1/2 bg-gray-700">
+                        {spell.change === 1 ? (
+                          <ul role="list" className="text-white text-base p-3">
+                            <li className="list-disc list-inside">
+                              {spell.changeDescription ?? 'Spell Updated in this Patch'}
+                            </li>
+                          </ul>
+                        ):
+                        (
+                          <p className="text-white text-sm p-3">No Spell Changes</p>
+                        )}
+                      </div>
+                      <div className=" relative h-1/2 w-full bg-gray-700">
+                      </div>
                     </div>
-                    <div className=" relative h-1/2 w-full bg-green-600">
-                    </div>
-                    </div>
-                    
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
             </motion.div>
-              </div>
-                ))}
-              </div>
-            </div>
-        </motion.div>
+          </div>
+        ))}
+      </div>
+    </div>
+</motion.div>
       <div className="grid grid-cols-11 h-full mt-8">
         {/* {heroNames && heroNames.map((hero, index) => (
           <Portrait key={index} src=`/hero-prestige-images/{hero.name}_prestige` alt="hero.name" heroName={hero.name} herotype={hero.type} 
