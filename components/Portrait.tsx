@@ -16,7 +16,8 @@ interface PortraitProps {
   activeId: number | null;                  // ID of the currently active portrait
   compID: number;                           // Unique ID for this particular component
   setScaledIndex: (value :number | null) => void;              // Index of the currently scaled portrait, if any
-
+  portraitLeft: number;                // Optional left position for the portrait
+  setPortraitLeft?: (value: number) => void; // Function to set the left position of the portrait
 }
 
 // Functional component definition using the props above
@@ -31,7 +32,8 @@ const Portrait: React.FC<PortraitProps> = ({
   setActiveId,
   compID,
   setScaledIndex,
-  
+  portraitLeft,
+  setPortraitLeft
 }) => {
 
   // Reference to the root DOM element for positioning calculations
@@ -48,6 +50,21 @@ const Portrait: React.FC<PortraitProps> = ({
   const setId = (compID: number) => {
     setActiveId(compID);
   };
+
+
+const getTargetPosition = (width: number) => {
+  if (width < 330) { // sm breakpoint
+    return { left: 50, top: 200, scale: 1 };
+  }
+  if (width < 640) { // sm breakpoint
+    return { left: 50, top: 200, scale: 1.2 };
+  } else if (width < 1282) { // md / lg breakpoint
+    return { left: 100, top: 300, scale: 1.7 };
+  } else { // xl breakpoint
+    return { left: 140, top: 430, scale: 2.5 };
+  }
+};
+
 
   // Handle click events on the portrait
   const handleClick = (e: React.MouseEvent) => {
@@ -74,10 +91,12 @@ const Portrait: React.FC<PortraitProps> = ({
     // Update position and scale for animation if needed
     if (shouldFocus) {
       const data = ref.current.getBoundingClientRect(); // Get current position on screen
+      const width = window.innerWidth; // Get current window width
+      const { left, top, scale } = getTargetPosition(width);
       setPosition({
-        left: 140 - ref.current.offsetLeft,
-        top: 430 - ref.current.offsetTop,
-        scale: 2.5, // Zoom in
+        left: left - ref.current.offsetLeft,
+        top: top - ref.current.offsetTop,
+        scale: scale, // Zoom in
       });
     } else {
       // Reset to original position and scale
