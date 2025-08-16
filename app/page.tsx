@@ -19,6 +19,7 @@ export default function Home() {
   const [buffsBorder, setBuffsBorder] = useState<string[]>(['rgb(107 114 128)','rgba(170, 255, 0, 1)', 'rgba(199, 0, 57, 1)']); // Temp Border Colors
   const [activeId, setActiveId] = useState<number | null>(null)
   const [scaledIndex, setScaledIndex] = useState<number | null>(null);
+  const [portraitLeft, setPortraitLeft] = useState<number>(0);
   const refs = useRef<Array<HTMLDivElement | null>>([]);
   let offtop:number | undefined = 0;
   let offsetLeft:number | undefined  = 0 ;
@@ -207,9 +208,9 @@ useEffect(() =>{
       isActive ={activeId == index + 1 } activeId={activeId} setActiveId = {setActiveId} compID ={index + 1} />
         ))} */}
          <Portrait src="/hero-prestige-images/adam-warlock_prestige.png" alt="My Portrait" heroName="PSYLOCKE" herotype="Strategist" 
-      isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} compID ={1} setScaledIndex = {setScaledIndex}/>
+      isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} compID ={1} setScaledIndex = {setScaledIndex} portraitLeft={portraitLeft} setPortraitLeft={setPortraitLeft} />
           <Portrait src="/jeff.webp" alt="My Portrait" heroName="PSYLOCKE" herotype="STRATEGIST" 
-     isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  compID ={2} setScaledIndex = {setScaledIndex} />
+     isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  compID ={2} setScaledIndex = {setScaledIndex} portraitLeft={portraitLeft} setPortraitLeft={setPortraitLeft} />
       </div>
       </>
     );
