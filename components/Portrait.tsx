@@ -15,9 +15,7 @@ interface PortraitProps {
   setActiveId: (value: number | null) => void; // Function to update the active component's ID
   activeId: number | null;                  // ID of the currently active portrait
   compID: number;                           // Unique ID for this particular component
-  setScaledIndex: (value :number | null) => void;              // Index of the currently scaled portrait, if any
-  portraitLeft: number;                // Optional left position for the portrait
-  setPortraitLeft?: (value: number) => void; // Function to set the left position of the portrait
+  setSelectedCard: (value :number | null) => void; // Index of the currently scaled portrait, if any
 }
 
 // Functional component definition using the props above
@@ -31,9 +29,7 @@ const Portrait: React.FC<PortraitProps> = ({
   activeId,
   setActiveId,
   compID,
-  setScaledIndex,
-  portraitLeft,
-  setPortraitLeft
+  setSelectedCard: setScaledIndex,
 }) => {
 
   // Reference to the root DOM element for positioning calculations

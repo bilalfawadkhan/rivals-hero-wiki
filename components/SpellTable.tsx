@@ -21,10 +21,10 @@ interface SpellTableProps {
 
 const SpellTable: React.FC<SpellTableProps> = ({ spell }) => {
   return (
-    <div className=" relative bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-2xl shadow-lg p-4 w-full max-w-md font-orbitron">
+    <div className=" relative bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-l-2xl shadow-lg p-4 w-[70%] max-w-md font-orbitron">
       <h2 className="text-yellow-400 text-xl font-bold mb-1">🪐 {spell.name}</h2>
-      <p className="text-blue-300 text-base mb-4 ">{spell.key ?? 'nill'}</p>
-      <p className="text-gray-300 text-sm mb-6">{spell.description}</p>
+      <p className="text-blue-300 text-base mb-2 ">{spell.key ?? 'null'}</p>
+      <p className="text-gray-300 text-sm mb-4">{spell.description}</p>
       {spell.attributes.length > 0 && (
       <table className="w-full text-sm">
         <thead>
