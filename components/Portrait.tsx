@@ -32,6 +32,8 @@ const Portrait: React.FC<PortraitProps> = ({
   setSelectedCard: setScaledIndex,
 }) => {
 
+  
+
   // Reference to the root DOM element for positioning calculations
   const ref = useRef<HTMLDivElement | null>(null);
 
@@ -49,15 +51,15 @@ const Portrait: React.FC<PortraitProps> = ({
 
 
 const getTargetPosition = (width: number) => {
-  if (width < 330) { // sm breakpoint
+  if (width <= 330) { // sm breakpoint
     return { left: 50, top: 200, scale: 1 };
   }
-  if (width < 640) { // sm breakpoint
-    return { left: 50, top: 200, scale: 1.2 };
-  } else if (width < 1282) { // md / lg breakpoint
-    return { left: 100, top: 300, scale: 1.7 };
+  if (width <= 640) { // sm breakpoint
+    return { left: 50, top: 200, scale: 1.1 };
+  } else if (width <= 1280) { // md / lg breakpoint
+    return { left: 100, top: 300, scale: 1.4 };
   } else { // xl breakpoint
-    return { left: 140, top: 430, scale: 2.5 };
+    return { left: 140, top: 380, scale: 2.2 };
   }
 };
 
@@ -70,25 +72,23 @@ const getTargetPosition = (width: number) => {
     let shouldFocus;
 
     // Logic to toggle focus based on the current active ID and click count
-    if (activeId === compID && isActive) {
-      // If already active and clicked again, unfocus
-      // console.log('Second Click actions');
+    if (activeId === compID) {
       setActiveId(null);
       shouldFocus = !isActive;
       setScaledIndex(null);
     }
-    if (activeId === null) {
+    else {
       // First time click — set as active
-      // console.log('First Click action');
       setActiveId(compID);
       shouldFocus = !isActive;
     }
 
     // Update position and scale for animation if needed
     if (shouldFocus) {
-      const data = ref.current.getBoundingClientRect(); // Get current position on screen
       const width = window.innerWidth; // Get current window width
       const { left, top, scale } = getTargetPosition(width);
+      if(width <= 640 )
+        return;
       setPosition({
         left: left - ref.current.offsetLeft,
         top: top - ref.current.offsetTop,
@@ -114,7 +114,7 @@ const getTargetPosition = (width: number) => {
       >
         {/* Motion-enabled card for smooth scaling and repositioning */}
         <motion.div
-          className={`relative h-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-[#D6D9F2] border-4 ${activeId === compID ? 'z-60' : 'z-40'}`}
+          className={`relative h-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-[#D6D9F2] border-4 ${activeId === compID ? 'md:z-60' : 'md:z-40'}`}
           animate={Position} // Apply dynamic animation styles
         >
           {/* Image of the hero */}

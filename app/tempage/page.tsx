@@ -3,7 +3,7 @@ import Portrait from "@/components/Portrait";
 import SpellTable from "@/components/SpellTable";
 import { Button } from "@/components/ui/button"
 import { useState , useRef, useEffect } from "react";
-import { AnimatePresence, motion} from "framer-motion";
+import { AnimatePresence, motion, rgba} from "framer-motion";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,12 +13,13 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import GradientButton from "@/components/GradientButton";
 
 export default function Home() {
 
   const [buffsBorder, setBuffsBorder] = useState<string[]>(['rgb(107 114 128)','rgba(170, 255, 0, 1)', 'rgba(199, 0, 57, 1)']); // Temp Border Colors
   const [activeId, setActiveId] = useState<number | null>(null)
-  const [Card, setCard] = useState<number | null>(null);
+  const [CardIndex, setCardIndex] = useState<number | null>(null);
   const [spellState, setSpellState] = useState<spells[]>([])
   const [portraitLeft, setPortraitLeft] = useState<number>(0);
   const refs = useRef<Array<HTMLDivElement | null>>([]);
@@ -55,6 +56,49 @@ export default function Home() {
 //     }
 //   }
 // }
+
+const handleClosePort = () => {
+
+}
+
+const rplceKeyword = (key: String):String => {
+  if(key === 'Right Click')
+    return 'RMB'
+  else if(key === 'Left Click')
+    return 'LMB'
+  else if(key === 'Passive')
+    return 'PSV'
+  else
+  return key
+}
+
+
+const buffValue = (changeval: number , target:number) =>{
+  if(changeval === 1){
+    if(target === 1){// target 1 is for placeholder value , 0 is for color value
+      return "Buff"
+    }
+    else{
+      return 'bg-green-600'
+    }
+  }
+   if(changeval === 2){
+      if(target === 1){
+        return 'DeBuff'
+      }
+      else{
+        return 'bg-red-600'
+      }
+    }
+    else{
+        if(target === 1){
+        return 'NC'
+      }
+      else{
+        return 'bg-gray-500'
+      }
+    }
+}
 
 {/* ----Fetching datqa from API for Hero Spells-----*/}
 type spells = {
@@ -111,7 +155,7 @@ useEffect(() => {
   <>
   {/* Header Start*/}
     <div
-    className="relative w-full h-12 flex items-center border-b-4 border-gold-border"
+    className="relative w-full h-12 flex items-center border-b-4 border-gold-border overflow-hidden"
     style={{ backgroundColor: 'rgba(255, 207, 64, 0.5)' }}
   >
       <div className="relative w-52 h-12 ">
@@ -127,9 +171,9 @@ useEffect(() => {
     </div>
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline">Select Patch</Button>
+        <GradientButton className="m-4" label="Select Patch"/>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 ">
         <DropdownMenuLabel>Panel Position</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={season} onValueChange={SetSeason}>
@@ -145,63 +189,91 @@ useEffect(() => {
     </DropdownMenu>
   </div>
    {/* Header end*/}
-<motion.div className={`absolute z-50 bg-black w-full h-full flex items-center justify-center ${activeId ? '' : 'hidden'}`}
-  animate={{ opacity: activeId ? 0.8 : 0}}
+<motion.div className={`absolute z-50 bg-black w-full h-full  ${activeId ? '' : 'hidden'}`}
+  animate={{ backgroundColor: activeId ? "rgba(0,0,0,0.8)" :"rgba(0,0,0,0)" }}
   transition={{ duration: 0.3,delay: 0.1 }}
   >
-    <div className=" relative rounded-lg p-4 w-[50%] 2xl:w-[90%] h-[600px] max-w-4xl bg-amber-300
-    translate-x-25 md:translate-x-20 lg:translate-x-6"> 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
-    { hero_spells && Object.entries(hero_spells).map(([SpellId,spell],index) => {
-      let newIndex = index + 1;
-      return(
-      <motion.button
-      key={newIndex}
-      layoutId={String(newIndex)}
-      className="relative w-full h-28 rounded-xxl bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl"
-      onClick={() => setCard(newIndex)} 
-      >
-      <h2 className="text-yellow-400 text-xl font-bold mb-1 ">🪐 {spell.name}</h2>
-      <p className="text-blue-300 text-base mb-4">{spell.key ?? 'nill'}</p>
-      <p className="text-gray-300 text-sm mb-6 text-left ">{spell.description}</p>
-      </motion.button>
-    );
-    })}
-    </div>
-
-<AnimatePresence>
-{Card && (
-  <>
- <motion.div
-  key="backdrop"
-  className="fixed inset-0 z-40"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  exit={{ opacity: 0 }}
-  onClick={() => setCard(null)}
-  style={{ backgroundColor: "rgba(0,0,0,0.6)" }}
-/>
-
-<motion.div
-layoutId={String(Card)}
-className="fixed z-50 w-[100%] h-full xl:w-[80%] m-auto sm:inset-10 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl overflow-hidden"
-onClick={(e) => e.stopPropagation()}
->
-  <motion.div className="relative h-full w-full">
-    <SpellTable spell={spellState[Card-1]}/>
-    {/* <div className="h-full w-full bg-amber-800">
-
-    </div> */}
-      {/* <AnimatePresence>
-        <motion.div
-        initial={{x:400 , opacity:0}}
-        animate={{x:0 , opacity:1}}
-        exit={{x:400, opacity:0}}
-        transition={{duration:0.25}}
-          className="absolute top-0 right-0 p-6 sm:w-[42%] bg-gray-400 h-full w-full"
+    <GradientButton label="Close" onClick={() => setActiveId(null)}></GradientButton>
+    <div className=" relative rounded-lg m-auto xl:mt-24 p-4 w-[60%] 2xl:w-[90%] h-[600px] max-w-4xl 
+     md:translate-x-20  bg-amber-400"> 
+      <motion.div 
+      initial={{opacity: 0}}
+      animate={{opacity:1}}
+      transition={{duration:5}}
+      className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {hero_spells && Object.entries(hero_spells).map(([SpellId,spell],index) => {
+          let newIndex = index + 1;
+          return(
+          <motion.button
+          key={newIndex}
+          layoutId={String(newIndex)}
+          className="relative w-full h-32 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden"
+          onClick={() => setCardIndex(newIndex)} 
           >
+            <div className="flex flex-row">
+              <p className=" text-white font-bold text-sm w-10 rounded-tl-2xl m-0 bg-yellow-600 2xl:text-base">{rplceKeyword(spell.key)?? 'null'}</p>
+              <p className={`ml-auto rounded-l-md px-1 ${buffValue(spell.change,0)}`}>{buffValue(spell.change,1)}</p>
+            </div>
+            <h2 className=" text-yellow-400 text-sm font-bold m-0 pb-4 2xl:text-xl ">🪐 {spell.name}</h2>
+            <p className="text-gray-300 text-[10px] text-left mb-8 m-0 px-4 2xl:text-sm 2xl:px-8 ">{spell.description}</p>
+          </motion.button>
+        );
+        })}
+      </motion.div>
+
+      <AnimatePresence>
+      {CardIndex && (
+        <>
+       <motion.div
+        key="backdrop"
+        className="fixed inset-0 z-40"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        onClick={() => setCardIndex(null)}
+        style={{ backgroundColor: "rgba(0,0,0,0.6)" }}
+      />
+
+        <motion.div
+        layoutId={String(CardIndex)}
+        className="fixed z-50 w-[60%] h-full md:w-[80%] m-auto sm:inset-10 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900  overflow-hidden"
+        onClick={(e) => e.stopPropagation()}
+        >
+           <motion.div className="relative h-full w-full">
+            <SpellTable spell={spellState[CardIndex-1]}/>
+              <AnimatePresence>
+              <motion.div
+              initial={{x:400 , opacity:0}}
+              animate={{x:0 , opacity:1}}
+              exit={{x:400, opacity:0}}
+              transition={{duration:0.25}}
+              className="absolute top-0 right-0 p-6 w-[30%] xl:w-[34%] bg-gradient-to-br from-zinc-800 to-zinc-900 h-full w-ful hidden md:block"
+              >
+              <motion.button // Cross button
+              whileHover={{ scale: 1.1, rotate: 90 , backgroundColor : '#A40D26' , color: 'white' }}
+              whileTap={{ scale: 0.9 }}
+              transition={{duration: 0.30}}
+              onClick={() => setCardIndex(null)}
+              className="flex items-center justify-center w-10 h-10 rounded-full ml-auto bg-gray-200 hover:bg-gray-300 text-gray-700 shadow-md"
+              >
+                {/* Cross (X) centered properly */}
+                <span className="relative block w-5 h-5">
+                <span className="absolute top-1/2 left-1/2 w-5 h-0.5 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-current rounded"></span>
+                <span className="absolute top-1/2 left-1/2 w-5 h-0.5 -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-current rounded"></span>
+                </span>
+              </motion.button>
+          {spellState[CardIndex-1].change === 1 ? (
+            <ul role="list" className="text-white text-[12px] xl:text-sm p-3">
+              <li className="list-disc list-inside">
+                {spellState[CardIndex-1].changeDescription ?? 'Spell Updated in this Patch'}
+              </li>
+            </ul>
+            ):
+            (
+              <p className="text-white text-[12px] xl:text-sm p-3">No Spell Changes</p>
+            )} 
         </motion.div>
-      </AnimatePresence> */}
+      </AnimatePresence>
   </motion.div>
 </motion.div>
 </>
@@ -218,9 +290,9 @@ onClick={(e) => e.stopPropagation()}
       isActive ={activeId == index + 1 } activeId={activeId} setActiveId = {setActiveId} compID ={index + 1} />
         ))} */}
          <Portrait src="/hero-prestige-images/adam-warlock_prestige.png" alt="My Portrait" heroName="PSYLOCKE" herotype="Strategist" 
-      isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} compID ={1} setSelectedCard = {setCard} />
+      isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} compID ={1} setSelectedCard = {setCardIndex} />
           <Portrait src="/jeff.webp" alt="My Portrait" heroName="PSYLOCKE" herotype="STRATEGIST" 
-     isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  compID ={2} setSelectedCard = {setCard} />
+     isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  compID ={2} setSelectedCard = {setCardIndex} />
       </div>
       </>
     );
