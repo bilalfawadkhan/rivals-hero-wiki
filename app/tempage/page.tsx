@@ -34,32 +34,6 @@ export default function Home() {
   }>({ top: 0, left: 0, height: 0, width: 0 });
   const positionRef = useRef(position)
 
-//   const handleClick = (e: React.MouseEvent, index:number) => { // event handling for scaling the spell card
-//     e.stopPropagation();
-//     if(Card === index) {
-//       setCard(null);
-//     }
-//     else {
-//       const el = refs.current[index];
-//       if(el){
-//         offtop = el.offsetTop;
-//         offsetLeft = el.offsetLeft;
-//        const newPosition = {
-//           top: 40,
-//           left:16,
-//           height: 'fit-content',
-//           width: '90%',
-//      }
-//        positionRef.current = newPosition;
-//        setPosition(newPosition);
-//        setCard(index);
-//     }
-//   }
-// }
-
-const handleClosePort = () => {
-
-}
 
 const rplceKeyword = (key: String):String => {
   if(key === 'Right Click')
@@ -158,14 +132,14 @@ useEffect(() => {
     className="relative w-full h-12 flex items-center border-b-4 border-gold-border overflow-hidden"
     style={{ backgroundColor: 'rgba(255, 207, 64, 0.5)' }}
   >
-      <div className="relative w-52 h-12 ">
+      <div className="relative w-44 md:w-52 h-12 ">
       {/* Tilted grey background */}
         <div
         className="absolute top-0 left-0 w-full h-full bg-gray-700"
         style={{ transform: 'skew(-15deg)' }}
       />
       {/* Text container */}
-        <h1 className="relative z-10 h-12 flex items-center justify-center text-white font-bold">
+        <h1 className="relative text-[14px] md:text-base z-10 h-12 flex items-center justify-center text-white font-bold">
         Marvel Rivals Hero Wiki
       </h1>
     </div>
@@ -189,13 +163,13 @@ useEffect(() => {
     </DropdownMenu>
   </div>
    {/* Header end*/}
-<motion.div className={`absolute z-50 bg-black w-full h-full  ${activeId ? '' : 'hidden'}`}
+<motion.div className={`fixed inset-0 z-50 w-full h-full  ${activeId ? '' : 'hidden'}`}
   animate={{ backgroundColor: activeId ? "rgba(0,0,0,0.8)" :"rgba(0,0,0,0)" }}
   transition={{ duration: 0.3,delay: 0.1 }}
   >
     <GradientButton label="Close" onClick={() => setActiveId(null)}></GradientButton>
-    <div className=" relative rounded-lg m-auto xl:mt-24 p-4 w-[60%] 2xl:w-[90%] h-[600px] max-w-4xl 
-     md:translate-x-20  bg-amber-400"> 
+    <div className=" relative rounded-lg m-auto xl:mt-24 p-4 w-[60%] 2xl:w-[90%] h-full xl:h-[600px] max-w-4xl 
+     md:translate-x-20 bg-amber-400"> 
       <motion.div 
       initial={{opacity: 0}}
       animate={{opacity:1}}
@@ -214,8 +188,8 @@ useEffect(() => {
               <p className=" text-white font-bold text-sm w-10 rounded-tl-2xl m-0 bg-yellow-600 2xl:text-base">{rplceKeyword(spell.key)?? 'null'}</p>
               <p className={`ml-auto rounded-l-md px-1 ${buffValue(spell.change,0)}`}>{buffValue(spell.change,1)}</p>
             </div>
-            <h2 className=" text-yellow-400 text-sm font-bold m-0 pb-4 2xl:text-xl ">🪐 {spell.name}</h2>
-            <p className="text-gray-300 text-[10px] text-left mb-8 m-0 px-4 2xl:text-sm 2xl:px-8 ">{spell.description}</p>
+            <h2 className=" text-yellow-400 text-sm font-bold m-0 pb-4 xl:text-xl ">🪐 {spell.name}</h2>
+            <p className="text-gray-300 hidden xs:block text-[10px] text-left mb-8 m-0 px-4 xl:text-sm 2xl:px-8 ">{spell.description}</p>
           </motion.button>
         );
         })}
@@ -236,7 +210,7 @@ useEffect(() => {
 
         <motion.div
         layoutId={String(CardIndex)}
-        className="fixed z-50 w-[60%] h-full md:w-[80%] m-auto sm:inset-10 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900  overflow-hidden"
+        className="fixed z-50 w-[60%] h-full md:w-[80%] m-auto inset-10 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900  overflow-hidden"
         onClick={(e) => e.stopPropagation()}
         >
            <motion.div className="relative h-full w-full">
