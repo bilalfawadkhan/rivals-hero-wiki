@@ -168,12 +168,12 @@ useEffect(() => {
   transition={{ duration: 0.3,delay: 0.1 }}
   >
     <GradientButton label="Close" onClick={() => setActiveId(null)}></GradientButton>
-    <div className=" relative rounded-lg m-auto xl:mt-24 p-4 w-[60%] 2xl:w-[90%] h-full xl:h-[600px] max-w-4xl 
+    <div className=" relative rounded-lg m-auto xl:mt-48 p-4 w-[60%] 2xl:w-[90%] h-full xl:h-[600px] max-w-4xl 
      md:translate-x-20 bg-amber-400"> 
       <motion.div 
       initial={{opacity: 0}}
       animate={{opacity:1}}
-      transition={{duration:5}}
+      transition={{duration:0.25}}
       className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {hero_spells && Object.entries(hero_spells).map(([SpellId,spell],index) => {
           let newIndex = index + 1;
@@ -181,15 +181,15 @@ useEffect(() => {
           <motion.button
           key={newIndex}
           layoutId={String(newIndex)}
-          className="relative w-full h-32 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden"
+          className=" flex flex-col relative w-full h-24 xs:h-32 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden"
           onClick={() => setCardIndex(newIndex)} 
           >
             <div className="flex flex-row">
-              <p className=" text-white font-bold text-sm w-10 rounded-tl-2xl m-0 bg-yellow-600 2xl:text-base">{rplceKeyword(spell.key)?? 'null'}</p>
+              <p className=" text-white font-bold text-sm w-10 rounded-tl-2xl bg-yellow-600 2xl:text-base">{rplceKeyword(spell.key)?? 'null'}</p>
               <p className={`ml-auto rounded-l-md px-1 ${buffValue(spell.change,0)}`}>{buffValue(spell.change,1)}</p>
             </div>
-            <h2 className=" text-yellow-400 text-sm font-bold m-0 pb-4 xl:text-xl ">🪐 {spell.name}</h2>
-            <p className="text-gray-300 hidden xs:block text-[10px] text-left mb-8 m-0 px-4 xl:text-sm 2xl:px-8 ">{spell.description}</p>
+            <h2 className=" text-yellow-400 text-[1rem] md:text-sm font-bold mt-1 pb-2 xl:text-xl "> {spell.name}</h2>
+            <p className="text-gray-300 hidden xs:block text-[10px] text-left px-4 xl:text-sm 2xl:px-8 ">{spell.description}</p>
           </motion.button>
         );
         })}
