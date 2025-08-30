@@ -1,6 +1,6 @@
 'use client'; // Enables usage of client-side features in a Next.js 13+ app
 
-import React, { useEffect, useRef } from 'react';
+import React, { forwardRef, useEffect, useImperativeHandle, useRef } from 'react';
 import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -18,24 +18,30 @@ interface PortraitProps {
   setSelectedCard: (value :number | null) => void; // Index of the currently scaled portrait, if any
 }
 
-// Functional component definition using the props above
-const Portrait: React.FC<PortraitProps> = ({
-  src,
-  alt = 'Portrait Image',
-  className = '',
-  heroName = 'Hero Name',
-  herotype = 'Hero Type',
-  isActive,
-  activeId,
-  setActiveId,
-  compID,
-  setSelectedCard: setScaledIndex,
-}) => {
+export interface Portraithandle{
+  handleClickChild: () => void;
+}
 
+// Functional component definition using the props above
+const Portrait = forwardRef<Portraithandle, PortraitProps>(function Portrait(
+  {
+    src,
+    alt = 'Portrait Image',
+    className = '',
+    heroName = 'Hero Name',
+    herotype = 'Hero Type',
+    isActive,
+    activeId,
+    setActiveId,
+    compID,
+    setSelectedCard,
+  },
+  ref
+) {
   
 
   // Reference to the root DOM element for positioning calculations
-  const ref = useRef<HTMLDivElement | null>(null);
+  const rootRef = useRef<HTMLDivElement | null>(null);
 
   // Local state to store dynamic position and scale for animation
   const [Position, setPosition] = React.useState({
@@ -65,9 +71,8 @@ const getTargetPosition = (width: number) => {
 
 
   // Handle click events on the portrait
-  const handleClick = (e: React.MouseEvent) => {
-    if (!ref.current) return;
-    e.stopPropagation(); // Prevents the event from bubbling to parent elements
+  const handleClickCore = () => {
+    if (!rootRef.current) return;
 
     let shouldFocus;
 
@@ -75,7 +80,7 @@ const getTargetPosition = (width: number) => {
     if (activeId === compID) {
       setActiveId(null);
       shouldFocus = !isActive;
-      setScaledIndex(null);
+      setSelectedCard(null);
     }
     else {
       // First time click — set as active
@@ -90,8 +95,8 @@ const getTargetPosition = (width: number) => {
       if(width <= 640 )
         return;
       setPosition({
-        left: left - ref.current.offsetLeft,
-        top: top - ref.current.offsetTop,
+        left: left - rootRef.current.offsetLeft,
+        top: top - rootRef.current.offsetTop,
         scale: scale, // Zoom in
       });
     } else {
@@ -104,11 +109,21 @@ const getTargetPosition = (width: number) => {
     }
   };
 
+  const handleClick =(e:React.MouseEvent) =>{
+    e.stopPropagation();
+    handleClickCore();
+  }
+
+  useImperativeHandle(ref, () => ({
+    handleClickChild:handleClickCore,
+
+  }),[activeId, compID, isActive]);
+
   return (
     <>
       {/* Outer wrapper to provide fixed dimensions */}
       <div
-        ref={ref}
+        ref={rootRef}
         onClick={(e) => handleClick(e)}
         className='w-[150px] h-[217px]'
       >
@@ -133,6 +148,6 @@ const getTargetPosition = (width: number) => {
       </div>
     </>
   );
-};
+});
 
 export default Portrait;

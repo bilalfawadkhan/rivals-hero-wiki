@@ -1,5 +1,5 @@
 'use client';
-import Portrait from "@/components/Portrait";
+import Portrait , {Portraithandle} from "@/components/Portrait";
 import SpellTable from "@/components/SpellTable";
 import { Button } from "@/components/ui/button"
 import { useState , useRef, useEffect } from "react";
@@ -52,25 +52,21 @@ const buffValue = (changeval: number , target:number) =>{
     if(target === 1){// target 1 is for placeholder value , 0 is for color value
       return "Buff"
     }
-    else{
-      return 'bg-green-600'
-    }
-  }
-   if(changeval === 2){
+    else return 'bg-green-600'  
+ }
+
+  else if(changeval === 2){
       if(target === 1){
         return 'DeBuff'
       }
-      else{
-        return 'bg-red-600'
-      }
+      else return 'bg-red-600'
     }
-    else{
+
+  else{
         if(target === 1){
         return 'NC'
       }
-      else{
-        return 'bg-gray-500'
-      }
+      else return 'bg-gray-500'
     }
 }
 
@@ -86,7 +82,6 @@ type spells = {
  }
 
 const [hero_spells, setHeroSpells]  = useState <{[key: string] : spells} | null>();
-
 
    useEffect(() => {
     if (!season) return; // Ensure season is defined before fetching
@@ -125,6 +120,12 @@ useEffect(() => {
   }
 
 },[hero_spells])
+
+const portraitRef = useRef<Portraithandle>(null);
+
+
+
+
     return (
   <>
   {/* Header Start*/}
@@ -167,13 +168,14 @@ useEffect(() => {
   animate={{ backgroundColor: activeId ? "rgba(0,0,0,0.8)" :"rgba(0,0,0,0)" }}
   transition={{ duration: 0.3,delay: 0.1 }}
   >
-    <GradientButton label="Close" onClick={() => setActiveId(null)}></GradientButton>
+    <Button  onClick={() => portraitRef.current?.handleClickChild()}>Xlose</Button>
     <div className=" relative rounded-lg m-auto xl:mt-48 p-4 w-[60%] 2xl:w-[90%] h-full xl:h-[600px] max-w-4xl 
      md:translate-x-20 bg-amber-400"> 
       <motion.div 
       initial={{opacity: 0}}
       animate={{opacity:1}}
       transition={{duration:0.25}}
+      exit={{opacity:0}}
       className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {hero_spells && Object.entries(hero_spells).map(([SpellId,spell],index) => {
           let newIndex = index + 1;
@@ -251,8 +253,7 @@ useEffect(() => {
   </motion.div>
 </motion.div>
 </>
-)
-}
+)};
 </AnimatePresence>
 </div>
 </motion.div> {/*Absolute div */}
@@ -264,9 +265,9 @@ useEffect(() => {
       isActive ={activeId == index + 1 } activeId={activeId} setActiveId = {setActiveId} compID ={index + 1} />
         ))} */}
          <Portrait src="/hero-prestige-images/adam-warlock_prestige.png" alt="My Portrait" heroName="PSYLOCKE" herotype="Strategist" 
-      isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} compID ={1} setSelectedCard = {setCardIndex} />
+          isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} compID ={1} setSelectedCard = {setCardIndex} />
           <Portrait src="/jeff.webp" alt="My Portrait" heroName="PSYLOCKE" herotype="STRATEGIST" 
-     isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  compID ={2} setSelectedCard = {setCardIndex} />
+          isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  compID ={2} setSelectedCard = {setCardIndex} ref={portraitRef} />
       </div>
       </>
     );
