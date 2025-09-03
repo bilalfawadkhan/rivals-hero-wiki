@@ -14,7 +14,7 @@ interface PortraitProps {
   isActive?: boolean;                       // Whether this component is currently active
   setActiveId: (value: number | null) => void; // Function to update the active component's ID
   activeId: number | null;                  // ID of the currently active portrait
-  compID: number;                           // Unique ID for this particular component
+  cardID: number;                           // Unique ID for this particular component
   setSelectedCard: (value :number | null) => void; // Index of the currently scaled portrait, if any
 }
 
@@ -33,7 +33,7 @@ const Portrait = forwardRef<Portraithandle, PortraitProps>(function Portrait(
     isActive,
     activeId,
     setActiveId,
-    compID,
+    cardID: compID,
     setSelectedCard,
   },
   ref
@@ -49,11 +49,6 @@ const Portrait = forwardRef<Portraithandle, PortraitProps>(function Portrait(
     top: 0,
     scale: 1
   });
-
-  // Function to set this component as the active one
-  const setId = (compID: number) => {
-    setActiveId(compID);
-  };
 
 
 const getTargetPosition = (width: number) => {
