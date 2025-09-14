@@ -16,6 +16,7 @@ interface PortraitProps {
   activeId: number | null;                  // ID of the currently active portrait
   cardID: number;                           // Unique ID for this particular component
   setSelectedCard: (value :number | null) => void; // Index of the currently scaled portrait, if any
+  onCardClick : (value:String) => void;
 }
 
 export interface Portraithandle{
@@ -35,6 +36,7 @@ const Portrait = forwardRef<Portraithandle, PortraitProps>(function Portrait(
     setActiveId,
     cardID: compID,
     setSelectedCard,
+    onCardClick
   },
   ref
 ) {
@@ -42,6 +44,19 @@ const Portrait = forwardRef<Portraithandle, PortraitProps>(function Portrait(
 
   // Reference to the root DOM element for positioning calculations
   const rootRef = useRef<HTMLDivElement | null>(null);
+
+const getHeroTypeColor = (herotype: string) => {
+  switch (herotype) {
+    case "Vanguard":
+      return "bg-gradient-to-r from-blue-700 to-blue-900 border-blue-800";
+    case "Duelist":
+      return "bg-gradient-to-r from-red-700 to-red-900 border-red-800";
+    case "Strategist":
+      return "bg-gradient-to-r from-green-700 to-green-900 border-green-800";
+    default:
+      return "bg-gradient-to-r from-gray-700 to-gray-900 border-gray-800";
+  }
+};
 
   // Local state to store dynamic position and scale for animation
   const [Position, setPosition] = React.useState({
@@ -58,9 +73,9 @@ const getTargetPosition = (width: number) => {
   if (width <= 640) { // sm breakpoint
     return { left: 50, top: 200, scale: 1.1 };
   } else if (width <= 1280) { // md / lg breakpoint
-    return { left: 100, top: 300, scale: 1.4 };
+    return { left: 100, top: 250, scale: 1.4 };
   } else { // xl breakpoint
-    return { left: 140, top: 380, scale: 2.2 };
+    return { left: 140, top: 250, scale: 2.2 };
   }
 };
 
@@ -68,7 +83,6 @@ const getTargetPosition = (width: number) => {
   // Handle click events on the portrait
   const handleClickCore = () => {
     if (!rootRef.current) return;
-
     let shouldFocus;
 
     // Logic to toggle focus based on the current active ID and click count
@@ -80,8 +94,10 @@ const getTargetPosition = (width: number) => {
     else {
       // First time click — set as active
       setActiveId(compID);
+      onCardClick(heroName);
       shouldFocus = !isActive;
     }
+
 
     // Update position and scale for animation if needed
     if (shouldFocus) {
@@ -131,12 +147,12 @@ const getTargetPosition = (width: number) => {
           <Image src={src} alt={alt} className='-ml-3.5' width={120} height={300} />
 
           {/* Hero name positioned near the bottom of the image */}
-          <h5 className="absolute top-34 left-6 rounded-sm w-2/3 text-center text-white text-xl">
+          <h5 className="absolute top-34 left-0 rounded-sm w-full text-center text-white text-sm">
             {heroName}
           </h5>
 
           {/* Hero type badge positioned below the name */}
-          <p className="absolute top-40 rounded-sm w-2/4 bg-[#be6f23] border-[#eaa03a] border-2 text-center text-[10px]">
+          <p className={`absolute top-40 rounded-sm w-2/4  border-2 text-center text-[10px] ${getHeroTypeColor(herotype)}`}>
             {herotype}
           </p>
         </motion.div>

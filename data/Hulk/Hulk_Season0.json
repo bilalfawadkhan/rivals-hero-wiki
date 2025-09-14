@@ -1,0 +1,340 @@
+{
+  "spell1": {
+    "key": "Left mouse button (Banner)",
+    "img": "",
+    "name": "GAMMA RAY GUN",
+    "description": "Fire with a Gamma Ray Gun.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with delayed impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "16"
+      },
+      {
+        "label": "AMMO",
+        "value": "25"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "5/s"
+      },
+      {
+        "label": "CRITICAL HIT",
+        "value": "Yes"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "80m/s"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q (Banner)",
+    "img": "",
+    "name": "PUNY BANNER",
+    "description": "Transform from Bruce Banner into Hero Hulk.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Transformation"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Caster is immobilized during the transformation and gains Invincibility"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Shift (Banner)",
+    "img": "",
+    "name": "GAMMA GRENADE",
+    "description": "Launch a Gamma Grenade to inflict damage and Launch Up enemies.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile with a downward delay that creates a spell field upon impact"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "40"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "RANGE",
+        "value": "3m spherical radius"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Entering the spell field restores 50 Gamma Energy"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E (Hulk)",
+    "img": "",
+    "name": "RADIOACTIVE LOCKDOWN",
+    "description": "Irradiate enemies, rendering them immobilized and immune to all ability effects until prematurely removed by certain attacks.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "5"
+      },
+      {
+        "label": "DURATION",
+        "value": "2s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "15s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "100m/s"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Heavy Blow and Gamma Burst can damage irradiated enemies and prematurely remove the status"
+      },
+      {
+        "label": "MAXIMUM SHIELD VALUE",
+        "value": "250 (caster) - 100 (allies)"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "Right mouse button (Hulk)",
+    "img": "",
+    "name": "GAMMA BURST",
+    "description": "Emit gamma-ray bursts that pierce enemies.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile that can pierce through enemies"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "70"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "80m/s"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "Left mouse button (Hulk)",
+    "img": "",
+    "name": "HEAVY BLOW",
+    "description": "Swing fists forward to punch enemies.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast spell field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "40"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "0.467/s"
+      },
+      {
+        "label": "RANGE",
+        "value": "4.5m"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "C",
+    "img": "",
+    "name": "GAMMA FASTBALL (Team-Up)",
+    "description": "Wolverine and Hulk can team up: Hulk lifts and hurls Wolverine forward after both confirm.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "TEAM-UP BONUS",
+        "value": "Hero Hulk and Monster Hulk gain 150 Max Health"
+      }
+    ]
+  },
+  "spell8": {
+    "key": "Q (Hulk)",
+    "img": "",
+    "name": "HULK SMASH!",
+    "description": "Transform from Hero Hulk into Monster Hulk for a limited time.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Transformation"
+      },
+      {
+        "label": "DURATION",
+        "value": "12s"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3400"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Caster is immobilized during the transformation and gains Invincibility"
+      }
+    ]
+  },
+  "spell9": {
+    "key": "Left mouse button (Monster Hulk)",
+    "img": "",
+    "name": "HEAVY BLOW \u2014 MONSTER HULK",
+    "description": "Stronger, longer-range punches while transformed into Monster Hulk.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast spell field"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "70"
+      },
+      {
+        "label": "INTERVAL",
+        "value": "0.52/s"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m"
+      }
+    ]
+  },
+  "spell10": {
+    "key": "E (Monster Hulk)",
+    "img": "",
+    "name": "RADIOACTIVE LOCKDOWN \u2014 MONSTER HULK",
+    "description": "Faster variant while transformed into Monster Hulk.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "5"
+      },
+      {
+        "label": "DURATION",
+        "value": "2s"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "5s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "150m/s"
+      }
+    ]
+  },
+  "spell11": {
+    "key": "Right mouse button (Monster Hulk)",
+    "img": "",
+    "name": "GAMMA BURST \u2014 MONSTER HULK",
+    "description": "Slower projectile but much stronger while transformed into Monster Hulk.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Single-cast projectile that can pierce through enemies"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "125"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "1s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60m/s"
+      }
+    ]
+  },
+  "spell12": {
+    "key": "Q (Monster Hulk)",
+    "img": "",
+    "name": "WORLD BREAKER",
+    "description": "Grab an enemy and deliver a series of devastating slams.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Targeted"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "5 hits \u00d7 40 damage"
+      },
+      {
+        "label": "DURATION",
+        "value": "5s"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "While smashing, Hulk gains 30% Damage Reduction"
+      }
+    ]
+  },
+  "spell13": {
+    "key": "Passive",
+    "img": "",
+    "name": "GAMMA BOOST (Team-Up Passive)",
+    "description": "Charges Doctor Strange and Iron Man with gamma radiation to modify their ultimates; also grants Hulk bonus Max Health while an Anchor.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "TEAM-UP BONUS",
+        "value": "Hero Hulk and Monster Hulk gain 150 Max Health (as Anchor)"
+      }
+    ]
+  }
+}

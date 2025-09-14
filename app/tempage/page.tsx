@@ -14,6 +14,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import GradientButton from "@/components/GradientButton";
+import BuyMeACoffeeButton from "@/components/BuyMeCoffee";
 
 export default function Home() {
   const [activeId, setActiveId] = useState<number | null>(null)
@@ -21,17 +22,34 @@ export default function Home() {
   const [spellState, setSpellState] = useState<spells[]>([])
   const [season, SetSeason] = useState('Season3_5');
 const portraitRefsMap = useRef(new Map<number, Portraithandle>());
+const [selectedHero, setSelectedHero] = useState<String>("");
 
 
-const rplceKeyword = (key: String):String => {
-  if(key === 'Right Click')
+const rplceKeyword = (key: string):string => {
+  if(key === 'Right Click'  || key === 'Right mouse button')
     return 'RMB'
-  else if(key === 'Left Click')
+  else if(key === 'Left Click' || key === 'Left mouse button')
     return 'LMB'
   else if(key === 'Passive')
     return 'PSV'
   else
   return key
+}
+
+function parseSeason(seasonStr:string) {
+  // Remove "Season" prefix
+  let numericPart = seasonStr.replace("Season", "");
+  
+  // Replace "_" with "." to make it a decimal
+  numericPart = numericPart.replace("_", ".");
+  
+  // Convert string to number
+  return Number(numericPart);
+}
+
+
+const cardClick = (hero_name : String) => {
+setSelectedHero(hero_name)
 }
 
 
@@ -86,20 +104,23 @@ const [hero_spells, setHeroSpells]  = useState <{[key: string] : spells} | null>
 
    useEffect(() => {
     if (!season) return; // Ensure season is defined before fetching
-       fetch(`/api/hero_spells/${season}/Adam_Warlock`)
+       fetch(`/api/hero_spells/${season}/${selectedHero}`)
        .then(response => response.json())
          .then(data => {
-            //  console.log(data);
+             console.log(selectedHero);
              setHeroSpells(data);
          })
-   },[season]);
+   },[season,selectedHero]);
 
 {/* -----END-----*/}
 
 {/*--------Loading hero Names-------*/}
  type hero ={
+  id:number
   name: string;
+  alt_name: string;
   type: string;
+  season:number
  };
 
 const [heroNames, setHeroNames] = useState<hero[]>();
@@ -156,9 +177,13 @@ useEffect(() => {
           <DropdownMenuRadioItem value="Season2_5">Season 2.5</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="Season3">Season 3</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="Season3_5">Season 3.5</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="Season4">Season 4</DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
+    <Button className="ml-auto mr-4">Changes and Fixes</Button>
+      <BuyMeACoffeeButton username="bilalfawad0" ></BuyMeACoffeeButton>
+      
   </div>
    {/* Header end*/}
 { activeId && ( 
@@ -168,7 +193,7 @@ useEffect(() => {
   transition={{ duration: 0.3 }}
   >
     <Button  onClick={runActivePortrait}>close</Button>
-    <div className=" relative rounded-lg m-auto md:mt-48 p-4 w-[60%] 2xl:w-[90%] h-full xl:h-[600px] max-w-4xl 
+    <div className=" relative rounded-lg m-auto md:mt-32 p-4 w-[60%] 2xl:w-[90%] h-full xl:h-[800px] max-w-4xl 
      md:translate-x-20"> 
       <motion.div 
       initial={{opacity: 0}}
@@ -177,7 +202,7 @@ useEffect(() => {
       exit={{opacity:0}}
       className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {hero_spells && Object.entries(hero_spells).map(([SpellId,spell],index) => {
-          let newIndex = index + 1;
+          let newIndex = index + 1; // starting the index of array from 1 , so that it doesnt mess with mounting object
           return(
           <motion.button
           key={newIndex}
@@ -237,7 +262,7 @@ useEffect(() => {
                 <span className="absolute top-1/2 left-1/2 w-5 h-0.5 -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-current rounded"></span>
                 </span>
               </motion.button>
-          {spellState[CardIndex-1].change === 1 ? (
+          {spellState[CardIndex-1].change > 0 ? (
             <ul role="list" className="text-white text-[12px] xl:text-sm p-3">
               <li className="list-disc list-inside">
                 {spellState[CardIndex-1].changeDescription ?? 'Spell Updated in this Patch'}
@@ -258,18 +283,37 @@ useEffect(() => {
 </motion.div>
 )} {/*Absolute div */}
 
+<h1 className="text-2xl font-bold">Vanguard</h1>
+<div className="grid grid-cols-11 h-full mt-8">
+   {heroNames?.filter(hero => hero.type ==="Vanguard" && hero.season <= parseSeason(season)).map((hero, index) => (
+          <Portrait key={hero.id } src={`/hero-prestige-images/${hero.name.toLowerCase()}_prestige.png`} alt={`${hero.alt_name} image`} heroName={hero.name} herotype={hero.type} 
+      isActive ={activeId == hero.id } activeId={activeId} setActiveId = {setActiveId} cardID ={hero.id} setSelectedCard = {setCardIndex} ref={setPortraitRef(hero.id)} onCardClick={cardClick} />
+        ))}
+</div>
 
-      <div className="grid grid-cols-11 h-full mt-8">
-        {/* {heroNames && heroNames.map((hero, index) => (
-          <Portrait key={index} src=`/hero-prestige-images/{hero.name}_prestige` alt="hero.name" heroName={hero.name} herotype={hero.type} 
-      isActive ={activeId == index + 1 } activeId={activeId} setActiveId = {setActiveId} compID ={index + 1} />
-        ))} */}
-         <Portrait src="/hero-prestige-images/adam-warlock_prestige.png" alt="My Portrait" heroName="PSYLOCKE" herotype="Strategist" 
+<h1 className="text-2xl font-bold">Duelist</h1>
+<div className="grid grid-cols-11 h-full mt-8">
+   {heroNames?.filter(hero => hero.type ==="Duelist" && hero.season <= parseSeason(season)).map((hero, index) => (
+          <Portrait key={hero.id } src={`/hero-prestige-images/${hero.name.toLowerCase()}_prestige.png`} alt={`${hero.alt_name} image`} heroName={hero.name} herotype={hero.type} 
+      isActive ={activeId == hero.id  } activeId={activeId} setActiveId = {setActiveId} cardID ={hero.id} setSelectedCard = {setCardIndex} ref={setPortraitRef(hero.id)} onCardClick={cardClick} />
+        ))}
+</div>
+
+<h1 className="text-2xl font-bold">Strategist</h1>
+<div className="grid grid-cols-11 h-full mt-8">
+ {heroNames?.filter(hero => hero.type ==="Strategist" && hero.season <= parseSeason(season)).map((hero, index) => (
+          <Portrait key={hero.id } src={`/hero-prestige-images/${hero.name.toLowerCase()}_prestige.png`} alt={`${hero.alt_name} image`} heroName={hero.name} herotype={hero.type} 
+      isActive ={activeId == hero.id  } activeId={activeId} setActiveId = {setActiveId} cardID ={hero.id} setSelectedCard = {setCardIndex} ref={setPortraitRef(hero.id)} onCardClick={cardClick} />
+        ))}
+</div>
+
+      {/* <Portrait src="/hero-prestige-images/adam-warlock_prestige.png" alt="My Portrait" heroName="PSYLOCKE" herotype="Strategist" 
           isActive ={activeId == 1 } activeId={activeId} setActiveId = {setActiveId} cardID ={1} setSelectedCard = {setCardIndex} ref={setPortraitRef(1)} />
           <Portrait src="/jeff.webp" alt="My Portrait" heroName="PSYLOCKE" herotype="STRATEGIST" 
-          isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  cardID ={2} setSelectedCard = {setCardIndex} ref={setPortraitRef(2)} />
-      </div>
+          isActive ={activeId == 2 } activeId={activeId}  setActiveId = {setActiveId}  cardID ={2} setSelectedCard = {setCardIndex} ref={setPortraitRef(2)} /> */}
+      
       </>
     );
 }
 
+  

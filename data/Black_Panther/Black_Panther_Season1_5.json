@@ -1,0 +1,201 @@
+{
+  "season": "1.5",
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "VIBRANIUM CLAWS",
+    "description": "Slice Vibranium Claws forward.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Melee"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "35"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "3m"
+      },
+      {
+        "label": "ATTACK INTERVAL",
+        "value": "0.44s per hit"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "SPEAR TOSS",
+    "description": "Toss a Vibranium energy spear forward, creating a Vibranium Force Field and attaching a Vibranium Mark to enemies in its radius.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Arced projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "60m/s"
+      },
+      {
+        "label": "RANGE",
+        "value": "5m spherical radius"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "45"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "6s"
+      },
+      {
+        "label": "CHARGES",
+        "value": "2"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "SPIRIT REND",
+    "description": "Lunge forward and deal damage to enemies. Vibranium Mark produces Bonus Health and refreshes the ability.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Movement-based damage ability"
+      },
+      {
+        "label": "AVERAGE SPEED",
+        "value": "50m/s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "15m"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "80"
+      },
+      {
+        "label": "BONUS HEALTH",
+        "value": "30"
+      },
+      {
+        "label": "BONUS MAX HEALTH",
+        "value": "75"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "SPINNING KICK",
+    "description": "Spiral forward and attach a Vibranium Mark to enemies hit.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Movement-based damage ability"
+      },
+      {
+        "label": "AVERAGE SPEED",
+        "value": "15m/s"
+      },
+      {
+        "label": "MAXIMUM DISTANCE",
+        "value": "16m"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "70"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Q",
+    "img": "",
+    "name": "BAST'S DESCENT",
+    "description": "Summon Bast, pouncing forward, dealing damage, and attaching a Vibranium Mark to enemies hit while refreshing Spirit Rend.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Cuboid Spell Field"
+      },
+      {
+        "label": "RANGE",
+        "value": "Length: 22m, Width: 20m, Height: 7m"
+      },
+      {
+        "label": "CASTING ANGLE",
+        "value": "150\u00b0"
+      },
+      {
+        "label": "DAMAGE",
+        "value": "150"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "3300"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "Passive",
+    "img": "",
+    "name": "PANTHER'S CUNNING",
+    "description": "Deal higher damage when at low Health.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "TRIGGER CONDITION",
+        "value": "Health drops below 100"
+      },
+      {
+        "label": "DAMAGE BOOST",
+        "value": "20%"
+      }
+    ]
+  },
+  "spell7": {
+    "key": "C",
+    "img": "",
+    "name": "WAKANDAN MASTER (Team-Up)",
+    "description": "With Magik: rewind to an earlier position and gain Bonus Health based on missing health.",
+    "change": 1,
+    "changeDescription": "Rewind time decreased 5s\u21923s; conversion ratio increased 0.5\u21920.8",
+    "attributes": [
+      {
+        "label": "REWIND TIME",
+        "value": "3s prior"
+      },
+      {
+        "label": "BONUS HEALTH/DAMAGE TAKEN CONVERSION",
+        "value": "80%"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "30s"
+      }
+    ]
+  }
+}
