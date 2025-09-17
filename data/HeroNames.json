@@ -18,7 +18,7 @@
     { "id": 16, "name": "Jeff_the_Land_Shark", "alt_name": "Jeff", "type": "Strategist", "season": 0 },
     { "id": 17, "name": "Loki", "alt_name": "Loki", "type": "Strategist", "season": 0 },
     { "id": 18, "name": "Luna_Snow", "alt_name": "Luna Snow", "type": "Strategist", "season": 0 },
-    { "id": 19, "name": "Magik", "alt_name": "Magik", "type": "Duelist", "season": 0 },
+    
     { "id": 20, "name": "Magneto", "alt_name": "Magneto", "type": "Vanguard", "season": 0 },
     { "id": 21, "name": "Mantis", "alt_name": "Mantis", "type": "Strategist", "season": 0 },
     { "id": 22, "name": "Mister_Fantastic", "alt_name": "Mister Fantastic", "type": "Duelist", "season": 1 },
