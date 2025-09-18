@@ -1,0 +1,226 @@
+{
+  "spell1": {
+    "key": "Left mouse button",
+    "img": "",
+    "name": "REPULSOR BLAST",
+    "description": "Fire nano pulse cannons forward. After two one-handed shots, the third fires dual blasters for higher damage at extra ammo cost.",
+    "change": 2,
+    "changeDescription": "Repulsor retune: Stage1&2 direct 55\u219240, Stage3 direct 65\u219250; AoE up 35\u219250 and 40\u219260; AO direct 55\u219250, AO AoE 55\u219265",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Straight-line projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "AMMO",
+        "value": "100 (Normal), \u221e (Armor Overdrive)"
+      },
+      {
+        "label": "AMMO CONSUMPTION",
+        "value": "10 (Normal), 16 (Dual Blasters)"
+      },
+      {
+        "label": "FIRE RATE",
+        "value": "1.67/s (Normal), 1.33/s (Armor Overdrive)"
+      },
+      {
+        "label": "DIRECT HIT DAMAGE (Stage 1 & 2 \u2014 Normal)",
+        "value": "40"
+      },
+      {
+        "label": "DIRECT HIT DAMAGE (Stage 3 \u2014 Normal)",
+        "value": "50"
+      },
+      {
+        "label": "SPELL FIELD DAMAGE (Stage 1 & 2 \u2014 Normal)",
+        "value": "50"
+      },
+      {
+        "label": "SPELL FIELD DAMAGE (Stage 3 \u2014 Normal)",
+        "value": "60"
+      },
+      {
+        "label": "DIRECT HIT DAMAGE (Armor Overdrive)",
+        "value": "50"
+      },
+      {
+        "label": "SPELL FIELD DAMAGE (Armor Overdrive)",
+        "value": "65"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Repulsor Blast and Unibeam share the same ammo count"
+      }
+    ]
+  },
+  "spell2": {
+    "key": "Right mouse button",
+    "img": "",
+    "name": "UNIBEAM",
+    "description": "Channel a beam of focused energy that deals continuous damage.",
+    "change": 1,
+    "changeDescription": "Unibeam damage increased 120\u2192140/s; Armor Overdrive 180\u2192190/s",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Channeled"
+      },
+      {
+        "label": "DAMAGE (Normal)",
+        "value": "140/s"
+      },
+      {
+        "label": "DAMAGE (Armor Overdrive)",
+        "value": "190/s"
+      },
+      {
+        "label": "AMMO",
+        "value": "100 (Normal), \u221e (Armor Overdrive)"
+      },
+      {
+        "label": "AMMO CONSUMPTION",
+        "value": "10/s"
+      },
+      {
+        "label": "RANGE",
+        "value": "25m"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Repulsor Blast and Unibeam share the same ammo count"
+      }
+    ]
+  },
+  "spell3": {
+    "key": "Shift",
+    "img": "",
+    "name": "HYPER-VELOCITY",
+    "description": "Activate Hyper-Velocity state for swift forward flight.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Movement"
+      },
+      {
+        "label": "MAXIMUM ENERGY",
+        "value": "120 (Hyper-Velocity), \u221e (Armor Overdrive)"
+      },
+      {
+        "label": "ENERGY RECOVERY SPEED",
+        "value": "10/s"
+      },
+      {
+        "label": "MOVEMENT BOOST",
+        "value": "100%"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "15/s"
+      }
+    ]
+  },
+  "spell4": {
+    "key": "E",
+    "img": "",
+    "name": "ARMOR OVERDRIVE",
+    "description": "Activate Armor Overdrive, enhancing Repulsor Blast and Unibeam.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "DURATION",
+        "value": "10s"
+      },
+      {
+        "label": "BONUS HEALTH",
+        "value": "0 (no bonus health prior to S2 feature)"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "20s"
+      }
+    ]
+  },
+  "spell5": {
+    "key": "F",
+    "img": "",
+    "name": "MICRO-MISSILE BARRAGE",
+    "description": "Launch a bombardment of scattered missiles (during Hyper-Velocity or Armor Overdrive).",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Scatter-type projectile that generates a spell area upon impact"
+      },
+      {
+        "label": "AMMO",
+        "value": "16 (Micro-Missile Barrage), 18 (Armor Overdrive)"
+      },
+      {
+        "label": "COOLDOWN",
+        "value": "8s (Micro-Missile Barrage), 6s (Armor Overdrive)"
+      },
+      {
+        "label": "RANGE",
+        "value": "2m spherical radius"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "15m/s (Micro-Missile Barrage), 60m/s (Armor Overdrive)"
+      },
+      {
+        "label": "SPELL FIELD DAMAGE",
+        "value": "20 per round (Micro-Missile Barrage), 15 per round (Armor Overdrive)"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Launches beneath Iron Man (M.M.); launches toward crosshair in Armor Overdrive"
+      }
+    ]
+  },
+  "spell6": {
+    "key": "Q",
+    "img": "",
+    "name": "INVINCIBLE PULSE CANNON",
+    "description": "Fire a devastating pulse cannon; the projectile creates a damaging field as it travels and a large explosion upon impact.",
+    "change": 0,
+    "changeDescription": "no changes",
+    "attributes": [
+      {
+        "label": "CASTING",
+        "value": "Straight-line projectile that generates a spell field upon impact"
+      },
+      {
+        "label": "DAMAGE (Dispersive field)",
+        "value": "300/s"
+      },
+      {
+        "label": "PROJECTILE SPEED",
+        "value": "25m/s"
+      },
+      {
+        "label": "SPELL FIELD RANGE",
+        "value": "10m spherical radius (Spell Field); 15\u00d75\u00d75m dispersive field while traveling"
+      },
+      {
+        "label": "SPELL FIELD DAMAGE (Impact)",
+        "value": "1000"
+      },
+      {
+        "label": "SPELL FIELD DAMAGE FALLOFF",
+        "value": "5% falloff at 10m"
+      },
+      {
+        "label": "ENERGY COST",
+        "value": "2800"
+      },
+      {
+        "label": "SPECIAL EFFECT",
+        "value": "Creates dispersive DoT while traveling before the main detonation"
+      }
+    ]
+  }
+}

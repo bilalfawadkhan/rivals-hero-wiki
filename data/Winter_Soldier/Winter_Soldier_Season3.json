@@ -51,8 +51,8 @@
         "value": "Enemies that take damage from the projectile will no longer receive damage from the spell field"
       }
     ],
-    "change": 0,
-    "changeDescription": "Projectile +5 (70\u219275), Area -5 (70\u219265), falloff reduced (65%\u219260%)"
+    "change": 1,
+    "changeDescription": "Adjust Roterstern damage falloff maximum at 40m from (60%) \u2192 (70%)"
   },
   "spell2": {
     "key": "Q",
@@ -93,8 +93,8 @@
         "value": "Stars Aligned (with Captain America)"
       }
     ],
-    "change": 2,
-    "changeDescription": "Bugfixes: corrected ultimate hit detection & reset edge cases; Base damage 100\u219280; Culling threshold 20%\u219215%"
+    "change": 0,
+    "changeDescription": ""
   },
   "spell3": {
     "key": "Shift",

@@ -1,6 +1,6 @@
 'use client'; // Enables usage of client-side features in a Next.js 13+ app
 
-import React, { useEffect, useRef } from 'react';
+import React, { forwardRef, useEffect, useImperativeHandle, useRef } from 'react';
 import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -14,28 +14,49 @@ interface PortraitProps {
   isActive?: boolean;                       // Whether this component is currently active
   setActiveId: (value: number | null) => void; // Function to update the active component's ID
   activeId: number | null;                  // ID of the currently active portrait
-  compID: number;                           // Unique ID for this particular component
-  setScaledIndex: (value :number | null) => void;              // Index of the currently scaled portrait, if any
+  cardID: number;                           // Unique ID for this particular component
+  setSelectedCard: (value :number | null) => void; // Index of the currently scaled portrait, if any
+  onCardClick : (value:String) => void;
+}
 
+export interface Portraithandle{
+  handleClickChild: () => void;
 }
 
 // Functional component definition using the props above
-const Portrait: React.FC<PortraitProps> = ({
-  src,
-  alt = 'Portrait Image',
-  className = '',
-  heroName = 'Hero Name',
-  herotype = 'Hero Type',
-  isActive,
-  activeId,
-  setActiveId,
-  compID,
-  setScaledIndex,
+const Portrait = forwardRef<Portraithandle, PortraitProps>(function Portrait(
+  {
+    src,
+    alt = 'Portrait Image',
+    className = '',
+    heroName = 'Hero Name',
+    herotype = 'Hero Type',
+    isActive,
+    activeId,
+    setActiveId,
+    cardID: compID,
+    setSelectedCard,
+    onCardClick
+  },
+  ref
+) {
   
-}) => {
 
   // Reference to the root DOM element for positioning calculations
-  const ref = useRef<HTMLDivElement | null>(null);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+
+const getHeroTypeColor = (herotype: string) => {
+  switch (herotype) {
+    case "Vanguard":
+      return "bg-gradient-to-r from-blue-700 to-blue-900 border-blue-800";
+    case "Duelist":
+      return "bg-gradient-to-r from-red-700 to-red-900 border-red-800";
+    case "Strategist":
+      return "bg-gradient-to-r from-green-700 to-green-900 border-green-800";
+    default:
+      return "bg-gradient-to-r from-gray-700 to-gray-900 border-gray-800";
+  }
+};
 
   // Local state to store dynamic position and scale for animation
   const [Position, setPosition] = React.useState({
@@ -44,40 +65,50 @@ const Portrait: React.FC<PortraitProps> = ({
     scale: 1
   });
 
-  // Function to set this component as the active one
-  const setId = (compID: number) => {
-    setActiveId(compID);
-  };
+
+const getTargetPosition = (width: number) => {
+  if (width <= 330) { // sm breakpoint
+    return { left: 50, top: 200, scale: 1 };
+  }
+  if (width <= 640) { // sm breakpoint
+    return { left: 50, top: 200, scale: 1.1 };
+  } else if (width <= 1280) { // md / lg breakpoint
+    return { left: 100, top: 250, scale: 1.4 };
+  } else { // xl breakpoint
+    return { left: 140, top: 250, scale: 2.2 };
+  }
+};
+
 
   // Handle click events on the portrait
-  const handleClick = (e: React.MouseEvent) => {
-    if (!ref.current) return;
-    e.stopPropagation(); // Prevents the event from bubbling to parent elements
-
+  const handleClickCore = () => {
+    if (!rootRef.current) return;
     let shouldFocus;
 
     // Logic to toggle focus based on the current active ID and click count
-    if (activeId === compID && isActive) {
-      // If already active and clicked again, unfocus
-      // console.log('Second Click actions');
+    if (activeId === compID) {
       setActiveId(null);
       shouldFocus = !isActive;
-      setScaledIndex(null);
+      setSelectedCard(null);
     }
-    if (activeId === null) {
+    else {
       // First time click — set as active
-      // console.log('First Click action');
       setActiveId(compID);
+      onCardClick(heroName);
       shouldFocus = !isActive;
     }
 
+
     // Update position and scale for animation if needed
     if (shouldFocus) {
-      const data = ref.current.getBoundingClientRect(); // Get current position on screen
+      const width = window.innerWidth; // Get current window width
+      const { left, top, scale } = getTargetPosition(width);
+      if(width <= 640 )
+        return;
       setPosition({
-        left: 140 - ref.current.offsetLeft,
-        top: 430 - ref.current.offsetTop,
-        scale: 2.5, // Zoom in
+        left: left - rootRef.current.offsetLeft,
+        top: top - rootRef.current.offsetTop,
+        scale: scale, // Zoom in
       });
     } else {
       // Reset to original position and scale
@@ -89,35 +120,45 @@ const Portrait: React.FC<PortraitProps> = ({
     }
   };
 
+  const handleClick =(e:React.MouseEvent) =>{
+    e.stopPropagation();
+    handleClickCore();
+  }
+
+  useImperativeHandle(ref, () => ({
+    handleClickChild:handleClickCore,
+
+  }),[activeId, compID, isActive]);
+
   return (
     <>
       {/* Outer wrapper to provide fixed dimensions */}
       <div
-        ref={ref}
+        ref={rootRef}
         onClick={(e) => handleClick(e)}
         className='w-[150px] h-[217px]'
       >
         {/* Motion-enabled card for smooth scaling and repositioning */}
         <motion.div
-          className={`relative h-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-[#D6D9F2] border-4 ${activeId === compID ? 'z-60' : 'z-40'}`}
+          className={`relative h-50 rounded-2xl overflow-hidden shadow-2xl flex flex-col items-center bg-gray-700 border-[#D6D9F2] border-4 ${activeId === compID ? 'md:z-60' : 'md:z-40'}`}
           animate={Position} // Apply dynamic animation styles
         >
           {/* Image of the hero */}
           <Image src={src} alt={alt} className='-ml-3.5' width={120} height={300} />
 
           {/* Hero name positioned near the bottom of the image */}
-          <h5 className="absolute top-34 left-6 rounded-sm w-2/3 text-center text-white text-xl">
+          <h5 className="absolute top-34 left-0 rounded-sm w-full text-center text-white text-sm">
             {heroName}
           </h5>
 
           {/* Hero type badge positioned below the name */}
-          <p className="absolute top-40 rounded-sm w-2/4 bg-[#be6f23] border-[#eaa03a] border-2 text-center text-[10px]">
+          <p className={`absolute top-40 rounded-sm w-2/4  border-2 text-center text-[10px] ${getHeroTypeColor(herotype)}`}>
             {herotype}
           </p>
         </motion.div>
       </div>
     </>
   );
-};
+});
 
 export default Portrait;
